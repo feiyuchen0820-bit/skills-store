@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Mijia App Figma Spec · Skills 详情</title>
+    <meta name="description" content="Apply the official Mijia Harmony app Figma design language to new pages, flow design, UI reviews, and implementation guidance. Use when Codex needs to design, restyle, critique, or map work to the Mijia Figma spec file `1sfio83buMLRzVwpokEudA`, especially for homepage tabs, notification center, camera, add-device, provisioning, and family-management flows." />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero-card">
+        <p class="eyebrow">Skill 详情</p>
+        <h1>Mijia App Figma Spec</h1>
+        <p class="hero-copy">Apply the official Mijia Harmony app Figma design language to new pages, flow design, UI reviews, and implementation guidance. Use when Codex needs to design, restyle, critique, or map work to the Mijia Figma spec file `1sfio83buMLRzVwpokEudA`, especially for homepage tabs, notification center, camera, add-device, provisioning, and family-management flows.</p>
+        <div class="score-badges">
+          <span class="score-pill">推荐分 87</span>
+          <span class="dimension-pill">设计体验</span>
+        </div>
+        <div class="override-note">手工规则：这是中文设计规范类 skill，应该纳入产品相关榜单。</div>
+        <div class="toolbar-meta">
+          <span>来源：~/.codex/skills/mijia-app-figma-spec/SKILL.md</span>
+          <span>最近修改：2026-03-18T12:27:23.045Z</span>
+        </div>
+      </section>
+
+      <section class="toolbar-card">
+        <div class="skill-bottomline">
+          <a class="link-button" href="../../">← 返回目录</a>
+          <a class="link-button" href="https://github.com/feiyuchen0820-bit/skills-store">仓库</a>
+        </div>
+        <div class="section-label">命中关键词</div>
+        <div class="keyword-list">
+          <span class="keyword-pill">design +10</span><span class="keyword-pill">figma +12</span><span class="keyword-pill">ui +8</span><span class="keyword-pill">flow +7</span><span class="keyword-pill">page +5</span><span class="keyword-pill">spec +7</span><span class="keyword-pill">design language +10</span><span class="keyword-pill">harmony +8</span>
+        </div>
+      </section>
+
+      <section class="skill-card">
+        <div class="section-label">原始 SKILL.md</div>
+        <pre class="skill-markdown">---
+name: mijia-app-figma-spec
+description: Apply the official Mijia Harmony app Figma design language to new pages, flow design, UI reviews, and implementation guidance. Use when Codex needs to design, restyle, critique, or map work to the Mijia Figma spec file `1sfio83buMLRzVwpokEudA`, especially for homepage tabs, notification center, camera, add-device, provisioning, and family-management flows.
+---
+
+# Mijia App Figma Spec
+
+## Quick Start
+
+- 先用 `references/figma-node-map.md` 找到最接近的 page anchor。
+- 先锁一个主 page family；未锁定前，不开始画 UI。
+- 先读 `1:9`「整体框架」，再读当前任务 page，再补截图。
+- 如果是输出到 `Figma Design` 或走 `html-to-design`，默认产物必须是“设计画板 + 多个手机 frame”，不是网页说明页。
+- 家庭成员、成员详情、备注、权限、合并管理这类页面，默认先归到 `30:14024`「家庭管理」。
+- 摄像头/人物识别类页面才借 `14745:31037`；插件页只借密度和媒体样式，不反向污染通用成员页。
+- 先沿用同一页面家族的导航、间距、组件，不要跨家族拼贴。
+- 先覆盖默认态，再补空态、加载、弹窗、深色、多语言、大屏态。
+- 默认用中文输出，文案保持米家式短句和低打扰语气。
+
+## 输出硬约束（必须遵守）
+
+- 先明确写出：`主 anchor`、`辅助 anchor`、`为什么不用其他 family`。
+- 同一批设计稿只允许 `1` 个主 family；辅助 anchor 只用于插件子页面或局部状态参考。
+- 禁止输出网页化 `hero`、大面积渐变头图、长文规则面板、营销式卖点区、三栏/四栏说明板。
+- 禁止把“信息架构解释区”做成页面主视觉；解释只允许做成画板短注释。
+- 首屏必须先出现 App 原生手机 frame，不能先出现网页头图或长篇说明。
+- 一张手机 screen 只表达一个路由或一个状态，不要把多个层级拼在同一屏里。
+- 画板中至少 `80%` 的视觉面积应由手机 frame、原生卡片、弹层、列表组成。
+- 家庭管理 family 默认复用：标题栏、子标题、列表、卡片、吸底按钮、底部弹层；不要另起新容器体系。
+- 当页面属于“管理 / 设置 / 合并”时，优先做成米家二级页，而不是 H5 宣传页。
+
+## 按这个流程工作
+
+### 1. 判断页面归属
+
+- 先判断需求更像：首页体系、通知、摄像机、添加设备、配网、家庭管理，还是跨页面总框架。
+- 不确定时，先选最接近的 page family，并明确说出你参考的 anchor。
+- 如果是“家庭成员、设备成员归属、备注、权限、合并建议、合并说明”，默认选 `30:14024`。
+- 如果是“摄像头人物、照片补录、识别优化”，再补 `14745:31037`。
+
+### 2. 先读骨架，再读细节
+
+- 先读 `1:9`「整体框架」，确认手机、大屏竖屏、大屏横屏的布局规律。
+- 再读当前 page anchor，确认导航层级、模块分组、组件密度和状态覆盖。
+- 需要视觉核对时，优先补同一 anchor 的截图，不要只靠文字猜样式。
+
+### 3. 复用页面家族规则
+
+- 首页类优先复用 `状态栏 40 + 标题栏 56 + 顶部 Tab 44 + 内容 + 底 Tab 60 + 手势区 16` 的节奏。
+- 二级列表/设置类优先复用标题栏、子标题、列表、卡片、吸底按钮的组合。
+- 配网和家庭管理类优先复用「模块 + 卡片 + 吸底操作区」结构，不要另起一套视觉语言。
+- 设计板输出时，优先做成“多手机 frame 横向/纵向排布 + 简短标题注释”的 Figma 版式。
+- 插件页和通用页要分组展示；插件页可借设备 family，但通用成员页仍必须留在家庭管理 family 内。
+- 大屏只放大栅格和边距，不改变交互层级。
+
+### 4. 按状态成套输出
+
+- 至少补齐：默认、加载、空态、异常/无结果。
+- 需要强交互时，再补：抽屉、弹窗、长按菜单、近手弹窗、搜索键盘态。
+- 当前 page family 已有深色、多语言、大屏样例时，默认一起考虑。
+
+### 5. 用米家口吻输出
+
+- 先给页面目标和信息架构，再给文案和视觉说明。
+- 文案优先短句、动词开头、少术语、少解释性废话。
+- CTA 要短，状态文案要直接，避免夸张营销语。
+
+## 遵守这些设计规则
+
+- 手机规格优先以规范稿 `392×872` 理解；同一套规范同时覆盖 `711` 和 `1138` 宽度。
+- 手机主内容区常用 `12` 左右留白、`368` 内容宽；大屏竖屏常用 `56/599`；大屏横屏常用 `132/874`。
+- `子标题` 常见高度为 `34`；`列表` 常见高度为 `56 / 60 / 70 / 75`；吸底主按钮常见为 `336×50`。
+- 吸底区不要拍脑袋：只有主按钮时常见 `94`；带步骤说明时常见 `125`；带复选框或双按钮时会更高。
+- 常用组件优先复用：`标题栏`、`tab`、`子标题`、`列表`、`卡片`、`状态按钮`、`大按钮`、`搜索栏`、`弹窗`、`抽屉容器`、`近手弹窗`、`空状态占位符`、`加载弹窗`。
+- 深色态不是简单反色；优先沿用规范里已有的深色页面关系、层级和 CTA 亮度。
+- 不要杜撰未验证的 token 数值；如果 Figma 变量或 design context 拉取失败，就沿用截图与现有项目 token 的近似映射。
+
+## 用这个输出结构
+
+1. 页面目标
+2. 主 anchor / 辅助 anchor
+3. 页面归属与不采用的 family
+4. 信息架构
+5. 页面文案
+6. 视觉与组件要点
+7. 状态与适配
+8. 交付与下一步
+
+## 自检清单（输出前过一遍）
+
+- 第一个可见主内容是不是手机 frame，而不是网页头图？
+- 标题栏、列表、卡片、吸底区，是否都能映射到所选 family？
+- 是否误用了网页式模块：`hero`、卖点卡、规则面板、长段说明？
+- 通用成员页是否仍然留在 `30:14024` 家族，而不是被插件视觉带偏？
+- 每一屏是否都能对应到一个清晰的 App 路由或状态？
+
+## 需要时再读这些参考
+
+- 读 `references/figma-node-map.md` 找 page anchor 和 MCP 注意事项。
+- 读 `references/page-inventory.md` 选最近的页面家族与状态集合。
+- 读 `references/design-principles.md` 对齐栅格、组件、文案和适配规则。
+
+## 遇到这些情况时这样处理
+
+- `get_design_context` 或 `get_variable_defs` 报 “You currently have nothing selected” 时，不要阻塞；改用 `get_metadata` + `get_screenshot`。
+- 用户只说“做一个米家页面”时，先问自己它属于哪个 page family，再按家族规则输出。
+- 用户要新页面时，优先从最相近的家族扩展，不要凭空发明新的导航和卡片体系。
+- 用户要评审现有稿时，按「是否同 family / 是否同栅格 / 是否同组件 / 是否同语气」四项检查。
+</pre>
+      </section>
+    </main>
+  </body>
+</html>

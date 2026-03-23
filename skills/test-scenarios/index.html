@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Test Scenarios · Skills 详情</title>
+    <meta name="description" content="Create comprehensive test scenarios from user stories with test objectives, starting conditions, user roles, step-by-step actions, and expected outcomes. Use when writing QA test cases, creating test plans, defining acceptance tests, or preparing for feature validation." />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero-card">
+        <p class="eyebrow">Skill 详情</p>
+        <h1>Test Scenarios</h1>
+        <p class="hero-copy">Create comprehensive test scenarios from user stories with test objectives, starting conditions, user roles, step-by-step actions, and expected outcomes. Use when writing QA test cases, creating test plans, defining acceptance tests, or preparing for feature validation.</p>
+        <div class="score-badges">
+          <span class="score-pill">推荐分 36</span>
+          <span class="dimension-pill">规划定义</span>
+        </div>
+        
+        <div class="toolbar-meta">
+          <span>来源：~/.codex/skills/test-scenarios/SKILL.md</span>
+          <span>最近修改：2026-03-19T08:29:09.586Z</span>
+        </div>
+      </section>
+
+      <section class="toolbar-card">
+        <div class="skill-bottomline">
+          <a class="link-button" href="../../">← 返回目录</a>
+          <a class="link-button" href="https://github.com/feiyuchen0820-bit/skills-store">仓库</a>
+        </div>
+        <div class="section-label">命中关键词</div>
+        <div class="keyword-list">
+          <span class="keyword-pill">feature +7</span><span class="keyword-pill">plan +6</span><span class="keyword-pill">acceptance +7</span><span class="keyword-pill">user +5</span><span class="keyword-pill">feature +6</span><span class="keyword-pill">plan +5</span>
+        </div>
+      </section>
+
+      <section class="skill-card">
+        <div class="section-label">原始 SKILL.md</div>
+        <pre class="skill-markdown">---
+name: test-scenarios
+description: &quot;Create comprehensive test scenarios from user stories with test objectives, starting conditions, user roles, step-by-step actions, and expected outcomes. Use when writing QA test cases, creating test plans, defining acceptance tests, or preparing for feature validation.&quot;
+---
+# Test Scenarios
+
+Create comprehensive test scenarios from user stories with test objectives, starting conditions, user roles, step-by-step test actions, and expected outcomes.
+
+**Use when:** Writing QA test cases, creating test plans, defining acceptance test scenarios, or validating user story implementations.
+
+**Arguments:**
+- `$PRODUCT`: The product or system name
+- `$USER_STORY`: The user story to test (title and acceptance criteria)
+- `$CONTEXT`: Additional testing context or constraints
+
+## Step-by-Step Process
+
+1. **Review the user story** and acceptance criteria
+2. **Define test objectives** - What specific behavior to validate
+3. **Establish starting conditions** - System state, data setup, configurations
+4. **Identify user roles** - Who performs the test actions
+5. **Create test steps** - Break down interactions step-by-step
+6. **Define expected outcomes** - Observable results after each step
+7. **Consider edge cases** - Invalid inputs, boundary conditions
+8. **Output detailed test scenarios** - Ready for QA execution
+
+## Scenario Template
+
+**Test Scenario:** [Clear scenario name]
+
+**Test Objective:** [What this test validates]
+
+**Starting Conditions:**
+- [System state required]
+- [Data or configuration needed]
+- [User setup or permissions]
+
+**User Role:** [Who performs the test]
+
+**Test Steps:**
+1. [First action and its expected result]
+2. [Second action and observable outcome]
+3. [Third action and system behavior]
+4. [Completion action and final state]
+
+**Expected Outcomes:**
+- [Observable result 1]
+- [Observable result 2]
+- [Observable result 3]
+
+## Example Test Scenario
+
+**Test Scenario:** View Recently Viewed Products on Product Page
+
+**Test Objective:** Verify that the &#39;Recently viewed&#39; section displays correctly and excludes the current product.
+
+**Starting Conditions:**
+- User is logged in or has browser history enabled
+- User has viewed at least 2 products in the current session
+- User is now on a product page different from previously viewed items
+
+**User Role:** Online Shopper
+
+**Test Steps:**
+1. Navigate to any product page → Section should appear at bottom with previously viewed items
+2. Scroll to bottom of page → &quot;Recently viewed&quot; section is visible with product cards
+3. Verify product thumbnails → Images, titles, and prices are displayed correctly
+4. Check current product → Current product is NOT in the recently viewed list
+5. Click on a product card → User navigates to the corresponding product page
+
+**Expected Outcomes:**
+- Recently viewed section appears only after viewing at least 1 prior product
+- Section displays 4-8 product cards with complete information
+- Current product is excluded from the list
+- Each card shows &quot;Viewed X minutes/hours ago&quot; timestamp
+- Clicking cards navigates to correct product pages
+- Performance: Section loads within 2 seconds
+
+## Output Deliverables
+
+- Comprehensive test scenarios for each acceptance criterion
+- Clear test objectives aligned with user story intent
+- Detailed step-by-step test actions
+- Observable expected outcomes after each step
+- Edge case and error scenario coverage
+- Ready for QA team execution and documentation
+</pre>
+      </section>
+    </main>
+  </body>
+</html>

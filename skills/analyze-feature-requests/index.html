@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>analyze-feature-requests · Skills 详情</title>
+    <meta name="description" content="Analyze and prioritize a list of feature requests by theme, strategic alignment, impact, effort, and risk. Use when reviewing customer feature requests, triaging a backlog, or making prioritization decisions." />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero-card">
+        <p class="eyebrow">Skill 详情</p>
+        <h1>analyze-feature-requests</h1>
+        <p class="hero-copy">Analyze and prioritize a list of feature requests by theme, strategic alignment, impact, effort, and risk. Use when reviewing customer feature requests, triaging a backlog, or making prioritization decisions.</p>
+        <div class="score-badges">
+          <span class="score-pill">推荐分 46</span>
+          <span class="dimension-pill">规划定义</span>
+        </div>
+        
+        <div class="toolbar-meta">
+          <span>来源：~/.codex/skills/analyze-feature-requests/SKILL.md</span>
+          <span>最近修改：2026-03-19T08:29:09.680Z</span>
+        </div>
+      </section>
+
+      <section class="toolbar-card">
+        <div class="skill-bottomline">
+          <a class="link-button" href="../../">← 返回目录</a>
+          <a class="link-button" href="https://github.com/feiyuchen0820-bit/skills-store">仓库</a>
+        </div>
+        <div class="section-label">命中关键词</div>
+        <div class="keyword-list">
+          <span class="keyword-pill">priorit +10</span><span class="keyword-pill">feature +7</span><span class="keyword-pill">backlog +9</span><span class="keyword-pill">customer +6</span><span class="keyword-pill">feature +6</span><span class="keyword-pill">priorit +8</span>
+        </div>
+      </section>
+
+      <section class="skill-card">
+        <div class="section-label">原始 SKILL.md</div>
+        <pre class="skill-markdown">---
+name: analyze-feature-requests
+description: &quot;Analyze and prioritize a list of feature requests by theme, strategic alignment, impact, effort, and risk. Use when reviewing customer feature requests, triaging a backlog, or making prioritization decisions.&quot;
+---
+
+## Analyze Feature Requests
+
+Categorize, evaluate, and prioritize customer feature requests against product goals.
+
+### Context
+
+You are analyzing feature requests for **$ARGUMENTS**.
+
+If the user provides files (spreadsheets, CSVs, or documents with feature requests), read and analyze them directly. If data is in a structured format, consider creating a summary table.
+
+### Domain Context
+
+Never allow customers to design solutions. Prioritize **opportunities (problems)**, not features. Use **Opportunity Score** (Dan Olsen) to evaluate customer-reported problems: Opportunity Score = Importance × (1 − Satisfaction), normalized to 0–1. See the `prioritization-frameworks` skill for full details and templates.
+
+### Instructions
+
+The user will describe their product goal and provide feature requests. Work through these steps:
+
+1. **Understand the goal**: Confirm the product objective and desired outcomes that will guide prioritization.
+
+2. **Categorize requests into themes**: Group related requests together and name each theme.
+
+3. **Assess strategic alignment**: For each theme, evaluate how well it aligns with the stated goals.
+
+4. **Prioritize the top 3 features** based on:
+   - **Impact**: Customer value and number of users affected
+   - **Effort**: Development and design resources required
+   - **Risk**: Technical and market uncertainty
+   - **Strategic alignment**: Fit with product vision and goals
+
+5. **For each top feature**, provide:
+   - Rationale (customer needs, strategic alignment)
+   - Alternative solutions worth considering
+   - High-risk assumptions
+   - How to test those assumptions with minimal effort
+
+Think step by step. Save as markdown or create a structured output document.
+
+---
+
+### Further Reading
+
+- [Kano Model: How to Delight Your Customers Without Becoming a Feature Factory](https://www.productcompass.pm/p/kano-model-how-to-delight-your-customers)
+- [Continuous Product Discovery Masterclass (CPDM)](https://www.productcompass.pm/p/cpdm) (video course)
+</pre>
+      </section>
+    </main>
+  </body>
+</html>

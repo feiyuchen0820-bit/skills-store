@@ -1,0 +1,1207 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>IoT 智能家居竞品功能研究引擎 · Skills 详情</title>
+    <meta name="description" content="IoT 智能家居竞品功能研究引擎（Capability Research Task）。触发场景： 1. 用户输入能力主题研究，如&quot;语音助手功能研究&quot;、&quot;自动化能力研究&quot;、&quot;智能门锁生态研究&quot; 2. 用户说&quot;分析 [功能/平台]&quot;、&quot;对比 [能力]&quot;、&quot;[平台] 最新动态&quot;、&quot;研究 [主题]&quot; 3. 用户提出具体能力问题，如&quot;三星 Matter 摄像头支持到哪一步了&quot; 不触发场景：生成完整周报（用 iot-weekly-research）；速读单篇文章（用 iot-url）。" />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero-card">
+        <p class="eyebrow">Skill 详情</p>
+        <h1>IoT 智能家居竞品功能研究引擎</h1>
+        <p class="hero-copy">IoT 智能家居竞品功能研究引擎（Capability Research Task）。触发场景： 1. 用户输入能力主题研究，如&quot;语音助手功能研究&quot;、&quot;自动化能力研究&quot;、&quot;智能门锁生态研究&quot; 2. 用户说&quot;分析 [功能/平台]&quot;、&quot;对比 [能力]&quot;、&quot;[平台] 最新动态&quot;、&quot;研究 [主题]&quot; 3. 用户提出具体能力问题，如&quot;三星 Matter 摄像头支持到哪一步了&quot; 不触发场景：生成完整周报（用 iot-weekly-research）；速读单篇文章（用 iot-url）。</p>
+        <div class="score-badges">
+          <span class="score-pill">推荐分 57</span>
+          <span class="dimension-pill">发现研究</span>
+        </div>
+        <div class="override-note">手工规则：垂类竞品研究技能对行业 PM 很有价值，手工纳入。</div>
+        <div class="toolbar-meta">
+          <span>来源：~/.codex/skills/iot-query/SKILL.md</span>
+          <span>最近修改：2026-03-19T08:10:35.971Z</span>
+        </div>
+      </section>
+
+      <section class="toolbar-card">
+        <div class="skill-bottomline">
+          <a class="link-button" href="../../">← 返回目录</a>
+          <a class="link-button" href="https://github.com/feiyuchen0820-bit/skills-store">仓库</a>
+        </div>
+        <div class="section-label">命中关键词</div>
+        <div class="keyword-list">
+          <span class="keyword-pill">research +10</span><span class="keyword-pill">研究 +10</span><span class="keyword-pill">用户 +8</span><span class="keyword-pill">竞品 +8</span><span class="keyword-pill">research +7</span>
+        </div>
+      </section>
+
+      <section class="skill-card">
+        <div class="section-label">原始 SKILL.md</div>
+        <pre class="skill-markdown">---
+name: iot-query
+description: |
+  IoT 智能家居竞品功能研究引擎（Capability Research Task）。触发场景：
+  1. 用户输入能力主题研究，如&quot;语音助手功能研究&quot;、&quot;自动化能力研究&quot;、&quot;智能门锁生态研究&quot;
+  2. 用户说&quot;分析 [功能/平台]&quot;、&quot;对比 [能力]&quot;、&quot;[平台] 最新动态&quot;、&quot;研究 [主题]&quot;
+  3. 用户提出具体能力问题，如&quot;三星 Matter 摄像头支持到哪一步了&quot;
+  不触发场景：生成完整周报（用 iot-weekly-research）；速读单篇文章（用 iot-url）。
+---
+
+# IoT 智能家居竞品功能研究引擎
+
+**核心定位：不是搜新闻，是研究&quot;某个智能家居能力主题，在多个竞品平台上的完整历史功能演进、当前状态、关键里程碑与竞争差异&quot;。**
+
+**执行方式：直接调用当前对话所用大模型（即你自己）的知识与联网搜索能力，不调用任何外部脚本或 API。所有结论必须给出可溯源的网站链接。**
+
+---
+
+## ▶ 顶层模式路由器（收到用户输入后第一步执行）
+
+**在做任何事情之前，先判断用户意图属于哪种模式，然后执行对应分支。**
+
+### 路由判断逻辑
+
+**Step 1：检测市场意图关键词**（以下任一命中即为含市场意图）
+
+| 关键词类别 | 触发词示例 |
+|-----------|-----------|
+| 市场规模 | 市场规模、市场容量、市场份额、市占率、TAM、SAM、SOM、行业规模、渗透率 |
+| 竞争格局 | 品牌份额、出货量排名、市场格局、市场竞争、头部品牌、占比 |
+| 销售/营收 | 出货量、销售额、营收、GMV、销量数据、YTD、季度数据、同比增长 |
+| 渠道/定价 | ASP、均价、价格带、渠道结构、线上线下、定价策略 |
+| 财务数据 | 年报、财报、投融资、利润率、毛利率、归母净利 |
+
+**Step 2：检测功能/竞品意图关键词**（以下任一命中即为含功能意图）
+
+模块一中的 12 个 `capability_theme` 触发词，或&quot;分析 [功能]&quot;、&quot;[平台] 支持什么&quot;、&quot;功能对比&quot;等。
+
+**Step 3：路由**
+
+```
+仅命中功能意图  →  theme_research_mode（执行模块一至执行流程，输出功能研究报告）
+仅命中市场意图  →  market_analysis_mode（执行市场分析子模块，输出市场研究报告）
+两者均命中      →  dual_mode（并行执行两个分支，合并输出，HTML 包含两个报告区块）
+无法判断        →  向用户确认：&quot;您是想了解功能竞品对比，还是市场规模与份额数据？&quot;
+```
+
+---
+
+## 执行总原则
+
+1. **全量而非最新**：覆盖该能力从首次出现到当前的完整演进，不剪裁历史信息
+2. **必须溯源**：每条功能事件都要附带来源 URL，无法提供 URL 的必须注明&quot;[知识库，无在线链接]&quot;并说明理由
+3. **直接研究**：使用自身知识 + WebSearch/WebFetch 工具进行信息收集，不依赖外部脚本
+4. **结构化输出**：严格按本 Skill 的五段式格式输出，禁用周报格式
+
+---
+
+## 模块一：任务理解器
+
+收到用户输入后，**先执行以下识别，不要直接跳到输出**。
+
+### 1.1 识别能力主题
+
+将用户输入映射到下方 12 个标准能力主题之一（或多个）：
+
+| 主题标识 | 触发词示例 |
+|---------|-----------|
+| `voice_assistant` | 语音助手、语音控制、AI助手、Alexa、Siri、小艺、小美 |
+| `automation` | 自动化、场景编排、Routines、联动、场景创建 |
+| `camera_ai` | 摄像头、安防、AI视觉、事件摘要、看护、监控 |
+| `smart_lock` | 门锁、数字钥匙、Home Key、Aliro、智能锁、UWB |
+| `energy` | 能源管理、电费、光伏、储能、EV充电、碳排放 |
+| `cross_endpoint` | 跨端、连续体验、手机+音箱+TV+车、多屏 |
+| `spatial_intelligence` | 空间智能、3D家庭视图、位置感知、presence sensing |
+| `home_ai_agent` | 家庭AI Agent、主动服务、家庭大脑、记忆推理 |
+| `protocol_ecosystem` | Matter、Thread、Aliro、Zigbee、生态接入、互操作 |
+| `appliance_control` | 家电控制、家庭控制中心、面板、中控屏 |
+| `service_loop` | 安装、维保、会员、商城、服务闭环 |
+| `b2b_solution` | 全屋智能、地产、物业、B2B、工程项目 |
+
+### 1.2 规范化研究任务
+
+识别主题后，内部生成研究任务参数：
+
+```
+capability_theme: [映射后的主题标识]
+target_scope: global / china / all（默认 all）
+time_range: inception_to_now（覆盖从该能力出现至今的完整历史，不限时间）
+output_focus: full_history + current_status + timeline + insights
+evidence_requirement: P0+P1+P2+P3（必须附 URL，无 URL 注明知识库来源）
+expand_related: true（联动相关主题）
+```
+
+---
+
+## 模块二：信息收集策略
+
+**不调用外部脚本。使用以下策略直接收集信息：**
+
+### Step A：先调用自身知识库
+
+基于训练数据中已有的竞品信息，整理该能力主题的完整历史（从出现至今）。
+
+### Step B：定向 WebSearch 补充在线最新信息
+
+针对每个核心品牌，搜索以下类型的信息：
+
+#### Type 1：官方功能页（P0，最高优先级）
+```
+site:support.google.com/googlenest [主题关键词]
+site:aboutamazon.com [主题关键词] Alexa
+site:consumer.huawei.com [主题关键词]
+site:aqara.com [主题关键词]
+site:apple.com [主题关键词] HomeKit
+site:news.samsung.com SmartThings [主题关键词]
+```
+
+#### Type 2：官方新闻稿（P1）
+```
+[品牌] [能力关键词] official announcement [年份范围]
+[品牌] [能力关键词] press release launch update
+```
+
+#### Type 3：标准组织（P2，适用于协议/生态类主题）
+```
+site:csa-iot.org [主题关键词]
+site:threadgroup.org [主题关键词]
+```
+
+#### Type 4：高可信媒体（P3，补充官方沉默期）
+```
+[品牌] [能力关键词] site:theverge.com OR site:bloomberg.com OR site:9to5google.com
+```
+
+#### Type 5：历史时间线补全
+```
+[品牌] [能力关键词] history timeline feature evolution
+[品牌] [能力关键词] 2020 2021 2022 2023 2024 2025 2026
+```
+
+### Step C：WebFetch 直接读取关键官方页面
+
+对以下高价值页面执行直接抓取（视主题选取）：
+
+| 品牌 | 高价值页面 |
+|------|---------|
+| Google Home | `https://support.google.com/googlenest/answer/15962877`（What&#39;s New） |
+| Google Nest Blog | `https://blog.google/products/google-nest/` |
+| Amazon Alexa | `https://www.aboutamazon.com/news/devices` |
+| Samsung SmartThings | `https://news.samsung.com/global/tag/smartthings` |
+| Aqara | `https://www.aqara.com/en/news/` |
+| Matter/CSA | `https://csa-iot.org/newsroom/` |
+| Apple | `https://www.apple.com/apple-intelligence/` |
+| 华为 | `https://consumer.huawei.com/cn/wholehome/celia/` |
+
+---
+
+## 模块三：能力原子模板
+
+按主题展开研究维度，**必须逐维度梳理每个平台的历史状态**。
+
+### `voice_assistant` 语音助手
+
+```
+A. 交互能力  唤醒/远场拾音 / 连续对话 / 多轮对话 / 方言/口语容错 / 多用户识别
+B. 控制能力  单设备 / 编组 / 房间级 / 全屋级 / 场景执行 / 自动化创建 / 上下文 targeting
+C. AI能力    语义理解增强 / 家庭上下文 / 偏好记忆 / 视觉理解 / 一句话生成场景 / 主动提醒
+D. 跨端能力  音箱 / 手机App / Web / 中控屏 / TV / 车端 / 可穿戴
+E. 生态能力  可控设备规模 / 兼容协议 / 第三方联动 / 开放API / Matter支持
+F. 商业化    可用国家 / 是否灰度 / 是否收费 / 会员绑定 / 免费tier
+G. 隐私技术  本地/云侧 / on-device / 数据权限
+```
+
+### `automation` 自动化/场景编排
+
+```
+A. 触发器    时间 / 设备状态 / 位置 / 传感器 / 日历 / 天气 / 语音 / 人员识别
+B. 条件      多条件组合 / 逻辑与或非 / 设备状态判断 / 时间段过滤
+C. 执行动作  设备控制 / 场景调用 / 通知推送 / 第三方服务
+D. AI编排    自然语言创建场景 / 推荐场景 / 自动优化 / 主动触发
+E. 跨平台    Matter设备触发 / 第三方平台联动
+F. 可用性    最大规则数 / 设备数限制 / 是否收费 / 调试工具
+```
+
+### `camera_ai` 摄像头AI
+
+```
+A. 视觉能力  人员识别 / 物品识别 / 事件分类 / 异常检测
+B. AI摘要   事件摘要 / 自然语言描述 / 视频片段标注
+C. 平台接入  Matter camera支持 / 跨平台流媒体 / API开放
+D. 硬件      分辨率 / 视角 / 夜视 / PTZ / 双向通话
+E. 存储      本地/云 / 订阅 / 隐私策略
+F. 自动化联动 摄像头事件触发场景
+```
+
+### `smart_lock` 门锁/数字钥匙
+
+```
+A. 协议支持  Matter / Aliro / HomeKey / UWB / NFC / BLE
+B. 平台兼容  支持哪些智能家居平台
+C. 入口集成  手机钱包 / 车钥匙延伸 / 访客权限管理
+D. 安全模型  离线能力 / 多因素验证 / 日志审计
+E. 硬件生态  支持品牌 / 认证产品数量
+```
+
+### `protocol_ecosystem` 协议生态
+
+```
+A. 版本支持  Matter 1.x / Thread / Aliro / Zigbee / Z-Wave
+B. 设备类型  已支持设备类别列表（逐版本列出）
+C. 平台集成  各平台对应版本支持状态及上线时间
+D. 开发者    认证流程 / SDK / 开发者工具
+E. 落地时间  标准发布 → 平台支持 → 设备上市 时间差
+```
+
+### `home_ai_agent` 家庭AI Agent
+
+```
+A. 主动服务  主动提醒 / 习惯感知 / 预测执行
+B. 记忆能力  用户偏好存储 / 跨会话记忆 / 家庭成员差异化
+C. 推理能力  多步骤规划 / 异常判断 / 多设备协同决策
+D. 对话能力  上下文保持 / 多轮追问 / 自然语言创建规则
+E. 平台依赖  是否依赖订阅 / 硬件要求 / 隐私处理
+```
+
+---
+
+## 模块四：竞品宇宙模板
+
+按主题自动选择竞品集合，**覆盖全球+中国市场**。
+
+### `voice_assistant`
+`Google Home/Gemini for Home / Alexa+ / Apple Siri/HomeKit / Samsung Bixby/AI Home / 华为小艺管家 / 美的小美 / 海尔Uhome / Aqara（生态承接型）/ LG ThinQ（生态承接型）/ 小米小爱`
+
+### `automation`
+`Google Home automation / Alexa Routines / Apple HomeKit automations / SmartThings routines / Aqara 场景引擎 / 华为场景大师 / 美的小美场景生成 / 海尔AI场景 / Home Assistant / 小米米家场景`
+
+### `camera_ai`
+`Google Nest camera / Amazon Ring / Apple Home camera / SmartThings Matter camera / Aqara / 华为AI摄像头 / 海尔 / 米家摄像头 / Matter 1.5 camera标准`
+
+### `smart_lock`
+`Apple Home Key / Samsung Digital Home Key / Aqara / Yale / Schlage / Nuki / Google Home / Alexa / Matter/Aliro / 华为 / 海尔 / 美的`
+
+### `protocol_ecosystem`
+`Matter (CSA) / Thread Group / Aliro / Samsung SmartThings / Google Home / Apple Home / Amazon Alexa / Aqara / IKEA / Home Assistant / 华为鸿蒙智联`
+
+### `home_ai_agent`
+`Google Gemini for Home / Alexa+ / Apple Intelligence / Samsung AI Home / 华为小艺管家 / 美的Home Agent / 海尔家庭大脑 / 小米AI助手`
+
+---
+
+## 模块五：来源等级与溯源要求
+
+**每条功能事实必须标注来源等级，并提供 URL 或明确说明来源**。
+
+| 等级 | 定义 | URL 要求 | 典型来源 |
+|------|------|---------|---------|
+| **P0** | 官方功能页/版本日志/帮助中心/开发者文档 | 必须提供直链 | Google Nest Help、海尔 App 版本页、华为产品页 |
+| **P1** | 官方新闻稿/发布会/展会页 | 必须提供直链 | Samsung Global Newsroom、Aqara 官方新闻、Amazon About |
+| **P2** | 标准组织/认证机构 | 必须提供直链 | CSA-IOT、Thread Group |
+| **P3** | 高可信媒体 | 必须提供直链 | Bloomberg、The Verge、Reuters、36Kr Pro |
+| **P4** | 社区/论坛/社媒 | 提供链接，注明&quot;仅作线索&quot; | Reddit、V2EX、Twitter/X |
+| **[知识库]** | 来自模型训练数据，无在线链接 | 注明&quot;[知识库，截至训练数据]&quot;，提供可验证的描述 | — |
+
+**黄金规则：**
+- P0/P1 可支撑对比表 ✅ 结论
+- P3/P4 只作线索，对比表中使用 ⏳ 或 ❓
+- Apple Home 相关信息通常为 P3，必须标&quot;媒体口径&quot;，状态只能写&quot;媒体传言/preview&quot;
+- 宣布 ≠ 上线：展会 Demo/PR 只能标 📢，不能标 ✅
+
+---
+
+## 模块六：证据对象模型
+
+每条有价值的信息抽成以下结构化对象（输出时嵌入时间线和对比表中）：
+
+```
+brand:            品牌/平台名
+capability_theme: 研究主题
+capability_atom:  能力原子（如 room_targeting / scene_generation）
+event_type:       新增 / 升级 / 发布 / 可用性扩展 / 战略表述 / 延迟受阻
+status_level:     已上线 / 已发布 / early_access / 预计上线 / 开发中 / 媒体称 / 待验证
+date:             事件日期（YYYY-MM，历史事件尽量精确到月）
+geography:        可用地区（如：全球 / 美国 / 中国大陆 / 特定市场）
+entry_points:     音箱 / app / web / 中控屏 / TV / 车端 / 家电屏（多选）
+device_scope:     适用设备范围（具体型号或类别）
+evidence_tier:    P0 / P1 / P2 / P3 / P4 / 知识库
+source_url:       原始链接（无则写&quot;[知识库]&quot;）
+evidence_text:    可核实的原文描述或功能点（禁用营销语言转述）
+implication:      对该主题竞争格局的意义
+confidence:       高 / 中 / 低
+need_followup:    true / false
+```
+
+**质量规则（逐条检查）：**
+- R1：不从一条来源直接实体结论，需交叉核验
+- R2：`status_level` 严格区分&quot;已发布&quot;和&quot;已上线&quot;，展会演示 ≠ 可用
+- R3：Apple Home 所有条目 `evidence_tier` 设 P3，`status_level` 设&quot;媒体称&quot;
+- R5：`evidence_text` 禁用&quot;更智能&quot;&quot;重新定义&quot;，改写为可验证的功能描述
+- R6（AI相关）：必须回答 ① 具体场景 ② 主动/被动触发 ③ 减少了什么操作成本
+- **R7（溯源规则）**：每条 evidence_text 后必须附 `[来源：URL 或 知识库]`
+
+---
+
+## 模块七：时间线构建规则
+
+**时间线覆盖该能力从首次出现到当前的完整历史，按&quot;能力变化节点&quot;排序，不按文章发布时间排序。**
+
+四类节点标识：
+
+| 节点类型 | 标识 | 说明 |
+|---------|------|------|
+| 宣布节点 | `📢 宣布` | 官方首次明确表述该能力 |
+| 可用节点 | `✅ 可用` | 实际向用户开放/推送 |
+| 升级节点 | `⬆️ 升级` | 已有能力出现功能增强 |
+| 受阻节点 | `⏸️ 受阻` | 延期/受限/官方暂停 |
+
+时间线输出格式（**从最新倒序排列，覆盖全历史**）：
+
+```
+── 2026-03 ─────────────────────────────────────────────────
+✅ 可用   Samsung SmartThings   Matter 1.5 camera 平台支持上线，Aqara G350 首发   [P1] https://news.samsung.com/...
+📢 宣布   SmartThings           开发者中心重构，Matter/Zigbee/Z-Wave 认证流程简化  [P1] https://news.samsung.com/...
+
+── 2025-12 ─────────────────────────────────────────────────
+✅ 可用   Samsung SmartThings   App 更新支持 Matter camera 接入（直播/PTZ/双向音频）[P1] https://...
+
+── 2024-xx ─────────────────────────────────────────────────
+📢 宣布   CSA/Matter            Matter 1.5 规范纳入 camera 设备类型                  [P2] https://csa-iot.org/...
+
+── 2022-xx ─────────────────────────────────────────────────
+📢 宣布   CSA                   Matter 1.0 正式发布，首批支持灯/插座/开关/锁/恒温器   [P2] https://csa-iot.org/...
+```
+
+---
+
+## 模块八：横向对比表规则
+
+对比表按**能力原子维度**构建，**每个维度逐平台填写完整历史能力状态**，不只写当前。
+
+```
+符号说明：
+✅ 已上线（P0/P1 确认）
+⏳ 已宣布/开发中（尚未上线）
+❌ 明确不支持或未涉及
+❓ 信息不足，待确认
+～ 部分支持（有条件/地区限制）
+```
+
+示例（`camera_ai` 主题）：
+
+| 能力维度 | Google Nest | Amazon Ring | Apple Home | Samsung SmartThings | Aqara | 华为 |
+|---------|------------|------------|------------|---------------------|-------|------|
+| AI 事件摘要 | ✅ 2022-起 [P0] | ✅ 2021-起 [P0] | ❓ 无官方页 | ⏳ 2025宣布 [P1] | ✅ 2023-起 [P1] | ✅ [P0] |
+| Matter camera 接入 | ✅ 2025 [P0] | ❌ 暂不支持 | ❓ | ✅ 2025-12 [P1] | ✅ G350首发 [P1] | ❌ |
+| PTZ 支持 | ✅ [P0] | ✅ [P0] | ❓ | ✅ [P1] | ✅ [P1] | ✅ [P0] |
+
+---
+
+## 模块九：洞察生成规则
+
+**洞察从结构化证据&quot;计算出来&quot;，固定输出五类，每类必须有内容（无信息则写&quot;证据不足&quot;）：**
+
+### 洞察一：能力成熟度定位
+对每个平台判断所处阶段（附佐证事件）：
+`初始阶段` → `基础功能稳定` → `AI增强阶段` → `生态整合阶段` → `平台化/Agent化阶段`
+
+### 洞察二：差异化路径
+每个平台把该能力做成了什么形态（附关键功能点和时间节点）
+
+### 洞察三：生态位置
+- `自有能力强化型`：自研核心功能（如 Google、Amazon）
+- `生态承接兼容型`：依托第三方设备和协议（如 Aqara、LG）
+- `平台基础设施型`：提供标准和 API 给生态（如 Matter/CSA）
+
+### 洞察四：商业化与 Rollout 节奏
+是否收费 / 是否订阅绑定 / 地区扩展顺序 / 硬件节奏是否受软件牵制 / 历史发布与落地的时间差
+
+### 洞察五：风险与空白信号
+- 官方口径大于产品页口径（战略表述 &gt; 实际功能）
+- 能力描述无可用地区/设备的具体说明
+- 媒体一致指向延期但官方未确认
+- 不同地区官网描述不一致
+- 中文官网能力 ≠ 英文官网能力
+
+---
+
+## 模块十：输出格式（五段式，固定结构）
+
+**周报格式禁用。每次输出严格按以下五段。要求详尽，不剪裁历史，不省略平台。**
+
+---
+
+### 第一段：研究结论摘要
+
+&gt; 一句话说清：这个能力赛道的**完整演进脉络**和**当前竞争焦点**是什么，谁领先、谁在补课、行业走向哪里。
+
+---
+
+### 第二段：各平台完整功能现状（全量，截至查询日期）
+
+对**每个相关平台**，完整列出该能力的所有已知功能点（从首次推出到当前）：
+
+**[品牌名]** `[状态标签：行业首发 / 跟进中 / 落后 / 待确认 / 生态承接型]`
+
+**历史功能列表（按时间顺序）：**
+- [YYYY-MM] 功能点描述（具体、可验证）`[来源等级]` 来源：[URL 或 知识库]
+- [YYYY-MM] 功能点描述 `[来源等级]` 来源：[URL]
+- ...
+
+**当前状态：**
+- 核心已上线能力（P0/P1 确认）：…
+- 已宣布待上线：…
+- 已知局限/空白：…
+
+**入口与适用范围：** 地区 / 终端 / 设备 / 条件
+
+**待关注：** 未确认 / 空白 / 矛盾之处
+
+---
+
+### 第三段：关键时间线（全历史，倒序）
+
+按模块七的节点类型（📢宣布 / ✅可用 / ⬆️升级 / ⏸️受阻）和时间线格式输出，**覆盖该能力从首次出现到当前的完整历史，每条附来源 URL 或 [知识库] 标注**。
+
+---
+
+### 第四段：横向能力对比表
+
+按模块八规则构建，**维度根据查询主题动态生成**（不使用通用模板）。每格注明来源等级和年份。
+
+---
+
+### 第五段：主要洞察 + 证据质量说明
+
+**洞察部分**（按模块九五类输出）：
+1. 能力成熟度定位
+2. 差异化路径
+3. 生态位置
+4. 商业化与 Rollout 节奏
+5. 风险与空白信号
+
+**证据质量说明：**
+
+| 类别 | 内容 |
+|------|------|
+| 已确认（P0/P1 有 URL） | 列出有官方一手来源支撑的结论 |
+| 高可信媒体（P3 有 URL） | 列出仅有媒体来源的结论，标&quot;官方未确认&quot; |
+| 来自知识库（无在线链接） | 列出来自训练数据的信息，说明可通过哪类官方页面核验 |
+| 证据冲突/空白 | 官方口径 &gt; 实际功能 / 地区不一致 / 延期未确认 |
+| 继续跟踪 | `need_followup: true` 的事件 |
+
+---
+
+## 执行流程
+
+```
+Step 1  任务理解 → 识别 capability_theme，生成研究任务参数
+Step 2  能力拆解 → 调用对应主题的能力原子模板，确定研究维度
+Step 3  竞品扩展 → 调用对应主题的竞品宇宙模板，确定覆盖范围
+Step 4  知识库梳理 → 先整理自身知识中该主题的完整历史信息（全量，不限时间）
+Step 5  定向搜索 → 对每个核心品牌执行 WebSearch，补充在线最新信息
+Step 6  关键页面抓取 → 对高价值官方页执行 WebFetch，获取 P0/P1 级信息
+Step 7  证据抽取 → 将所有信息转化为结构化证据对象，逐条标注来源 URL 或知识库
+Step 8  时间线构建 → 按四类节点从最新到最早排列完整历史
+Step 9  对比表构建 → 按能力原子维度横向对比
+Step 10 洞察生成 → 基于证据计算五类洞察
+Step 11 输出报告 → 严格按五段式格式输出，确保详尽、全量、有溯源
+```
+
+**注意：Step 4-6 并行执行，先输出知识库整理结果，再用在线搜索结果补充和修正。如搜索结果与知识库有冲突，以 P0/P1 在线来源为准，并在第五段注明差异。**
+
+---
+
+---
+
+# ═══════════════════════════════════════════════
+# 市场分析子模块（market_analysis_mode）
+# 与功能研究模块并行，不修改原有任何内容
+# ═══════════════════════════════════════════════
+
+## 市场模块 M1：市场单元定义器
+
+**在开始任何市场搜索之前，必须先定义「市场单元」，不允许在模糊定义上做研究。**
+
+收到用户的市场类问题后，内部先确认以下 5 个维度，再进入后续步骤：
+
+```
+market_unit:
+  category:        [品类精度，如&quot;智能空调&quot; / &quot;家用空调全品类&quot; / &quot;HVAC&quot; / &quot;智能门锁&quot;]
+  geography:       [地理范围，如&quot;中国&quot; / &quot;全球&quot; / &quot;北美&quot; / &quot;欧洲&quot; / &quot;中国+全球对比&quot;]
+  metric:          [度量指标，如&quot;出货量（台）&quot; / &quot;零售额（亿元）&quot; / &quot;ASP（元/台）&quot; / &quot;市场份额（%）&quot;]
+  time_window:     [时间窗，如&quot;2024年全年&quot; / &quot;2024Q3&quot; / &quot;2024年YTD&quot; / &quot;近3年趋势&quot;]
+  smart_overlay:   [是否区分&quot;智能款&quot;与&quot;全品类&quot;，true/false，及智能渗透率口径]
+```
+
+**如果用户未明确说明，优先采用以下默认值，并在输出中标注&quot;[默认口径]&quot;：**
+- category：用户查询关键词最窄精度品类
+- geography：中国（国内平台为主时）或 全球（含海外品牌时）
+- metric：出货量 + 零售额双指标
+- time_window：最近完整自然年 + 最新可用季度
+- smart_overlay：true（智能款单独拆出，与全品类对比）
+
+---
+
+## 市场模块 M2：来源等级体系（M0–M4）
+
+**每条市场数据必须标注来源等级，不允许混用功能研究的 P0–P4 等级。**
+
+| 等级 | 定义 | 可用于 | 典型来源 |
+|------|------|--------|---------|
+| **M0** | 权威统计机构原始数据 | 直接引用数字，支撑核心结论 | 奥维云网（AVC）、中怡康（ChinaIOL）、AHRI（北美暖通）、AHAM、NPD/Circana |
+| **M1** | 上市公司官方财报/年报/投资者关系 | 品牌自述的出货量/营收/份额 | 美的年报、海尔智家年报、格力年报、三星年报、亚马逊 10-K |
+| **M2** | 明确引用 M0/M1 数据的高可信媒体 | 辅助交叉验证，补充背景 | 36Kr Pro（注明数据来源）、彭博、路透、财新（含数据出处） |
+| **M3** | 研究机构报告摘要 | 趋势方向参考，不用于精确数字 | IDC、Statista、Mordor Intelligence、GfK |
+| **M4** | 软信号 | 仅作方向线索，不作结论 | 社交媒体讨论、展会传言、行业协会估计 |
+
+**市场数据质量规则：**
+- MR1：M0 来源才能写精确数字（如&quot;2024年中国智能空调出货量 X 万台&quot;）
+- MR2：M3 来源只能写区间或方向（如&quot;约 X–Y 亿元区间&quot;）
+- MR3：品牌自述份额（M1）必须注明&quot;品牌自报，未经第三方验证&quot;
+- MR4：不同机构口径不同时，必须并列呈现，注明差异原因（统计口径/地区/时间不同）
+- MR5：超过 2 年的数据必须标注&quot;[历史数据，当前状态需核验]&quot;
+
+---
+
+## 市场模块 M3：信息收集策略（5 类查询组）
+
+**不调用外部脚本。按以下 5 组查询策略直接收集信息：**
+
+### 查询组 1：市场定义与总规模
+```
+[品类] market size [geography] [year] billion
+[品类] 市场规模 [年份] 亿元
+[品类] total addressable market smart home
+[品类] industry report [year] IDC Statista
+```
+
+### 查询组 2：M0 直源查询（权威机构）
+```
+site:avc.com.cn [品类]
+奥维云网 [品类] [年份] 出货量
+中怡康 [品类] [年份] 零售额
+AHRI [品类] shipments [year]
+NPD Circana [品类] market share [year]
+```
+
+### 查询组 3：品牌份额 &amp; 财务数据
+```
+[品牌] market share [品类] [year]
+[品牌] 出货量 [品类] [年份] 年报
+[品牌] annual report [year] [product category] revenue units
+[品牌] investor relations [品类] shipment
+```
+
+### 查询组 4：渠道结构 &amp; 定价趋势
+```
+[品类] ASP average selling price [year] trend
+[品类] 均价 [年份] 价格带分布
+[品类] online offline channel share [geography] [year]
+[品类] 线上线下 渠道结构 [年份]
+```
+
+### 查询组 5：智能家居叠加层
+```
+[品类] smart home penetration rate [year]
+[品类] 智能款 渗透率 [年份]
+[品类] connected [品类] market share vs total
+智能 [品类] 出货量 占比 [年份]
+```
+
+---
+
+## 市场模块 M4：代理指标模式（Proxy Metrics Mode）
+
+**当无法获取 M0/M1 精确数据时，自动切换到代理指标模式，并在输出中明确标注&quot;[代理指标，非权威数据]&quot;。**
+
+代理指标优先级（从高到低）：
+
+| 代理指标 | 数据来源 | 说明 |
+|---------|---------|------|
+| 电商平台评论数/销量排名 | 京东/天猫/Amazon 榜单 | 反映零售端相对体量 |
+| App Store/应用商店下载量与评分 | App Store / Google Play | 反映用户活跃度 |
+| 搜索指数趋势 | 百度指数、Google Trends | 反映用户关注度变化方向 |
+| 产品线宽度/在售 SKU 数量 | 官网/电商统计 | 反映品牌在该品类的布局深度 |
+| 展会参与度/获奖情况 | CES、AWE、IFA 等 | 反映战略重视程度 |
+| 开发者生态规模 | 认证设备数、开发者数量 | 反映平台生态吸引力 |
+| 合作伙伴/供应商公告 | 新闻稿、合作发布 | 间接反映市场地位 |
+
+**代理指标输出规则：**
+- 不用代理指标推算具体份额数字
+- 只用于描述相对地位（&quot;高于&quot;/&quot;领先&quot;/&quot;下降趋势&quot;）
+- 每条代理指标必须注明来源和统计时间
+
+---
+
+## 市场模块 M5：市场时间线构建规则
+
+**市场时间线按&quot;市场变化节点&quot;排序，使用 5 类专属节点，覆盖完整历史。**
+
+| 节点类型 | 标识 | 说明 |
+|---------|------|------|
+| 行业数据节点 | `📊 数据` | 权威机构发布的市场规模/份额统计（M0） |
+| 财报节点 | `📋 财报` | 公司季报/年报中的业务数据（M1） |
+| 关键事件节点 | `🏪 事件` | 展会发布、重大合作、市场进入/退出 |
+| 拐点节点 | `📈 拐点` | 渗透率突破、竞争格局重组、技术替代加速 |
+| 品牌战略节点 | `🎯 战略` | 定价调整、渠道变革、品类扩张、价格战 |
+
+时间线输出格式（倒序，覆盖全历史）：
+
+```
+── 2024-Q4 ─────────────────────────────────────────────────
+📊 数据   奥维云网     中国智能空调全年出货量 X 万台，同比+X%，智能渗透率达 X%   [M0] https://...
+📋 财报   美的集团     2024 年报：暖通空调营收 X 亿元，同比+X%，海外占比 X%      [M1] https://...
+
+── 2024-Q3 ─────────────────────────────────────────────────
+🎯 战略   格力电器     发布 X 系列，进入 X~X 元价格带，全面对标 [竞品]            [M2] https://...
+📈 拐点   行业整体     线上渗透率首次超过 50%，中怡康数据                          [M0] https://...
+```
+
+---
+
+## 市场模块 M6：输出格式（八段式，固定结构）
+
+**market_analysis_mode 的最终输出，严格按以下八段。不使用功能研究的五段式格式。**
+
+---
+
+### 第一段：市场单元确认
+
+&gt; 明确本次研究的品类、地理范围、度量指标、时间窗和智能叠加口径。若用默认值，逐项标注。
+
+---
+
+### 第二段：市场现状快照
+
+**规模数据（附来源等级）：**
+- TAM：全品类市场规模（`[度量指标]`，`[时间窗]`） `[M等级]` [来源]
+- SAM：智能款/可联网款市场规模 `[M等级]` [来源]
+- 增长率：同比 / YoY `[M等级]` [来源]
+- ASP：均价及价格带分布 `[M等级]` [来源]
+- 渗透率：智能款占全品类比例 `[M等级]` [来源]
+
+---
+
+### 第三段：竞争格局
+
+**品牌份额排名（附来源等级，注明统计口径）：**
+
+| 排名 | 品牌 | 份额（%） | 同比变化 | 来源等级 | 统计口径 |
+|------|------|---------|---------|---------|---------|
+| 1 | [品牌] | X% | ▲/▼ X pp | M0 | 中国/出货量/2024年 |
+| 2 | ... | | | | |
+
+若无 M0 数据，标注&quot;[代理指标模式]&quot;并切换到模块 M4 方法。
+
+**各品牌战略定位：**
+- [品牌]：**[定位标签：价格领导型 / 技术溢价型 / 生态整合型 / 渠道深耕型]** — 一句话说明
+
+---
+
+### 第四段：结构性变化
+
+**以下维度逐一分析，无数据的标&quot;证据不足&quot;：**
+- **渠道结构**：线上 vs 线下比例变化趋势 `[M等级]`
+- **价格带迁移**：高中低价格带出货量结构变化 `[M等级]`
+- **竞争集中度**：CR3/CR5 趋势（头部集中还是分散）`[M等级]`
+- **地区差异**：国内 vs 海外，或不同省/地区的市场特征 `[M等级]`
+
+---
+
+### 第五段：智能家居叠加层
+
+**专门分析&quot;智能化&quot;对该品类市场格局的影响：**
+- 智能款渗透率历史趋势（哪一年突破 XX%）`[M等级]`
+- 智能款与非智能款的 ASP 差（溢价空间） `[M等级]`
+- 各品牌在&quot;智能款&quot;细分市场的份额是否与整体份额一致 `[M等级]`
+- 平台生态绑定效应：哪些品牌因接入大生态（Matter/米家/鸿蒙智联等）获得份额增益 `[M等级]`
+
+---
+
+### 第六段：市场关键时间线
+
+按市场模块 M5 的五类节点格式输出，**覆盖该品类市场从有数据记录至今的完整历史，每条附来源 URL 或 [知识库] 标注**。
+
+---
+
+### 第七段：核心洞察
+
+**固定输出以下三类，每类必须有内容（无证据则写&quot;证据不足&quot;）：**
+
+1. **市场格局判断**：头部集中 or 分散化？格局是否在发生实质性变化？
+2. **智能化机会判断**：渗透率空间是否还在增长？哪个价格带渗透率提升最快？
+3. **战略风险信号**：价格战迹象 / 份额快速集中 / 新进入者冲击 / 渠道结构剧变
+
+---
+
+### 第八段：证据质量说明
+
+| 类别 | 内容 |
+|------|------|
+| M0 权威数据（有 URL） | 列出使用了哪些权威机构数据，覆盖哪些品类/时间 |
+| M1 公司财报（有 URL） | 列出使用了哪些公司年报/季报，及其自报口径说明 |
+| M3 研究机构摘要 | 列出引用的研究报告，标注&quot;仅作方向参考&quot; |
+| 代理指标（Proxy） | 列出所有代理指标来源，说明使用原因 |
+| 数据空白/冲突 | 无法获取的数据 / 不同机构口径冲突的说明 |
+| 待核验项 | 超过 2 年的历史数据、品牌自报份额等需定期更新的信息 |
+
+---
+
+## 市场模块 M7：执行流程（market_analysis_mode）
+
+```
+Step M1  市场单元确认 → 识别 category/geography/metric/time_window/smart_overlay
+Step M2  来源规划 → 根据品类确定哪些 M0 来源有数据（中国品类 → AVC/中怡康；北美 → AHRI/NPD）
+Step M3  5组查询执行 → 并行执行市场规模/M0直源/品牌份额/渠道定价/智能叠加 5 组查询
+Step M4  数据抽取 → 将所有数字打上 M等级标注，记录来源 URL
+Step M5  交叉验证 → 同一指标 ≥2 个来源交叉确认；冲突时并列呈现，不取均值
+Step M6  代理指标补全 → 对 M0/M1 数据空白的维度切换代理指标模式
+Step M7  时间线构建 → 按 5 类节点从最新到最早排列
+Step M8  输出报告 → 严格按八段式格式输出，HTML 生成市场分析版报告
+```
+
+---
+
+## dual_mode 合并规则
+
+当 `theme_research_mode` 和 `market_analysis_mode` 均触发时：
+
+1. 分别完成各自的执行流程
+2. HTML 报告使用**双区块结构**：
+   - 顶部导航栏增加两个 Tab：「功能研究」和「市场分析」，点击切换显示对应区块
+   - 或按顺序排列：Hero 区展示双主题摘要，然后依次输出功能研究五段式 + 市场分析八段式
+3. 文件命名：`query_[主题]_[YYYY-MM-DD]_dual.html`
+4. 两段式页脚第二行：`研究主题：[capability_theme] + 市场分析 · 覆盖平台：[…] · 市场范围：[market_unit.geography]`
+
+---
+
+## 最终输出：HTML 报告（必须执行）
+
+**研究分析完成后，必须执行以下步骤生成 HTML 文件并自动打开。这是本 Skill 的最终交付物。**
+
+### 文件保存
+
+使用 Write 工具将 HTML 写入：
+```
+~/Desktop/iot-competitive-research/output/query_[主题关键词]_[YYYY-MM-DD].html
+```
+写入完成后，使用 Bash 执行 `open [文件路径]` 自动弹出浏览器。
+
+---
+
+### HTML 设计规范
+
+**整体风格：浅色科技感、清爽、信息密度高、用词客观中立。**
+
+#### 色彩系统（必须遵守）
+```
+页面背景:    #F0F4F8
+卡片背景:    #FFFFFF
+主色调:      #0284C7   （sky-600，标题、强调、链接）
+次要色:      #0EA5E9   （sky-400，hover 效果）
+文字主色:    #0F172A   （slate-900）
+文字次色:    #475569   （slate-600，说明文字）
+文字弱色:    #94A3B8   （slate-400，标注、来源）
+边框色:      #E2E8F0   （slate-200）
+分隔线:      #F1F5F9   （slate-100）
+```
+
+#### 状态标签色（badge）
+```
+✅ 已上线:    背景 #DCFCE7  文字 #166534  （green）
+📢 已宣布:    背景 #DBEAFE  文字 #1E40AF  （blue）
+⏳ 待上线:    背景 #FEF9C3  文字 #854D0E  （amber）
+⏸️ 受阻:     背景 #FEE2E2  文字 #991B1B  （red）
+❓ 待确认:    背景 #F1F5F9  文字 #475569  （slate）
+❌ 不支持:    背景 #F1F5F9  文字 #94A3B8  （slate-muted）
+```
+
+#### 来源等级标签色
+```
+P0:  背景 #0284C7  文字 #FFFFFF  （深蓝）
+P1:  背景 #0EA5E9  文字 #FFFFFF  （蓝）
+P2:  背景 #7C3AED  文字 #FFFFFF  （紫）
+P3:  背景 #F59E0B  文字 #FFFFFF  （琥珀）
+P4:  背景 #94A3B8  文字 #FFFFFF  （灰）
+知识库: 背景 #E2E8F0  文字 #475569  （浅灰）
+```
+
+#### 排版
+```css
+font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, &#39;PingFang SC&#39;,
+             &#39;Hiragino Sans GB&#39;, &#39;Microsoft YaHei&#39;, sans-serif;
+正文字号: 14px  行高: 1.7
+标题 h1:  24px  font-weight: 700
+标题 h2:  18px  font-weight: 600  color: #0284C7
+标题 h3:  15px  font-weight: 600  color: #0F172A
+代码/链接: font-size: 12px  color: #0284C7
+```
+
+---
+
+### HTML 页面结构
+
+```html
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;[研究主题] · IoT 竞品功能研究报告 · [日期]&lt;/title&gt;
+  &lt;style&gt;
+    /* === 全部 CSS 内联，不依赖外部资源 === */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #F0F4F8; color: #0F172A; font-family: -apple-system,
+           BlinkMacSystemFont,&#39;Segoe UI&#39;,&#39;PingFang SC&#39;,&#39;Hiragino Sans GB&#39;,
+           &#39;Microsoft YaHei&#39;,sans-serif; font-size: 14px; line-height: 1.7; }
+
+    /* 顶部导航栏 */
+    .topbar { background: #0F172A; color: #F8FAFC; padding: 12px 32px;
+              display: flex; align-items: center; justify-content: space-between;
+              position: sticky; top: 0; z-index: 100; }
+    .topbar .brand { font-size: 13px; color: #94A3B8; letter-spacing: 0.05em; }
+    .topbar .title { font-size: 15px; font-weight: 600; color: #F8FAFC; }
+    .topbar .meta  { font-size: 12px; color: #64748B; }
+
+    /* 主容器 */
+    .container { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+
+    /* Hero 区（研究主题标题 + 结论摘要） */
+    .hero { background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
+            border-radius: 12px; padding: 32px 36px; margin-bottom: 24px; color: #fff; }
+    .hero .label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+                   color: #BAE6FD; margin-bottom: 8px; }
+    .hero h1 { font-size: 26px; font-weight: 700; margin-bottom: 12px; }
+    .hero .summary { font-size: 14px; color: #E0F2FE; line-height: 1.8; }
+
+    /* 卡片通用 */
+    .card { background: #FFFFFF; border-radius: 10px; border: 1px solid #E2E8F0;
+            padding: 24px 28px; margin-bottom: 20px; }
+    .card-title { font-size: 16px; font-weight: 600; color: #0284C7;
+                  border-bottom: 2px solid #E0F2FE; padding-bottom: 10px; margin-bottom: 18px;
+                  display: flex; align-items: center; gap: 8px; }
+    .card-title .icon { font-size: 18px; }
+
+    /* 品牌区块 */
+    .brand-block { border: 1px solid #E2E8F0; border-radius: 8px;
+                   padding: 18px 22px; margin-bottom: 14px; }
+    .brand-block .brand-header { display: flex; align-items: center;
+                                  gap: 10px; margin-bottom: 12px; }
+    .brand-name { font-size: 15px; font-weight: 600; color: #0F172A; }
+
+    /* 状态 badge */
+    .badge { display: inline-block; padding: 2px 10px; border-radius: 999px;
+             font-size: 11px; font-weight: 600; white-space: nowrap; }
+    .badge-online  { background: #DCFCE7; color: #166534; }
+    .badge-announced { background: #DBEAFE; color: #1E40AF; }
+    .badge-pending { background: #FEF9C3; color: #854D0E; }
+    .badge-blocked { background: #FEE2E2; color: #991B1B; }
+    .badge-unknown { background: #F1F5F9; color: #475569; }
+    .badge-p0 { background: #0284C7; color: #fff; }
+    .badge-p1 { background: #0EA5E9; color: #fff; }
+    .badge-p2 { background: #7C3AED; color: #fff; }
+    .badge-p3 { background: #F59E0B; color: #fff; }
+    .badge-p4 { background: #94A3B8; color: #fff; }
+    .badge-kb { background: #E2E8F0; color: #475569; }
+
+    /* 功能列表 */
+    .feature-list { list-style: none; }
+    .feature-list li { padding: 8px 0; border-bottom: 1px solid #F1F5F9;
+                        display: flex; gap: 10px; align-items: flex-start; font-size: 13px; }
+    .feature-list li:last-child { border-bottom: none; }
+    .feature-date { color: #94A3B8; font-size: 12px; white-space: nowrap;
+                    min-width: 72px; padding-top: 1px; }
+    .feature-text { flex: 1; color: #0F172A; }
+    .source-link { color: #0284C7; font-size: 11px; text-decoration: none; }
+    .source-link:hover { text-decoration: underline; }
+
+    /* 时间线 */
+    .timeline { position: relative; padding-left: 20px; }
+    .timeline::before { content: &#39;&#39;; position: absolute; left: 6px; top: 0;
+                         bottom: 0; width: 2px; background: #E2E8F0; }
+    .tl-group { margin-bottom: 24px; }
+    .tl-date-label { font-size: 12px; font-weight: 700; color: #0284C7;
+                     letter-spacing: 0.08em; margin-bottom: 10px;
+                     background: #EFF6FF; display: inline-block;
+                     padding: 2px 10px; border-radius: 4px; }
+    .tl-item { position: relative; padding: 8px 0 8px 22px; font-size: 13px; }
+    .tl-item::before { content: &#39;&#39;; position: absolute; left: -15px; top: 14px;
+                        width: 10px; height: 10px; border-radius: 50%;
+                        border: 2px solid #0284C7; background: #fff; }
+    .tl-item .tl-node { font-weight: 600; margin-right: 6px; }
+    .tl-item .tl-brand { color: #0284C7; font-weight: 600; margin-right: 6px; }
+    .tl-item .tl-desc { color: #475569; }
+
+    /* 对比表 */
+    .compare-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+    .compare-table th { background: #F0F4F8; color: #475569; font-weight: 600;
+                         padding: 10px 14px; text-align: left;
+                         border: 1px solid #E2E8F0; white-space: nowrap; }
+    .compare-table th:first-child { background: #0F172A; color: #F8FAFC; }
+    .compare-table td { padding: 9px 14px; border: 1px solid #E2E8F0;
+                         color: #0F172A; vertical-align: top; }
+    .compare-table tr:nth-child(even) td { background: #F8FAFC; }
+    .compare-table td:first-child { font-weight: 600; color: #475569;
+                                     background: #F8FAFC; white-space: nowrap; }
+
+    /* 洞察卡片 */
+    .insight-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .insight-item { background: #F8FAFC; border: 1px solid #E2E8F0;
+                    border-radius: 8px; padding: 16px 18px; }
+    .insight-item .insight-label { font-size: 11px; font-weight: 700;
+                                    color: #0284C7; letter-spacing: 0.08em;
+                                    text-transform: uppercase; margin-bottom: 8px; }
+    .insight-item p { font-size: 13px; color: #475569; line-height: 1.7; }
+
+    /* 待追踪表 */
+    .track-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+    .track-table th { background: #FEF9C3; color: #854D0E; font-weight: 600;
+                       padding: 9px 14px; border: 1px solid #FDE68A; text-align: left; }
+    .track-table td { padding: 9px 14px; border: 1px solid #E2E8F0; color: #475569; }
+
+    /* 证据质量 */
+    .evidence-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .evidence-cell { background: #F8FAFC; border: 1px solid #E2E8F0;
+                      border-radius: 8px; padding: 14px 16px; }
+    .evidence-cell .ev-label { font-size: 11px; color: #94A3B8; margin-bottom: 4px; }
+    .evidence-cell .ev-count { font-size: 22px; font-weight: 700; color: #0284C7; }
+    .evidence-cell .ev-desc  { font-size: 12px; color: #475569; margin-top: 4px; }
+
+    /* 页脚 */
+    .footer { text-align: center; color: #94A3B8; font-size: 12px;
+              padding: 32px 0 48px; }
+
+    @media (max-width: 768px) {
+      .insight-grid { grid-template-columns: 1fr; }
+      .evidence-grid { grid-template-columns: 1fr 1fr; }
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;topbar&quot;&gt;
+    &lt;span class=&quot;brand&quot;&gt;IoT 智能家居竞品研究&lt;/span&gt;
+    &lt;span class=&quot;title&quot;&gt;[研究主题] 功能专项研究&lt;/span&gt;
+    &lt;span class=&quot;meta&quot;&gt;生成于 [YYYY-MM-DD]&lt;/span&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;container&quot;&gt;
+
+    &lt;!-- Hero：研究主题 + 一句话结论 --&gt;
+    &lt;div class=&quot;hero&quot;&gt;
+      &lt;div class=&quot;label&quot;&gt;Capability Research · 功能专项研究&lt;/div&gt;
+      &lt;h1&gt;[研究主题全称]&lt;/h1&gt;
+      &lt;p class=&quot;summary&quot;&gt;[第一段：研究结论摘要，一段话说清竞争焦点、领先者、行业走向]&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Section 1：各平台完整功能现状 --&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card-title&quot;&gt;&lt;span class=&quot;icon&quot;&gt;🏢&lt;/span&gt;各平台完整功能现状（截至 [日期]）&lt;/div&gt;
+      &lt;!-- 每个品牌一个 brand-block --&gt;
+      &lt;div class=&quot;brand-block&quot;&gt;
+        &lt;div class=&quot;brand-header&quot;&gt;
+          &lt;span class=&quot;brand-name&quot;&gt;[品牌名]&lt;/span&gt;
+          &lt;span class=&quot;badge badge-online&quot;&gt;行业首发&lt;/span&gt;
+          &lt;!-- 或 badge-announced / badge-pending / badge-unknown --&gt;
+        &lt;/div&gt;
+        &lt;ul class=&quot;feature-list&quot;&gt;
+          &lt;li&gt;
+            &lt;span class=&quot;feature-date&quot;&gt;2024-03&lt;/span&gt;
+            &lt;span class=&quot;feature-text&quot;&gt;
+              [功能描述，客观中立，可验证]
+              &lt;span class=&quot;badge badge-p0&quot; style=&quot;margin-left:6px&quot;&gt;P0&lt;/span&gt;
+            &lt;/span&gt;
+            &lt;a class=&quot;source-link&quot; href=&quot;[URL]&quot; target=&quot;_blank&quot;&gt;来源 ↗&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;!-- 更多功能点... --&gt;
+        &lt;/ul&gt;
+        &lt;div style=&quot;margin-top:12px;font-size:12px;color:#94A3B8&quot;&gt;
+          &lt;strong style=&quot;color:#475569&quot;&gt;当前局限：&lt;/strong&gt;[已知空白或限制]
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- 重复以上 brand-block 覆盖所有相关品牌 --&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Section 2：完整时间线 --&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card-title&quot;&gt;&lt;span class=&quot;icon&quot;&gt;📅&lt;/span&gt;关键时间线（全历史，倒序）&lt;/div&gt;
+      &lt;div class=&quot;timeline&quot;&gt;
+        &lt;div class=&quot;tl-group&quot;&gt;
+          &lt;div class=&quot;tl-date-label&quot;&gt;2026-03&lt;/div&gt;
+          &lt;div class=&quot;tl-item&quot;&gt;
+            &lt;span class=&quot;tl-node&quot;&gt;✅ 可用&lt;/span&gt;
+            &lt;span class=&quot;tl-brand&quot;&gt;[品牌]&lt;/span&gt;
+            &lt;span class=&quot;tl-desc&quot;&gt;[功能描述]&lt;/span&gt;
+            &lt;span class=&quot;badge badge-p1&quot; style=&quot;margin-left:6px;font-size:10px&quot;&gt;P1&lt;/span&gt;
+            &lt;a class=&quot;source-link&quot; href=&quot;[URL]&quot; target=&quot;_blank&quot; style=&quot;margin-left:6px&quot;&gt;来源 ↗&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;!-- 更多节点... --&gt;
+        &lt;/div&gt;
+        &lt;!-- 更多时间组... --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Section 3：横向能力对比表 --&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card-title&quot;&gt;&lt;span class=&quot;icon&quot;&gt;📊&lt;/span&gt;横向能力对比&lt;/div&gt;
+      &lt;div style=&quot;overflow-x:auto&quot;&gt;
+        &lt;table class=&quot;compare-table&quot;&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;能力维度&lt;/th&gt;
+              &lt;th&gt;[品牌A]&lt;/th&gt;
+              &lt;th&gt;[品牌B]&lt;/th&gt;
+              &lt;th&gt;[品牌C]&lt;/th&gt;
+              &lt;th&gt;[品牌D]&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;[能力维度1]&lt;/td&gt;
+              &lt;td&gt;&lt;span class=&quot;badge badge-online&quot;&gt;✅ 已上线&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;color:#94A3B8;font-size:11px&quot;&gt;[年份] [P等级]&lt;/span&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;span class=&quot;badge badge-announced&quot;&gt;📢 已宣布&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;color:#94A3B8;font-size:11px&quot;&gt;[年份] [P等级]&lt;/span&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;span class=&quot;badge badge-unknown&quot;&gt;❓ 待确认&lt;/span&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;span class=&quot;badge badge-unknown&quot;&gt;❌ 不支持&lt;/span&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;!-- 更多行... --&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Section 4：主要洞察 --&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card-title&quot;&gt;&lt;span class=&quot;icon&quot;&gt;💡&lt;/span&gt;主要洞察&lt;/div&gt;
+      &lt;div class=&quot;insight-grid&quot;&gt;
+        &lt;div class=&quot;insight-item&quot;&gt;
+          &lt;div class=&quot;insight-label&quot;&gt;能力成熟度定位&lt;/div&gt;
+          &lt;p&gt;[各平台所处阶段，附关键佐证事件]&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;insight-item&quot;&gt;
+          &lt;div class=&quot;insight-label&quot;&gt;差异化路径&lt;/div&gt;
+          &lt;p&gt;[各平台做成了什么形态，附关键功能点]&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;insight-item&quot;&gt;
+          &lt;div class=&quot;insight-label&quot;&gt;生态位置&lt;/div&gt;
+          &lt;p&gt;[自有强化型 / 生态承接型 / 平台基础设施型，附说明]&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;insight-item&quot;&gt;
+          &lt;div class=&quot;insight-label&quot;&gt;商业化与 Rollout 节奏&lt;/div&gt;
+          &lt;p&gt;[是否收费、地区扩展顺序、历史发布到落地时间差]&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;insight-item&quot; style=&quot;grid-column: 1 / -1;&quot;&gt;
+          &lt;div class=&quot;insight-label&quot;&gt;风险与空白信号&lt;/div&gt;
+          &lt;p&gt;[官方口径 &gt; 产品页 / 地区不一致 / 媒体指向延期未确认 等]&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Section 5：待追踪 --&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card-title&quot;&gt;&lt;span class=&quot;icon&quot;&gt;🔍&lt;/span&gt;待追踪事项&lt;/div&gt;
+      &lt;table class=&quot;track-table&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;&lt;th&gt;品牌&lt;/th&gt;&lt;th&gt;事件&lt;/th&gt;&lt;th&gt;当前状态&lt;/th&gt;&lt;th&gt;追踪原因&lt;/th&gt;&lt;th&gt;来源&lt;/th&gt;&lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;[品牌]&lt;/td&gt;
+            &lt;td&gt;[功能描述]&lt;/td&gt;
+            &lt;td&gt;&lt;span class=&quot;badge badge-pending&quot;&gt;渐进 rollout&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;[追踪原因]&lt;/td&gt;
+            &lt;td&gt;&lt;a class=&quot;source-link&quot; href=&quot;[URL]&quot; target=&quot;_blank&quot;&gt;[URL简写] ↗&lt;/a&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Section 6：证据质量 --&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card-title&quot;&gt;&lt;span class=&quot;icon&quot;&gt;🔖&lt;/span&gt;证据质量说明&lt;/div&gt;
+      &lt;div class=&quot;evidence-grid&quot;&gt;
+        &lt;div class=&quot;evidence-cell&quot;&gt;
+          &lt;div class=&quot;ev-label&quot;&gt;P0 官方功能页确认&lt;/div&gt;
+          &lt;div class=&quot;ev-count&quot;&gt;[N]&lt;/div&gt;
+          &lt;div class=&quot;ev-desc&quot;&gt;可直接引用的官方来源&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;evidence-cell&quot;&gt;
+          &lt;div class=&quot;ev-label&quot;&gt;P1 官方新闻稿宣布&lt;/div&gt;
+          &lt;div class=&quot;ev-count&quot;&gt;[N]&lt;/div&gt;
+          &lt;div class=&quot;ev-desc&quot;&gt;已宣布，未必已上线&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;evidence-cell&quot;&gt;
+          &lt;div class=&quot;ev-label&quot;&gt;P3 媒体口径待确认&lt;/div&gt;
+          &lt;div class=&quot;ev-count&quot;&gt;[N]&lt;/div&gt;
+          &lt;div class=&quot;ev-desc&quot;&gt;官方未正式确认&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;evidence-cell&quot;&gt;
+          &lt;div class=&quot;ev-label&quot;&gt;来自知识库&lt;/div&gt;
+          &lt;div class=&quot;ev-count&quot;&gt;[N]&lt;/div&gt;
+          &lt;div class=&quot;ev-desc&quot;&gt;训练数据，标注核验方式&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;evidence-cell&quot;&gt;
+          &lt;div class=&quot;ev-label&quot;&gt;证据冲突/空白&lt;/div&gt;
+          &lt;div class=&quot;ev-count&quot;&gt;[N]&lt;/div&gt;
+          &lt;div class=&quot;ev-desc&quot;&gt;需人工核查&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;footer&quot;&gt;
+      &lt;div&gt;IoT 智能家居竞品研究 · 由 Claude 大模型生成 · [YYYY-MM-DD] · 仅供内部参考 · 欢迎反馈，请联系 skill 创建人@武芯宇（wuxinyu3）&lt;/div&gt;
+      &lt;div style=&quot;margin-top:4px&quot;&gt;研究主题：[capability_theme] · 覆盖平台：[品牌A / 品牌B / 品牌C / …] · 市场范围：[全球 / 中国 / 全球 + 中国]&lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+```
+
+---
+
+### market_analysis_mode HTML 补充规范
+
+market_analysis_mode 输出的 HTML 在相同设计系统（色彩/排版/卡片）基础上，Hero 区使用不同标签：
+
+```html
+&lt;!-- Hero 区：市场分析版 --&gt;
+&lt;div class=&quot;hero&quot; style=&quot;background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);&quot;&gt;
+  &lt;div class=&quot;label&quot;&gt;Market Analysis · 市场分析报告&lt;/div&gt;
+  &lt;h1&gt;[品类] 市场竞争格局研究&lt;/h1&gt;
+  &lt;p class=&quot;summary&quot;&gt;[第七段核心洞察摘要]&lt;/p&gt;
+&lt;/div&gt;
+```
+
+市场来源等级 badge 色彩（追加，与 P0–P4 并列）：
+
+```
+M0: 背景 #166534  文字 #DCFCE7  （深绿，权威数据）
+M1: 背景 #1E40AF  文字 #DBEAFE  （深蓝，财报）
+M2: 背景 #7C3AED  文字 #EDE9FE  （紫，引用来源媒体）
+M3: 背景 #B45309  文字 #FEF3C7  （琥珀，研究机构）
+M4: 背景 #94A3B8  文字 #F8FAFC  （灰，软信号）
+代理指标: 背景 #E2E8F0  文字 #475569  边框虚线  （标注代理性质）
+```
+
+文件命名：`query_market_[品类关键词]_[YYYY-MM-DD].html`
+
+---
+
+### DOC 文档选项
+
+用户说&quot;给我一份 Word 文档&quot;或&quot;导出 doc&quot;时，额外使用 Write 工具生成：
+```
+~/Desktop/iot-competitive-research/output/query_[主题关键词]_[YYYY-MM-DD].md
+```
+
+DOC 版要求：
+- 内容比 HTML 版**更详尽**：每个平台的功能历史写完整段落，不压缩
+- 每条引用单独成行，格式：`&gt; 来源：[平台] [P等级] [URL]`
+- 包含&quot;深度分析&quot;章节：逐平台对该能力做 300-500 字深度评述
+- 包含&quot;竞争态势研判&quot;章节：跨平台横向洞察，提供具体的产品侧可执行建议
+- Markdown 可直接在 Typora / Notion / 飞书文档打开，或粘贴入 Word
+</pre>
+      </section>
+    </main>
+  </body>
+</html>

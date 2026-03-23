@@ -1,17 +1,20 @@
 {
   "meta": {
-    "generatedAt": "2026-03-23T12:43:21.452Z",
+    "generatedAt": "2026-03-23T12:54:36.912Z",
     "sourceRoot": "~/.codex/skills",
-    "includeThreshold": 30,
+    "includeThreshold": 15,
     "totalSkills": 71,
-    "includedSkills": 52,
-    "manualOverrideCount": 24,
-    "manualIncludedCount": 16,
+    "includedSkills": 66,
+    "manualOverrideCount": 31,
+    "manualIncludedCount": 27,
     "countsByDimension": {
-      "发现研究": 15,
-      "策略定位": 15,
+      "发现研究": 14,
+      "策略定位": 19,
       "规划定义": 14,
       "数据分析": 7,
+      "设计体验": 6,
+      "增长营销": 3,
+      "视觉表达": 2,
       "沟通落地": 1
     },
     "dimensions": [
@@ -19,10 +22,192 @@
       "策略定位",
       "规划定义",
       "数据分析",
+      "设计体验",
+      "增长营销",
+      "视觉表达",
       "沟通落地"
     ]
   },
   "skills": [
+    {
+      "slug": "figma-implement-design",
+      "title": "Implement Design",
+      "description": "Translate Figma nodes into production-ready code with 1:1 visual fidelity using the Figma MCP workflow (design context, screenshots, assets, and project-convention translation). Trigger when the user provides Figma URLs or node IDs, or asks to implement designs or components that must match Figma specs. Requires a working Figma MCP server connection.",
+      "sourcePath": "~/.codex/skills/figma-implement-design/SKILL.md",
+      "modifiedAt": "2026-02-27T12:41:34.904Z",
+      "primaryDimension": "设计体验",
+      "dimensionScores": {
+        "发现研究": 6,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "设计体验": 58,
+        "增长营销": 0,
+        "视觉表达": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 89,
+      "basePmScore": 71,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "user",
+              "weight": 6
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "design",
+              "weight": 10
+            },
+            {
+              "keyword": "figma",
+              "weight": 12
+            },
+            {
+              "keyword": "ui",
+              "weight": 8
+            },
+            {
+              "keyword": "visual",
+              "weight": 8
+            },
+            {
+              "keyword": "flow",
+              "weight": 7
+            },
+            {
+              "keyword": "component",
+              "weight": 6
+            },
+            {
+              "keyword": "spec",
+              "weight": 7
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "user",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 18,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "Figma 到实现的链路对产品和设计协作都很关键。",
+        "labels": [
+          "设计",
+          "实现"
+        ]
+      },
+      "detailUrl": "./skills/figma-implement-design/"
+    },
+    {
+      "slug": "mijia-app-figma-spec",
+      "title": "Mijia App Figma Spec",
+      "description": "Apply the official Mijia Harmony app Figma design language to new pages, flow design, UI reviews, and implementation guidance. Use when Codex needs to design, restyle, critique, or map work to the Mijia Figma spec file `1sfio83buMLRzVwpokEudA`, especially for homepage tabs, notification center, camera, add-device, provisioning, and family-management flows.",
+      "sourcePath": "~/.codex/skills/mijia-app-figma-spec/SKILL.md",
+      "modifiedAt": "2026-03-18T12:27:23.045Z",
+      "primaryDimension": "设计体验",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 9,
+        "规划定义": 0,
+        "数据分析": 0,
+        "设计体验": 67,
+        "增长营销": 0,
+        "视觉表达": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 87,
+      "basePmScore": 67,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "vision",
+              "weight": 9
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "design",
+              "weight": 10
+            },
+            {
+              "keyword": "figma",
+              "weight": 12
+            },
+            {
+              "keyword": "ui",
+              "weight": 8
+            },
+            {
+              "keyword": "flow",
+              "weight": 7
+            },
+            {
+              "keyword": "page",
+              "weight": 5
+            },
+            {
+              "keyword": "spec",
+              "weight": 7
+            },
+            {
+              "keyword": "design language",
+              "weight": 10
+            },
+            {
+              "keyword": "harmony",
+              "weight": 8
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
+          "沟通落地": []
+        },
+        "bonuses": [],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 20,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "这是中文设计规范类 skill，应该纳入产品相关榜单。",
+        "labels": [
+          "中文",
+          "设计"
+        ]
+      },
+      "detailUrl": "./skills/mijia-app-figma-spec/"
+    },
     {
       "slug": "interview-script",
       "title": "interview-script",
@@ -35,6 +220,9 @@
         "策略定位": 0,
         "规划定义": 6,
         "数据分析": 0,
+        "设计体验": 8,
+        "增长营销": 0,
+        "视觉表达": 7,
         "沟通落地": 0
       },
       "pmScore": 85,
@@ -76,6 +264,19 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "ui",
+              "weight": 8
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [
+            {
+              "keyword": "cover",
+              "weight": 7
+            }
+          ],
           "沟通落地": []
         },
         "bonuses": [
@@ -110,7 +311,8 @@
           "核心",
           "研究"
         ]
-      }
+      },
+      "detailUrl": "./skills/interview-script/"
     },
     {
       "slug": "product-strategy",
@@ -124,6 +326,9 @@
         "策略定位": 51,
         "规划定义": 6,
         "数据分析": 20,
+        "设计体验": 8,
+        "增长营销": 10,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 85,
@@ -179,6 +384,19 @@
               "weight": 10
             }
           ],
+          "设计体验": [
+            {
+              "keyword": "ui",
+              "weight": 8
+            }
+          ],
+          "增长营销": [
+            {
+              "keyword": "growth",
+              "weight": 10
+            }
+          ],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -213,7 +431,8 @@
           "核心",
           "策略"
         ]
-      }
+      },
+      "detailUrl": "./skills/product-strategy/"
     },
     {
       "slug": "user-personas",
@@ -227,6 +446,9 @@
         "策略定位": 0,
         "规划定义": 0,
         "数据分析": 8,
+        "设计体验": 8,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 82,
@@ -272,6 +494,14 @@
               "weight": 8
             }
           ],
+          "设计体验": [
+            {
+              "keyword": "ui",
+              "weight": 8
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -291,7 +521,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/user-personas/"
     },
     {
       "slug": "create-prd",
@@ -305,6 +536,9 @@
         "策略定位": 17,
         "规划定义": 42,
         "数据分析": 0,
+        "设计体验": 15,
+        "增长营销": 0,
+        "视觉表达": 7,
         "沟通落地": 0
       },
       "pmScore": 81,
@@ -351,6 +585,23 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "ui",
+              "weight": 8
+            },
+            {
+              "keyword": "spec",
+              "weight": 7
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [
+            {
+              "keyword": "cover",
+              "weight": 7
+            }
+          ],
           "沟通落地": []
         },
         "bonuses": [
@@ -385,7 +636,8 @@
           "核心",
           "文档"
         ]
-      }
+      },
+      "detailUrl": "./skills/create-prd/"
     },
     {
       "slug": "gtm-strategy",
@@ -399,6 +651,9 @@
         "策略定位": 36,
         "规划定义": 6,
         "数据分析": 20,
+        "设计体验": 0,
+        "增长营销": 33,
+        "视觉表达": 7,
         "沟通落地": 0
       },
       "pmScore": 73,
@@ -441,6 +696,31 @@
               "weight": 10
             }
           ],
+          "设计体验": [],
+          "增长营销": [
+            {
+              "keyword": "marketing",
+              "weight": 10
+            },
+            {
+              "keyword": "launch",
+              "weight": 8
+            },
+            {
+              "keyword": "messaging",
+              "weight": 8
+            },
+            {
+              "keyword": "channel",
+              "weight": 7
+            }
+          ],
+          "视觉表达": [
+            {
+              "keyword": "cover",
+              "weight": 7
+            }
+          ],
           "沟通落地": []
         },
         "bonuses": [
@@ -472,7 +752,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/gtm-strategy/"
     },
     {
       "slug": "sentiment-analysis",
@@ -486,6 +767,9 @@
         "策略定位": 0,
         "规划定义": 0,
         "数据分析": 14,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 67,
@@ -531,6 +815,9 @@
               "weight": 8
             }
           ],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -550,7 +837,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/sentiment-analysis/"
     },
     {
       "slug": "metrics-dashboard",
@@ -564,6 +852,9 @@
         "策略定位": 0,
         "规划定义": 6,
         "数据分析": 45,
+        "设计体验": 26,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 64,
@@ -601,6 +892,22 @@
               "weight": 8
             }
           ],
+          "设计体验": [
+            {
+              "keyword": "design",
+              "weight": 10
+            },
+            {
+              "keyword": "ui",
+              "weight": 8
+            },
+            {
+              "keyword": "visual",
+              "weight": 8
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -620,7 +927,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/metrics-dashboard/"
     },
     {
       "slug": "beachhead-segment",
@@ -634,6 +942,9 @@
         "策略定位": 27,
         "规划定义": 6,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 16,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 64,
@@ -672,6 +983,18 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [
+            {
+              "keyword": "launch",
+              "weight": 8
+            },
+            {
+              "keyword": "referral",
+              "weight": 8
+            }
+          ],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -703,7 +1026,93 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/beachhead-segment/"
+    },
+    {
+      "slug": "imagegen",
+      "title": "Image Generation Skill",
+      "description": "Use when the user asks to generate or edit images via the OpenAI Image API (for example: generate image, edit/inpaint/mask, background removal or replacement, transparent background, product shots, concept art, covers, or batch variants); run the bundled CLI (`scripts/image_gen.py`) and require `OPENAI_API_KEY` for live calls.",
+      "sourcePath": "~/.codex/skills/imagegen/SKILL.md",
+      "modifiedAt": "2026-03-19T12:06:55.422Z",
+      "primaryDimension": "视觉表达",
+      "dimensionScores": {
+        "发现研究": 6,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "设计体验": 8,
+        "增长营销": 0,
+        "视觉表达": 31,
+        "沟通落地": 0
+      },
+      "pmScore": 62,
+      "basePmScore": 44,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "user",
+              "weight": 6
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "ui",
+              "weight": 8
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [
+            {
+              "keyword": "image",
+              "weight": 8
+            },
+            {
+              "keyword": "images",
+              "weight": 8
+            },
+            {
+              "keyword": "cover",
+              "weight": 7
+            },
+            {
+              "keyword": "concept art",
+              "weight": 8
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "user",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 18,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "图像生成与视觉创意属于画图类工作流，应该收录。",
+        "labels": [
+          "画图",
+          "视觉生成"
+        ]
+      },
+      "detailUrl": "./skills/imagegen/"
     },
     {
       "slug": "ab-test-analysis",
@@ -714,18 +1123,26 @@
       "primaryDimension": "数据分析",
       "dimensionScores": {
         "发现研究": 0,
-        "策略定位": 0,
+        "策略定位": 8,
         "规划定义": 0,
         "数据分析": 64,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
-      "pmScore": 62,
-      "basePmScore": 56,
+      "pmScore": 60,
+      "basePmScore": 54,
       "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
-          "策略定位": [],
+          "策略定位": [
+            {
+              "keyword": "sam",
+              "weight": 8
+            }
+          ],
           "规划定义": [],
           "数据分析": [
             {
@@ -757,6 +1174,9 @@
               "weight": 8
             }
           ],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -768,7 +1188,7 @@
         "penalties": [
           {
             "keyword": "nda",
-            "weight": 12
+            "weight": 14
           }
         ]
       },
@@ -784,7 +1204,96 @@
           "高频",
           "数据"
         ]
-      }
+      },
+      "detailUrl": "./skills/ab-test-analysis/"
+    },
+    {
+      "slug": "marketing-ideas",
+      "title": "Marketing Ideas",
+      "description": "Generate 5 creative, cost-effective marketing ideas with channels, messaging, and engagement rationale. Use when brainstorming marketing campaigns, planning product promotion, or looking for creative marketing tactics.",
+      "sourcePath": "~/.codex/skills/marketing-ideas/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.658Z",
+      "primaryDimension": "增长营销",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 8,
+        "规划定义": 6,
+        "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 33,
+        "视觉表达": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 58,
+      "basePmScore": 52,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "market",
+              "weight": 8
+            }
+          ],
+          "规划定义": [
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [],
+          "设计体验": [],
+          "增长营销": [
+            {
+              "keyword": "marketing",
+              "weight": 10
+            },
+            {
+              "keyword": "campaign",
+              "weight": 8
+            },
+            {
+              "keyword": "messaging",
+              "weight": 8
+            },
+            {
+              "keyword": "channel",
+              "weight": 7
+            }
+          ],
+          "视觉表达": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "market",
+            "weight": 6
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 6,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "营销创意是产品增长相关技能。",
+        "labels": [
+          "增长"
+        ]
+      },
+      "detailUrl": "./skills/marketing-ideas/"
     },
     {
       "slug": "pre-mortem",
@@ -798,6 +1307,9 @@
         "策略定位": 0,
         "规划定义": 26,
         "数据分析": 6,
+        "设计体验": 0,
+        "增长营销": 8,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 58,
@@ -827,6 +1339,14 @@
               "weight": 6
             }
           ],
+          "设计体验": [],
+          "增长营销": [
+            {
+              "keyword": "launch",
+              "weight": 8
+            }
+          ],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -854,7 +1374,84 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/pre-mortem/"
+    },
+    {
+      "slug": "iot-query",
+      "title": "IoT 智能家居竞品功能研究引擎",
+      "description": "IoT 智能家居竞品功能研究引擎（Capability Research Task）。触发场景： 1. 用户输入能力主题研究，如\"语音助手功能研究\"、\"自动化能力研究\"、\"智能门锁生态研究\" 2. 用户说\"分析 [功能/平台]\"、\"对比 [能力]\"、\"[平台] 最新动态\"、\"研究 [主题]\" 3. 用户提出具体能力问题，如\"三星 Matter 摄像头支持到哪一步了\" 不触发场景：生成完整周报（用 iot-weekly-research）；速读单篇文章（用 iot-url）。",
+      "sourcePath": "~/.codex/skills/iot-query/SKILL.md",
+      "modifiedAt": "2026-03-19T08:10:35.971Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 36,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 8,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 57,
+      "basePmScore": 43,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "research",
+              "weight": 10
+            },
+            {
+              "keyword": "研究",
+              "weight": 10
+            },
+            {
+              "keyword": "用户",
+              "weight": 8
+            },
+            {
+              "keyword": "竞品",
+              "weight": 8
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "分析",
+              "weight": 8
+            }
+          ],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "research",
+            "weight": 7
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 14,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "垂类竞品研究技能对行业 PM 很有价值，手工纳入。",
+        "labels": [
+          "行业研究",
+          "中文"
+        ]
+      },
+      "detailUrl": "./skills/iot-query/"
     },
     {
       "slug": "release-notes",
@@ -868,6 +1465,9 @@
         "策略定位": 0,
         "规划定义": 26,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 17
       },
       "pmScore": 55,
@@ -897,6 +1497,9 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": [
             {
               "keyword": "release notes",
@@ -929,7 +1532,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/release-notes/"
     },
     {
       "slug": "positioning-ideas",
@@ -943,6 +1547,9 @@
         "策略定位": 37,
         "规划定义": 0,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 14,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 52,
@@ -971,6 +1578,18 @@
           ],
           "规划定义": [],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [
+            {
+              "keyword": "brand",
+              "weight": 8
+            },
+            {
+              "keyword": "positioning",
+              "weight": 6
+            }
+          ],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -986,7 +1605,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/positioning-ideas/"
     },
     {
       "slug": "market-segments",
@@ -1000,6 +1620,9 @@
         "策略定位": 8,
         "规划定义": 0,
         "数据分析": 6,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 50,
@@ -1034,6 +1657,9 @@
               "weight": 6
             }
           ],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -1057,7 +1683,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/market-segments/"
     },
     {
       "slug": "ideal-customer-profile",
@@ -1071,6 +1698,9 @@
         "策略定位": 0,
         "规划定义": 0,
         "数据分析": 8,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 49,
@@ -1100,6 +1730,9 @@
               "weight": 8
             }
           ],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -1119,7 +1752,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/ideal-customer-profile/"
     },
     {
       "slug": "user-segmentation",
@@ -1133,6 +1767,9 @@
         "策略定位": 0,
         "规划定义": 0,
         "数据分析": 20,
+        "设计体验": 8,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 48,
@@ -1174,6 +1811,14 @@
               "weight": 8
             }
           ],
+          "设计体验": [
+            {
+              "keyword": "ui",
+              "weight": 8
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -1185,7 +1830,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/user-segmentation/"
     },
     {
       "slug": "cohort-analysis",
@@ -1199,6 +1845,9 @@
         "策略定位": 0,
         "规划定义": 7,
         "数据分析": 33,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 48,
@@ -1245,6 +1894,9 @@
               "weight": 8
             }
           ],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -1264,7 +1916,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/cohort-analysis/"
     },
     {
       "slug": "identify-assumptions-new",
@@ -1278,6 +1931,9 @@
         "策略定位": 27,
         "规划定义": 0,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 48,
@@ -1307,6 +1963,9 @@
           ],
           "规划定义": [],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -1326,7 +1985,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/identify-assumptions-new/"
     },
     {
       "slug": "startup-canvas",
@@ -1340,6 +2000,9 @@
         "策略定位": 27,
         "规划定义": 0,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 8,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 47,
@@ -1364,6 +2027,14 @@
           ],
           "规划定义": [],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [
+            {
+              "keyword": "launch",
+              "weight": 8
+            }
+          ],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -1383,7 +2054,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/startup-canvas/"
     },
     {
       "slug": "ansoff-matrix",
@@ -1397,6 +2069,9 @@
         "策略定位": 16,
         "规划定义": 6,
         "数据分析": 6,
+        "设计体验": 0,
+        "增长营销": 10,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 47,
@@ -1427,6 +2102,14 @@
               "weight": 6
             }
           ],
+          "设计体验": [],
+          "增长营销": [
+            {
+              "keyword": "growth",
+              "weight": 10
+            }
+          ],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -1454,7 +2137,70 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/ansoff-matrix/"
+    },
+    {
+      "slug": "better-icons",
+      "title": "Better Icons",
+      "description": "Use when working with icons in any project. Provides CLI for searching 200+ icon libraries (Iconify) and retrieving SVGs. Commands: `better-icons search <query>` to find icons, `better-icons get <id>` to get SVG. Also available as MCP server for AI agents.",
+      "sourcePath": "~/.codex/skills/better-icons/SKILL.md",
+      "modifiedAt": "2026-03-19T12:17:24.824Z",
+      "primaryDimension": "视觉表达",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 28,
+        "沟通落地": 0
+      },
+      "pmScore": 46,
+      "basePmScore": 28,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [
+            {
+              "keyword": "icon",
+              "weight": 10
+            },
+            {
+              "keyword": "icons",
+              "weight": 10
+            },
+            {
+              "keyword": "svg",
+              "weight": 8
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 18,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "图标与视觉素材能力属于设计/画图工作流，应该收录。",
+        "labels": [
+          "设计",
+          "图标"
+        ]
+      },
+      "detailUrl": "./skills/better-icons/"
     },
     {
       "slug": "analyze-feature-requests",
@@ -1468,6 +2214,9 @@
         "策略定位": 0,
         "规划定义": 26,
         "数据分析": 12,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 7
       },
       "pmScore": 46,
@@ -1502,6 +2251,9 @@
               "weight": 12
             }
           ],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": [
             {
               "keyword": "alignment",
@@ -1526,7 +2278,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/analyze-feature-requests/"
     },
     {
       "slug": "gtm-motions",
@@ -1540,6 +2293,9 @@
         "策略定位": 27,
         "规划定义": 6,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 25,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 45,
@@ -1569,6 +2325,22 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [
+            {
+              "keyword": "marketing",
+              "weight": 10
+            },
+            {
+              "keyword": "campaign",
+              "weight": 8
+            },
+            {
+              "keyword": "channel",
+              "weight": 7
+            }
+          ],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -1588,7 +2360,97 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/gtm-motions/"
+    },
+    {
+      "slug": "growth-loops",
+      "title": "Growth Loops",
+      "description": "Identify growth loops (flywheels) for sustainable traction. Evaluates 5 loop types: Viral, Usage, Collaboration, User-Generated, and Referral. Use when designing growth mechanisms, building product-led traction, or understanding how growth loops work.",
+      "sourcePath": "~/.codex/skills/growth-loops/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.607Z",
+      "primaryDimension": "增长营销",
+      "dimensionScores": {
+        "发现研究": 6,
+        "策略定位": 8,
+        "规划定义": 0,
+        "数据分析": 0,
+        "设计体验": 18,
+        "增长营销": 26,
+        "视觉表达": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 45,
+      "basePmScore": 39,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "user",
+              "weight": 6
+            }
+          ],
+          "策略定位": [
+            {
+              "keyword": "growth",
+              "weight": 8
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "design",
+              "weight": 10
+            },
+            {
+              "keyword": "ui",
+              "weight": 8
+            }
+          ],
+          "增长营销": [
+            {
+              "keyword": "growth",
+              "weight": 10
+            },
+            {
+              "keyword": "referral",
+              "weight": 8
+            },
+            {
+              "keyword": "viral",
+              "weight": 8
+            }
+          ],
+          "视觉表达": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "user",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 6,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "增长循环属于增长策略方法，应收录。",
+        "labels": [
+          "增长"
+        ]
+      },
+      "detailUrl": "./skills/growth-loops/"
     },
     {
       "slug": "summarize-interview",
@@ -1602,6 +2464,9 @@
         "策略定位": 0,
         "规划定义": 0,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 7,
         "沟通落地": 8
       },
       "pmScore": 44,
@@ -1630,6 +2495,14 @@
           "策略定位": [],
           "规划定义": [],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [
+            {
+              "keyword": "cover",
+              "weight": 7
+            }
+          ],
           "沟通落地": [
             {
               "keyword": "summarize",
@@ -1646,7 +2519,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/summarize-interview/"
     },
     {
       "slug": "north-star-metric",
@@ -1660,6 +2534,9 @@
         "策略定位": 0,
         "规划定义": 0,
         "数据分析": 30,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 44,
@@ -1684,6 +2561,9 @@
               "weight": 10
             }
           ],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -1699,7 +2579,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/north-star-metric/"
     },
     {
       "slug": "monetization-strategy",
@@ -1713,6 +2594,9 @@
         "策略定位": 28,
         "规划定义": 0,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 43,
@@ -1737,6 +2621,9 @@
           ],
           "规划定义": [],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -1752,90 +2639,84 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/monetization-strategy/"
     },
     {
-      "slug": "prioritize-features",
-      "title": "prioritize-features",
-      "description": "Prioritize a backlog of feature ideas based on impact, effort, risk, and strategic alignment with top 5 recommendations. Use when prioritizing a feature backlog, making scope decisions, or ranking product ideas.",
-      "sourcePath": "~/.codex/skills/prioritize-features/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.730Z",
-      "primaryDimension": "规划定义",
+      "slug": "market-sizing",
+      "title": "Estimate Market Size (TAM, SAM, SOM)",
+      "description": "Estimate market size using TAM, SAM, and SOM with top-down and bottom-up approaches. Use when sizing a market opportunity, estimating addressable market, preparing for investor pitches, or evaluating market entry.",
+      "sourcePath": "~/.codex/skills/market-sizing/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.640Z",
+      "primaryDimension": "策略定位",
       "dimensionScores": {
-        "发现研究": 0,
-        "策略定位": 0,
-        "规划定义": 26,
-        "数据分析": 12,
-        "沟通落地": 7
+        "发现研究": 8,
+        "策略定位": 32,
+        "规划定义": 0,
+        "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
+        "沟通落地": 0
       },
-      "pmScore": 43,
-      "basePmScore": 36,
+      "pmScore": 42,
+      "basePmScore": 38,
       "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
-          "发现研究": [],
-          "策略定位": [],
-          "规划定义": [
+          "发现研究": [
             {
-              "keyword": "priorit",
-              "weight": 10
-            },
-            {
-              "keyword": "feature",
-              "weight": 7
-            },
-            {
-              "keyword": "backlog",
-              "weight": 9
+              "keyword": "opportunity",
+              "weight": 8
             }
           ],
-          "数据分析": [
+          "策略定位": [
             {
-              "keyword": "a/b",
-              "weight": 12
+              "keyword": "market",
+              "weight": 8
+            },
+            {
+              "keyword": "tam",
+              "weight": 8
+            },
+            {
+              "keyword": "sam",
+              "weight": 8
+            },
+            {
+              "keyword": "som",
+              "weight": 8
             }
           ],
-          "沟通落地": [
-            {
-              "keyword": "alignment",
-              "weight": 7
-            }
-          ]
+          "规划定义": [],
+          "数据分析": [],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
+          "沟通落地": []
         },
         "bonuses": [
           {
-            "keyword": "product",
-            "weight": 8
-          },
-          {
-            "keyword": "feature",
+            "keyword": "market",
             "weight": 6
-          },
-          {
-            "keyword": "priorit",
-            "weight": 8
           }
         ],
-        "penalties": [
-          {
-            "keyword": "nda",
-            "weight": 12
-          }
-        ]
+        "penalties": []
       },
       "included": true,
       "override": {
         "applied": true,
-        "scoreDelta": 7,
+        "scoreDelta": 4,
         "forceInclude": true,
         "forceExclude": false,
         "primaryDimension": null,
-        "note": "优先级评估是日常路线图与范围管理核心能力。",
+        "note": "市场规模测算是产品战略分析的重要一环。",
         "labels": [
-          "高频",
-          "规划"
+          "战略",
+          "市场"
         ]
-      }
+      },
+      "detailUrl": "./skills/market-sizing/"
     },
     {
       "slug": "competitive-battlecard",
@@ -1849,6 +2730,9 @@
         "策略定位": 27,
         "规划定义": 7,
         "数据分析": 0,
+        "设计体验": 7,
+        "增长营销": 6,
+        "视觉表达": 0,
         "沟通落地": 7
       },
       "pmScore": 41,
@@ -1878,6 +2762,19 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "spec",
+              "weight": 7
+            }
+          ],
+          "增长营销": [
+            {
+              "keyword": "positioning",
+              "weight": 6
+            }
+          ],
+          "视觉表达": [],
           "沟通落地": [
             {
               "keyword": "battlecard",
@@ -1898,7 +2795,322 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/competitive-battlecard/"
+    },
+    {
+      "slug": "prioritize-features",
+      "title": "prioritize-features",
+      "description": "Prioritize a backlog of feature ideas based on impact, effort, risk, and strategic alignment with top 5 recommendations. Use when prioritizing a feature backlog, making scope decisions, or ranking product ideas.",
+      "sourcePath": "~/.codex/skills/prioritize-features/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.730Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 26,
+        "数据分析": 12,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
+        "沟通落地": 7
+      },
+      "pmScore": 41,
+      "basePmScore": 34,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "priorit",
+              "weight": 10
+            },
+            {
+              "keyword": "feature",
+              "weight": 7
+            },
+            {
+              "keyword": "backlog",
+              "weight": 9
+            }
+          ],
+          "数据分析": [
+            {
+              "keyword": "a/b",
+              "weight": 12
+            }
+          ],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
+          "沟通落地": [
+            {
+              "keyword": "alignment",
+              "weight": 7
+            }
+          ]
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          },
+          {
+            "keyword": "priorit",
+            "weight": 8
+          }
+        ],
+        "penalties": [
+          {
+            "keyword": "nda",
+            "weight": 14
+          }
+        ]
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 7,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "优先级评估是日常路线图与范围管理核心能力。",
+        "labels": [
+          "高频",
+          "规划"
+        ]
+      },
+      "detailUrl": "./skills/prioritize-features/"
+    },
+    {
+      "slug": "brainstorm-experiments-existing",
+      "title": "brainstorm-experiments-existing",
+      "description": "Design experiments to test assumptions for an existing product — prototypes, A/B tests, spikes, and other low-effort validation methods. Use when validating assumptions, testing feature ideas cheaply, or planning product experiments.",
+      "sourcePath": "~/.codex/skills/brainstorm-experiments-existing/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.684Z",
+      "primaryDimension": "设计体验",
+      "dimensionScores": {
+        "发现研究": 7,
+        "策略定位": 0,
+        "规划定义": 13,
+        "数据分析": 12,
+        "设计体验": 20,
+        "增长营销": 0,
+        "视觉表达": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 39,
+      "basePmScore": 39,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "assumption",
+              "weight": 7
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "feature",
+              "weight": 7
+            },
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [
+            {
+              "keyword": "a/b",
+              "weight": 12
+            }
+          ],
+          "设计体验": [
+            {
+              "keyword": "design",
+              "weight": 10
+            },
+            {
+              "keyword": "prototype",
+              "weight": 10
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": null,
+      "detailUrl": "./skills/brainstorm-experiments-existing/"
+    },
+    {
+      "slug": "brainstorm-ideas-existing",
+      "title": "brainstorm-ideas-existing",
+      "description": "Brainstorm product ideas for an existing product using multi-perspective ideation from PM, Designer, and Engineer viewpoints. Use when generating new feature ideas, brainstorming solutions for an identified opportunity, or ideating with a product trio.",
+      "sourcePath": "~/.codex/skills/brainstorm-ideas-existing/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.694Z",
+      "primaryDimension": "设计体验",
+      "dimensionScores": {
+        "发现研究": 8,
+        "策略定位": 0,
+        "规划定义": 7,
+        "数据分析": 0,
+        "设计体验": 17,
+        "增长营销": 0,
+        "视觉表达": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 39,
+      "basePmScore": 39,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "opportunity",
+              "weight": 8
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "feature",
+              "weight": 7
+            }
+          ],
+          "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "design",
+              "weight": 10
+            },
+            {
+              "keyword": "spec",
+              "weight": 7
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "pm",
+            "weight": 8
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": null,
+      "detailUrl": "./skills/brainstorm-ideas-existing/"
+    },
+    {
+      "slug": "brainstorm-ideas-new",
+      "title": "brainstorm-ideas-new",
+      "description": "Brainstorm feature ideas for a new product in initial discovery from PM, Designer, and Engineer perspectives. Use when starting product discovery for a new product, exploring features for a startup idea, or doing initial ideation.",
+      "sourcePath": "~/.codex/skills/brainstorm-ideas-new/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.699Z",
+      "primaryDimension": "设计体验",
+      "dimensionScores": {
+        "发现研究": 10,
+        "策略定位": 0,
+        "规划定义": 7,
+        "数据分析": 0,
+        "设计体验": 17,
+        "增长营销": 0,
+        "视觉表达": 7,
+        "沟通落地": 0
+      },
+      "pmScore": 39,
+      "basePmScore": 39,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "discovery",
+              "weight": 10
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "feature",
+              "weight": 7
+            }
+          ],
+          "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "design",
+              "weight": 10
+            },
+            {
+              "keyword": "spec",
+              "weight": 7
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [
+            {
+              "keyword": "cover",
+              "weight": 7
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "pm",
+            "weight": 8
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": null,
+      "detailUrl": "./skills/brainstorm-ideas-new/"
     },
     {
       "slug": "lean-canvas",
@@ -1912,6 +3124,9 @@
         "策略定位": 7,
         "规划定义": 0,
         "数据分析": 32,
+        "设计体验": 0,
+        "增长营销": 7,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 38,
@@ -1946,6 +3161,14 @@
               "weight": 10
             }
           ],
+          "设计体验": [],
+          "增长营销": [
+            {
+              "keyword": "channel",
+              "weight": 7
+            }
+          ],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -1957,7 +3180,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/lean-canvas/"
     },
     {
       "slug": "dummy-dataset",
@@ -1968,9 +3192,12 @@
       "primaryDimension": "数据分析",
       "dimensionScores": {
         "发现研究": 0,
-        "策略定位": 0,
+        "策略定位": 8,
         "规划定义": 0,
         "数据分析": 30,
+        "设计体验": 8,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 38,
@@ -1979,7 +3206,12 @@
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
-          "策略定位": [],
+          "策略定位": [
+            {
+              "keyword": "sam",
+              "weight": 8
+            }
+          ],
           "规划定义": [],
           "数据分析": [
             {
@@ -1995,6 +3227,14 @@
               "weight": 8
             }
           ],
+          "设计体验": [
+            {
+              "keyword": "ui",
+              "weight": 8
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -2006,7 +3246,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/dummy-dataset/"
     },
     {
       "slug": "wwas",
@@ -2020,6 +3261,9 @@
         "策略定位": 0,
         "规划定义": 23,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 37,
@@ -2044,6 +3288,9 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -2059,7 +3306,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/wwas/"
     },
     {
       "slug": "summarize-meeting",
@@ -2073,6 +3321,9 @@
         "策略定位": 0,
         "规划定义": 0,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 32
       },
       "pmScore": 36,
@@ -2084,6 +3335,9 @@
           "策略定位": [],
           "规划定义": [],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": [
             {
               "keyword": "meeting",
@@ -2112,7 +3366,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/summarize-meeting/"
     },
     {
       "slug": "test-scenarios",
@@ -2126,6 +3381,9 @@
         "策略定位": 0,
         "规划定义": 20,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 36,
@@ -2155,6 +3413,9 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -2174,7 +3435,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/test-scenarios/"
     },
     {
       "slug": "outcome-roadmap",
@@ -2188,6 +3450,9 @@
         "策略定位": 0,
         "规划定义": 17,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 36,
@@ -2213,6 +3478,9 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -2232,7 +3500,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/outcome-roadmap/"
     },
     {
       "slug": "sprint-plan",
@@ -2246,11 +3515,14 @@
         "策略定位": 0,
         "规划定义": 23,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 34,
       "basePmScore": 28,
-      "baseIncluded": false,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -2270,6 +3542,9 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -2291,7 +3566,8 @@
         "labels": [
           "协作"
         ]
-      }
+      },
+      "detailUrl": "./skills/sprint-plan/"
     },
     {
       "slug": "user-stories",
@@ -2305,6 +3581,9 @@
         "策略定位": 0,
         "规划定义": 23,
         "数据分析": 0,
+        "设计体验": 10,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 34,
@@ -2334,6 +3613,14 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "design",
+              "weight": 10
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -2349,7 +3636,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/user-stories/"
     },
     {
       "slug": "opportunity-solution-tree",
@@ -2363,11 +3651,14 @@
         "策略定位": 0,
         "规划定义": 0,
         "数据分析": 0,
+        "设计体验": 8,
+        "增长营销": 0,
+        "视觉表达": 7,
         "沟通落地": 0
       },
       "pmScore": 34,
       "basePmScore": 26,
-      "baseIncluded": false,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -2383,6 +3674,19 @@
           "策略定位": [],
           "规划定义": [],
           "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "ui",
+              "weight": 8
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [
+            {
+              "keyword": "cover",
+              "weight": 7
+            }
+          ],
           "沟通落地": []
         },
         "bonuses": [
@@ -2405,7 +3709,8 @@
           "发现",
           "框架"
         ]
-      }
+      },
+      "detailUrl": "./skills/opportunity-solution-tree/"
     },
     {
       "slug": "customer-journey-map",
@@ -2419,6 +3724,9 @@
         "策略定位": 0,
         "规划定义": 0,
         "数据分析": 0,
+        "设计体验": 8,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 33,
@@ -2443,6 +3751,14 @@
           "策略定位": [],
           "规划定义": [],
           "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "visual",
+              "weight": 8
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -2458,7 +3774,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/customer-journey-map/"
     },
     {
       "slug": "value-proposition",
@@ -2472,6 +3789,9 @@
         "策略定位": 17,
         "规划定义": 0,
         "数据分析": 0,
+        "设计体验": 10,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 32,
@@ -2501,6 +3821,14 @@
           ],
           "规划定义": [],
           "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "design",
+              "weight": 10
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -2516,124 +3844,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
-    },
-    {
-      "slug": "brainstorm-experiments-existing",
-      "title": "brainstorm-experiments-existing",
-      "description": "Design experiments to test assumptions for an existing product — prototypes, A/B tests, spikes, and other low-effort validation methods. Use when validating assumptions, testing feature ideas cheaply, or planning product experiments.",
-      "sourcePath": "~/.codex/skills/brainstorm-experiments-existing/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.684Z",
-      "primaryDimension": "规划定义",
-      "dimensionScores": {
-        "发现研究": 7,
-        "策略定位": 0,
-        "规划定义": 13,
-        "数据分析": 12,
-        "沟通落地": 0
-      },
-      "pmScore": 32,
-      "basePmScore": 32,
-      "baseIncluded": true,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [
-            {
-              "keyword": "assumption",
-              "weight": 7
-            }
-          ],
-          "策略定位": [],
-          "规划定义": [
-            {
-              "keyword": "feature",
-              "weight": 7
-            },
-            {
-              "keyword": "plan",
-              "weight": 6
-            }
-          ],
-          "数据分析": [
-            {
-              "keyword": "a/b",
-              "weight": 12
-            }
-          ],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "product",
-            "weight": 8
-          },
-          {
-            "keyword": "feature",
-            "weight": 6
-          },
-          {
-            "keyword": "plan",
-            "weight": 5
-          }
-        ],
-        "penalties": []
-      },
-      "included": true,
-      "override": null
-    },
-    {
-      "slug": "brainstorm-ideas-new",
-      "title": "brainstorm-ideas-new",
-      "description": "Brainstorm feature ideas for a new product in initial discovery from PM, Designer, and Engineer perspectives. Use when starting product discovery for a new product, exploring features for a startup idea, or doing initial ideation.",
-      "sourcePath": "~/.codex/skills/brainstorm-ideas-new/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.699Z",
-      "primaryDimension": "发现研究",
-      "dimensionScores": {
-        "发现研究": 10,
-        "策略定位": 0,
-        "规划定义": 7,
-        "数据分析": 0,
-        "沟通落地": 0
-      },
-      "pmScore": 32,
-      "basePmScore": 32,
-      "baseIncluded": true,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [
-            {
-              "keyword": "discovery",
-              "weight": 10
-            }
-          ],
-          "策略定位": [],
-          "规划定义": [
-            {
-              "keyword": "feature",
-              "weight": 7
-            }
-          ],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "product",
-            "weight": 8
-          },
-          {
-            "keyword": "pm",
-            "weight": 8
-          },
-          {
-            "keyword": "feature",
-            "weight": 6
-          }
-        ],
-        "penalties": []
-      },
-      "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/value-proposition/"
     },
     {
       "slug": "value-prop-statements",
@@ -2647,6 +3859,9 @@
         "策略定位": 25,
         "规划定义": 0,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 18,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 31,
@@ -2671,6 +3886,18 @@
           ],
           "规划定义": [],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [
+            {
+              "keyword": "marketing",
+              "weight": 10
+            },
+            {
+              "keyword": "messaging",
+              "weight": 8
+            }
+          ],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -2682,7 +3909,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/value-prop-statements/"
     },
     {
       "slug": "retro",
@@ -2696,11 +3924,14 @@
         "策略定位": 0,
         "规划定义": 18,
         "数据分析": 0,
+        "设计体验": 7,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 9
       },
       "pmScore": 31,
       "basePmScore": 26,
-      "baseIncluded": false,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -2721,6 +3952,14 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "spec",
+              "weight": 7
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": [
             {
               "keyword": "retro",
@@ -2747,7 +3986,8 @@
         "labels": [
           "协作"
         ]
-      }
+      },
+      "detailUrl": "./skills/retro/"
     },
     {
       "slug": "business-model",
@@ -2761,11 +4001,14 @@
         "策略定位": 17,
         "规划定义": 0,
         "数据分析": 12,
+        "设计体验": 8,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 31,
       "basePmScore": 17,
-      "baseIncluded": false,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -2786,6 +4029,14 @@
               "weight": 12
             }
           ],
+          "设计体验": [
+            {
+              "keyword": "ui",
+              "weight": 8
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [],
@@ -2802,7 +4053,141 @@
         "labels": [
           "策略"
         ]
-      }
+      },
+      "detailUrl": "./skills/business-model/"
+    },
+    {
+      "slug": "porters-five-forces",
+      "title": "Porter's Five Forces",
+      "description": "Perform Porter's Five Forces analysis — competitive rivalry, supplier power, buyer power, threat of substitutes, and threat of new entrants. Use when analyzing industry dynamics, assessing competitive forces, or evaluating market attractiveness.",
+      "sourcePath": "~/.codex/skills/porters-five-forces/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.761Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 17,
+        "规划定义": 0,
+        "数据分析": 6,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 31,
+      "basePmScore": 27,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "market",
+              "weight": 8
+            },
+            {
+              "keyword": "porter",
+              "weight": 9
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "analysis",
+              "weight": 6
+            }
+          ],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "market",
+            "weight": 6
+          },
+          {
+            "keyword": "analysis",
+            "weight": 4
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 4,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "五力模型属于经典战略分析框架。",
+        "labels": [
+          "战略"
+        ]
+      },
+      "detailUrl": "./skills/porters-five-forces/"
+    },
+    {
+      "slug": "product-name",
+      "title": "Product Name",
+      "description": "Brainstorm 5 unique, memorable product names with rationale aligned to brand values and target audience. Use when naming a new product, rebranding, or exploring product name ideas.",
+      "sourcePath": "~/.codex/skills/product-name/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.671Z",
+      "primaryDimension": "增长营销",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 15,
+        "视觉表达": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 31,
+      "basePmScore": 23,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "设计体验": [],
+          "增长营销": [
+            {
+              "keyword": "brand",
+              "weight": 8
+            },
+            {
+              "keyword": "naming",
+              "weight": 7
+            }
+          ],
+          "视觉表达": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 8,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "产品命名属于品牌与增长表达的一部分。",
+        "labels": [
+          "品牌"
+        ]
+      },
+      "detailUrl": "./skills/product-name/"
     },
     {
       "slug": "stakeholder-map",
@@ -2816,11 +4201,14 @@
         "策略定位": 0,
         "规划定义": 14,
         "数据分析": 0,
+        "设计体验": 8,
+        "增长营销": 8,
+        "视觉表达": 0,
         "沟通落地": 8
       },
       "pmScore": 31,
       "basePmScore": 24,
-      "baseIncluded": false,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -2836,6 +4224,19 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "ui",
+              "weight": 8
+            }
+          ],
+          "增长营销": [
+            {
+              "keyword": "launch",
+              "weight": 8
+            }
+          ],
+          "视觉表达": [],
           "沟通落地": [
             {
               "keyword": "communication",
@@ -2866,7 +4267,8 @@
         "labels": [
           "沟通"
         ]
-      }
+      },
+      "detailUrl": "./skills/stakeholder-map/"
     },
     {
       "slug": "competitor-analysis",
@@ -2880,11 +4282,14 @@
         "策略定位": 9,
         "规划定义": 0,
         "数据分析": 6,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 31,
       "basePmScore": 21,
-      "baseIncluded": false,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -2906,6 +4311,9 @@
               "weight": 6
             }
           ],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -2932,58 +4340,8 @@
           "研究",
           "策略"
         ]
-      }
-    },
-    {
-      "slug": "iot-query",
-      "title": "IoT 智能家居竞品功能研究引擎",
-      "description": "IoT 智能家居竞品功能研究引擎（Capability Research Task）。触发场景： 1. 用户输入能力主题研究，如\"语音助手功能研究\"、\"自动化能力研究\"、\"智能门锁生态研究\" 2. 用户说\"分析 [功能/平台]\"、\"对比 [能力]\"、\"[平台] 最新动态\"、\"研究 [主题]\" 3. 用户提出具体能力问题，如\"三星 Matter 摄像头支持到哪一步了\" 不触发场景：生成完整周报（用 iot-weekly-research）；速读单篇文章（用 iot-url）。",
-      "sourcePath": "~/.codex/skills/iot-query/SKILL.md",
-      "modifiedAt": "2026-03-19T08:10:35.971Z",
-      "primaryDimension": "发现研究",
-      "dimensionScores": {
-        "发现研究": 10,
-        "策略定位": 0,
-        "规划定义": 0,
-        "数据分析": 0,
-        "沟通落地": 0
       },
-      "pmScore": 31,
-      "basePmScore": 17,
-      "baseIncluded": false,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [
-            {
-              "keyword": "research",
-              "weight": 10
-            }
-          ],
-          "策略定位": [],
-          "规划定义": [],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "research",
-            "weight": 7
-          }
-        ],
-        "penalties": []
-      },
-      "included": true,
-      "override": {
-        "applied": true,
-        "scoreDelta": 14,
-        "forceInclude": true,
-        "forceExclude": false,
-        "primaryDimension": null,
-        "note": "垂类竞品研究技能对行业 PM 很有价值，手工纳入。",
-        "labels": [
-          "行业研究"
-        ]
-      }
+      "detailUrl": "./skills/competitor-analysis/"
     },
     {
       "slug": "product-vision",
@@ -2997,11 +4355,14 @@
         "策略定位": 9,
         "规划定义": 8,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 31,
       "basePmScore": 17,
-      "baseIncluded": false,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -3018,6 +4379,9 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -3039,7 +4403,8 @@
         "labels": [
           "策略"
         ]
-      }
+      },
+      "detailUrl": "./skills/product-vision/"
     },
     {
       "slug": "job-stories",
@@ -3053,6 +4418,9 @@
         "策略定位": 0,
         "规划定义": 16,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 30,
@@ -3086,6 +4454,9 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -3097,7 +4468,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/job-stories/"
     },
     {
       "slug": "pricing-strategy",
@@ -3111,6 +4483,9 @@
         "策略定位": 19,
         "规划定义": 0,
         "数据分析": 6,
+        "设计体验": 10,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 30,
@@ -3136,6 +4511,14 @@
               "weight": 6
             }
           ],
+          "设计体验": [
+            {
+              "keyword": "design",
+              "weight": 10
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -3151,7 +4534,8 @@
         "penalties": []
       },
       "included": true,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/pricing-strategy/"
     },
     {
       "slug": "sql-queries",
@@ -3165,11 +4549,14 @@
         "策略定位": 0,
         "规划定义": 0,
         "数据分析": 18,
+        "设计体验": 8,
+        "增长营销": 0,
+        "视觉表达": 10,
         "沟通落地": 0
       },
       "pmScore": 30,
       "basePmScore": 18,
-      "baseIncluded": false,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -3183,6 +4570,19 @@
             {
               "keyword": "data",
               "weight": 8
+            }
+          ],
+          "设计体验": [
+            {
+              "keyword": "ui",
+              "weight": 8
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [
+            {
+              "keyword": "diagram",
+              "weight": 10
             }
           ],
           "沟通落地": []
@@ -3201,41 +4601,52 @@
         "labels": [
           "分析"
         ]
-      }
+      },
+      "detailUrl": "./skills/sql-queries/"
     },
     {
-      "slug": "brainstorm-ideas-existing",
-      "title": "brainstorm-ideas-existing",
-      "description": "Brainstorm product ideas for an existing product using multi-perspective ideation from PM, Designer, and Engineer viewpoints. Use when generating new feature ideas, brainstorming solutions for an identified opportunity, or ideating with a product trio.",
-      "sourcePath": "~/.codex/skills/brainstorm-ideas-existing/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.694Z",
-      "primaryDimension": "发现研究",
+      "slug": "brainstorm-experiments-new",
+      "title": "brainstorm-experiments-new",
+      "description": "Design lean startup experiments (pretotypes) for a new product. Creates XYZ hypotheses and suggests low-effort validation methods like landing pages, explainer videos, and pre-orders. Use when validating a new product idea, creating pretotypes, or testing market demand.",
+      "sourcePath": "~/.codex/skills/brainstorm-experiments-new/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.689Z",
+      "primaryDimension": "设计体验",
       "dimensionScores": {
-        "发现研究": 8,
-        "策略定位": 0,
-        "规划定义": 7,
+        "发现研究": 0,
+        "策略定位": 8,
+        "规划定义": 0,
         "数据分析": 0,
+        "设计体验": 15,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
-      "pmScore": 30,
-      "basePmScore": 30,
+      "pmScore": 29,
+      "basePmScore": 29,
       "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
-          "发现研究": [
+          "发现研究": [],
+          "策略定位": [
             {
-              "keyword": "opportunity",
+              "keyword": "market",
               "weight": 8
             }
           ],
-          "策略定位": [],
-          "规划定义": [
+          "规划定义": [],
+          "数据分析": [],
+          "设计体验": [
             {
-              "keyword": "feature",
-              "weight": 7
+              "keyword": "design",
+              "weight": 10
+            },
+            {
+              "keyword": "page",
+              "weight": 5
             }
           ],
-          "数据分析": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -3244,126 +4655,15 @@
             "weight": 8
           },
           {
-            "keyword": "pm",
-            "weight": 8
-          },
-          {
-            "keyword": "feature",
+            "keyword": "market",
             "weight": 6
           }
         ],
         "penalties": []
       },
       "included": true,
-      "override": null
-    },
-    {
-      "slug": "marketing-ideas",
-      "title": "Marketing Ideas",
-      "description": "Generate 5 creative, cost-effective marketing ideas with channels, messaging, and engagement rationale. Use when brainstorming marketing campaigns, planning product promotion, or looking for creative marketing tactics.",
-      "sourcePath": "~/.codex/skills/marketing-ideas/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.658Z",
-      "primaryDimension": "策略定位",
-      "dimensionScores": {
-        "发现研究": 0,
-        "策略定位": 8,
-        "规划定义": 6,
-        "数据分析": 0,
-        "沟通落地": 0
-      },
-      "pmScore": 27,
-      "basePmScore": 27,
-      "baseIncluded": false,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [],
-          "策略定位": [
-            {
-              "keyword": "market",
-              "weight": 8
-            }
-          ],
-          "规划定义": [
-            {
-              "keyword": "plan",
-              "weight": 6
-            }
-          ],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "product",
-            "weight": 8
-          },
-          {
-            "keyword": "market",
-            "weight": 6
-          },
-          {
-            "keyword": "plan",
-            "weight": 5
-          }
-        ],
-        "penalties": []
-      },
-      "included": false,
-      "override": null
-    },
-    {
-      "slug": "porters-five-forces",
-      "title": "Porter's Five Forces",
-      "description": "Perform Porter's Five Forces analysis — competitive rivalry, supplier power, buyer power, threat of substitutes, and threat of new entrants. Use when analyzing industry dynamics, assessing competitive forces, or evaluating market attractiveness.",
-      "sourcePath": "~/.codex/skills/porters-five-forces/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.761Z",
-      "primaryDimension": "策略定位",
-      "dimensionScores": {
-        "发现研究": 0,
-        "策略定位": 16,
-        "规划定义": 0,
-        "数据分析": 6,
-        "沟通落地": 0
-      },
-      "pmScore": 26,
-      "basePmScore": 26,
-      "baseIncluded": false,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [],
-          "策略定位": [
-            {
-              "keyword": "market",
-              "weight": 8
-            },
-            {
-              "keyword": "porter",
-              "weight": 8
-            }
-          ],
-          "规划定义": [],
-          "数据分析": [
-            {
-              "keyword": "analysis",
-              "weight": 6
-            }
-          ],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "market",
-            "weight": 6
-          },
-          {
-            "keyword": "analysis",
-            "weight": 4
-          }
-        ],
-        "penalties": []
-      },
-      "included": false,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/brainstorm-experiments-new/"
     },
     {
       "slug": "prioritize-assumptions",
@@ -3377,11 +4677,14 @@
         "策略定位": 7,
         "规划定义": 10,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 25,
       "basePmScore": 18,
-      "baseIncluded": false,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -3403,6 +4706,9 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -3425,7 +4731,8 @@
           "发现",
           "风险"
         ]
-      }
+      },
+      "detailUrl": "./skills/prioritize-assumptions/"
     },
     {
       "slug": "brainstorm-okrs",
@@ -3439,11 +4746,14 @@
         "策略定位": 10,
         "规划定义": 8,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
       "pmScore": 22,
       "basePmScore": 17,
-      "baseIncluded": false,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -3460,6 +4770,9 @@
             }
           ],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -3481,198 +4794,8 @@
         "labels": [
           "目标"
         ]
-      }
-    },
-    {
-      "slug": "brainstorm-experiments-new",
-      "title": "brainstorm-experiments-new",
-      "description": "Design lean startup experiments (pretotypes) for a new product. Creates XYZ hypotheses and suggests low-effort validation methods like landing pages, explainer videos, and pre-orders. Use when validating a new product idea, creating pretotypes, or testing market demand.",
-      "sourcePath": "~/.codex/skills/brainstorm-experiments-new/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.689Z",
-      "primaryDimension": "策略定位",
-      "dimensionScores": {
-        "发现研究": 0,
-        "策略定位": 8,
-        "规划定义": 0,
-        "数据分析": 0,
-        "沟通落地": 0
       },
-      "pmScore": 22,
-      "basePmScore": 22,
-      "baseIncluded": false,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [],
-          "策略定位": [
-            {
-              "keyword": "market",
-              "weight": 8
-            }
-          ],
-          "规划定义": [],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "product",
-            "weight": 8
-          },
-          {
-            "keyword": "market",
-            "weight": 6
-          }
-        ],
-        "penalties": []
-      },
-      "included": false,
-      "override": null
-    },
-    {
-      "slug": "growth-loops",
-      "title": "Growth Loops",
-      "description": "Identify growth loops (flywheels) for sustainable traction. Evaluates 5 loop types: Viral, Usage, Collaboration, User-Generated, and Referral. Use when designing growth mechanisms, building product-led traction, or understanding how growth loops work.",
-      "sourcePath": "~/.codex/skills/growth-loops/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.607Z",
-      "primaryDimension": "策略定位",
-      "dimensionScores": {
-        "发现研究": 6,
-        "策略定位": 8,
-        "规划定义": 0,
-        "数据分析": 0,
-        "沟通落地": 0
-      },
-      "pmScore": 21,
-      "basePmScore": 21,
-      "baseIncluded": false,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [
-            {
-              "keyword": "user",
-              "weight": 6
-            }
-          ],
-          "策略定位": [
-            {
-              "keyword": "growth",
-              "weight": 8
-            }
-          ],
-          "规划定义": [],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "product",
-            "weight": 8
-          },
-          {
-            "keyword": "user",
-            "weight": 5
-          }
-        ],
-        "penalties": []
-      },
-      "included": false,
-      "override": null
-    },
-    {
-      "slug": "identify-assumptions-existing",
-      "title": "identify-assumptions-existing",
-      "description": "Identify risky assumptions for a feature idea in an existing product across Value, Usability, Viability, and Feasibility. Uses multi-perspective devil's advocate thinking. Use when stress-testing a feature idea, doing risk assessment, or preparing for assumption mapping.",
-      "sourcePath": "~/.codex/skills/identify-assumptions-existing/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.703Z",
-      "primaryDimension": "发现研究",
-      "dimensionScores": {
-        "发现研究": 7,
-        "策略定位": 0,
-        "规划定义": 7,
-        "数据分析": 0,
-        "沟通落地": 0
-      },
-      "pmScore": 21,
-      "basePmScore": 21,
-      "baseIncluded": false,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [
-            {
-              "keyword": "assumption",
-              "weight": 7
-            }
-          ],
-          "策略定位": [],
-          "规划定义": [
-            {
-              "keyword": "feature",
-              "weight": 7
-            }
-          ],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "product",
-            "weight": 8
-          },
-          {
-            "keyword": "feature",
-            "weight": 6
-          }
-        ],
-        "penalties": []
-      },
-      "included": false,
-      "override": null
-    },
-    {
-      "slug": "prioritization-frameworks",
-      "title": "prioritization-frameworks",
-      "description": "Reference guide to 9 prioritization frameworks with formulas, when-to-use guidance, and templates — RICE, ICE, Kano, MoSCoW, Opportunity Score, and more. Use when selecting a prioritization method, comparing frameworks like RICE vs ICE, or learning how different prioritization approaches work.",
-      "sourcePath": "~/.codex/skills/prioritization-frameworks/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.561Z",
-      "primaryDimension": "规划定义",
-      "dimensionScores": {
-        "发现研究": 8,
-        "策略定位": 0,
-        "规划定义": 10,
-        "数据分析": 0,
-        "沟通落地": 0
-      },
-      "pmScore": 18,
-      "basePmScore": 18,
-      "baseIncluded": false,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [
-            {
-              "keyword": "opportunity",
-              "weight": 8
-            }
-          ],
-          "策略定位": [],
-          "规划定义": [
-            {
-              "keyword": "priorit",
-              "weight": 10
-            }
-          ],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "priorit",
-            "weight": 8
-          }
-        ],
-        "penalties": []
-      },
-      "included": false,
-      "override": null
+      "detailUrl": "./skills/brainstorm-okrs/"
     },
     {
       "slug": "pestle-analysis",
@@ -3683,21 +4806,24 @@
       "primaryDimension": "策略定位",
       "dimensionScores": {
         "发现研究": 0,
-        "策略定位": 8,
+        "策略定位": 9,
         "规划定义": 6,
         "数据分析": 6,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 7,
         "沟通落地": 0
       },
-      "pmScore": 17,
-      "basePmScore": 17,
-      "baseIncluded": false,
+      "pmScore": 22,
+      "basePmScore": 18,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
           "策略定位": [
             {
               "keyword": "pestle",
-              "weight": 8
+              "weight": 9
             }
           ],
           "规划定义": [
@@ -3710,6 +4836,14 @@
             {
               "keyword": "analysis",
               "weight": 6
+            }
+          ],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [
+            {
+              "keyword": "cover",
+              "weight": 7
             }
           ],
           "沟通落地": []
@@ -3726,8 +4860,81 @@
         ],
         "penalties": []
       },
-      "included": false,
-      "override": null
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 4,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "PESTLE 属于宏观战略分析工具。",
+        "labels": [
+          "战略"
+        ]
+      },
+      "detailUrl": "./skills/pestle-analysis/"
+    },
+    {
+      "slug": "identify-assumptions-existing",
+      "title": "identify-assumptions-existing",
+      "description": "Identify risky assumptions for a feature idea in an existing product across Value, Usability, Viability, and Feasibility. Uses multi-perspective devil's advocate thinking. Use when stress-testing a feature idea, doing risk assessment, or preparing for assumption mapping.",
+      "sourcePath": "~/.codex/skills/identify-assumptions-existing/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.703Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 7,
+        "策略定位": 0,
+        "规划定义": 7,
+        "数据分析": 0,
+        "设计体验": 7,
+        "增长营销": 0,
+        "视觉表达": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 21,
+      "basePmScore": 21,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "assumption",
+              "weight": 7
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "feature",
+              "weight": 7
+            }
+          ],
+          "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "spec",
+              "weight": 7
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": null,
+      "detailUrl": "./skills/identify-assumptions-existing/"
     },
     {
       "slug": "swot-analysis",
@@ -3738,14 +4945,17 @@
       "primaryDimension": "策略定位",
       "dimensionScores": {
         "发现研究": 0,
-        "策略定位": 16,
+        "策略定位": 17,
         "规划定义": 0,
         "数据分析": 6,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
-      "pmScore": 16,
-      "basePmScore": 16,
-      "baseIncluded": false,
+      "pmScore": 19,
+      "basePmScore": 15,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -3756,7 +4966,7 @@
             },
             {
               "keyword": "swot",
-              "weight": 8
+              "weight": 9
             }
           ],
           "规划定义": [],
@@ -3766,6 +4976,9 @@
               "weight": 6
             }
           ],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
@@ -3781,30 +4994,44 @@
         "penalties": [
           {
             "keyword": "nda",
-            "weight": 12
+            "weight": 14
           }
         ]
       },
-      "included": false,
-      "override": null
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 4,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "SWOT 属于常见战略分析技能。",
+        "labels": [
+          "战略"
+        ]
+      },
+      "detailUrl": "./skills/swot-analysis/"
     },
     {
-      "slug": "market-sizing",
-      "title": "Estimate Market Size (TAM, SAM, SOM)",
-      "description": "Estimate market size using TAM, SAM, and SOM with top-down and bottom-up approaches. Use when sizing a market opportunity, estimating addressable market, preparing for investor pitches, or evaluating market entry.",
-      "sourcePath": "~/.codex/skills/market-sizing/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.640Z",
-      "primaryDimension": "发现研究",
+      "slug": "prioritization-frameworks",
+      "title": "prioritization-frameworks",
+      "description": "Reference guide to 9 prioritization frameworks with formulas, when-to-use guidance, and templates — RICE, ICE, Kano, MoSCoW, Opportunity Score, and more. Use when selecting a prioritization method, comparing frameworks like RICE vs ICE, or learning how different prioritization approaches work.",
+      "sourcePath": "~/.codex/skills/prioritization-frameworks/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.561Z",
+      "primaryDimension": "规划定义",
       "dimensionScores": {
         "发现研究": 8,
-        "策略定位": 8,
-        "规划定义": 0,
+        "策略定位": 0,
+        "规划定义": 10,
         "数据分析": 0,
+        "设计体验": 8,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
-      "pmScore": 14,
-      "basePmScore": 14,
-      "baseIncluded": false,
+      "pmScore": 18,
+      "basePmScore": 18,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -3813,59 +5040,92 @@
               "weight": 8
             }
           ],
-          "策略定位": [
+          "策略定位": [],
+          "规划定义": [
             {
-              "keyword": "market",
+              "keyword": "priorit",
+              "weight": 10
+            }
+          ],
+          "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "ui",
               "weight": 8
             }
           ],
-          "规划定义": [],
-          "数据分析": [],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
           {
-            "keyword": "market",
-            "weight": 6
+            "keyword": "priorit",
+            "weight": 8
           }
         ],
         "penalties": []
       },
-      "included": false,
-      "override": null
+      "included": true,
+      "override": null,
+      "detailUrl": "./skills/prioritization-frameworks/"
     },
     {
-      "slug": "mijia-app-figma-spec",
-      "title": "Mijia App Figma Spec",
-      "description": "Apply the official Mijia Harmony app Figma design language to new pages, flow design, UI reviews, and implementation guidance. Use when Codex needs to design, restyle, critique, or map work to the Mijia Figma spec file `1sfio83buMLRzVwpokEudA`, especially for homepage tabs, notification center, camera, add-device, provisioning, and family-management flows.",
-      "sourcePath": "~/.codex/skills/mijia-app-figma-spec/SKILL.md",
-      "modifiedAt": "2026-03-18T12:27:23.045Z",
-      "primaryDimension": "策略定位",
+      "slug": "review-resume",
+      "title": "Resume Review for Product Managers",
+      "description": "Comprehensive PM resume review and tailoring against 10 best practices including XYZ+S formula, keyword optimization, job-specific tailoring, and structure. Use when reviewing a PM resume, preparing for job applications, or improving resume impact.",
+      "sourcePath": "~/.codex/skills/review-resume/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.806Z",
+      "primaryDimension": "设计体验",
       "dimensionScores": {
         "发现研究": 0,
-        "策略定位": 9,
+        "策略定位": 0,
         "规划定义": 0,
         "数据分析": 0,
+        "设计体验": 7,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
-      "pmScore": 9,
-      "basePmScore": 9,
-      "baseIncluded": false,
+      "pmScore": 15,
+      "basePmScore": 15,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
-          "策略定位": [
-            {
-              "keyword": "vision",
-              "weight": 9
-            }
-          ],
+          "策略定位": [],
           "规划定义": [],
           "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "spec",
+              "weight": 7
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
-        "bonuses": [],
-        "penalties": []
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "pm",
+            "weight": 8
+          },
+          {
+            "keyword": "product manager",
+            "weight": 8
+          }
+        ],
+        "penalties": [
+          {
+            "keyword": "resume",
+            "weight": 16
+          }
+        ]
       },
       "included": false,
       "override": {
@@ -3874,11 +5134,12 @@
         "forceInclude": false,
         "forceExclude": true,
         "primaryDimension": null,
-        "note": "偏设计规范映射，默认不计入通用 PM 榜单。",
+        "note": "求职场景工具，不纳入产品工作流主榜。",
         "labels": [
           "排除"
         ]
-      }
+      },
+      "detailUrl": "./skills/review-resume/"
     },
     {
       "slug": "grammar-check",
@@ -3892,6 +5153,9 @@
         "策略定位": 0,
         "规划定义": 0,
         "数据分析": 0,
+        "设计体验": 7,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 8
       },
       "pmScore": 8,
@@ -3903,6 +5167,14 @@
           "策略定位": [],
           "规划定义": [],
           "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "flow",
+              "weight": 7
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": [
             {
               "keyword": "grammar",
@@ -3914,24 +5186,28 @@
         "penalties": []
       },
       "included": false,
-      "override": null
+      "override": null,
+      "detailUrl": "./skills/grammar-check/"
     },
     {
-      "slug": "product-name",
-      "title": "Product Name",
-      "description": "Brainstorm 5 unique, memorable product names with rationale aligned to brand values and target audience. Use when naming a new product, rebranding, or exploring product name ideas.",
-      "sourcePath": "~/.codex/skills/product-name/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.671Z",
-      "primaryDimension": "发现研究",
+      "slug": "develop-web-game",
+      "title": "Develop Web Game",
+      "description": "Use when Codex is building or iterating on a web game (HTML/JS) and needs a reliable development + testing loop: implement small changes, run a Playwright-based test script with short input bursts and intentional pauses, inspect screenshots/text, and review console errors with render_game_to_text.",
+      "sourcePath": "~/.codex/skills/develop-web-game/SKILL.md",
+      "modifiedAt": "2026-02-27T12:41:39.856Z",
+      "primaryDimension": "设计体验",
       "dimensionScores": {
         "发现研究": 0,
         "策略定位": 0,
         "规划定义": 0,
         "数据分析": 0,
+        "设计体验": 15,
+        "增长营销": 0,
+        "视觉表达": 0,
         "沟通落地": 0
       },
-      "pmScore": 8,
-      "basePmScore": 8,
+      "pmScore": 0,
+      "basePmScore": 0,
       "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
@@ -3939,49 +5215,21 @@
           "策略定位": [],
           "规划定义": [],
           "数据分析": [],
+          "设计体验": [
+            {
+              "keyword": "ui",
+              "weight": 8
+            },
+            {
+              "keyword": "spec",
+              "weight": 7
+            }
+          ],
+          "增长营销": [],
+          "视觉表达": [],
           "沟通落地": []
         },
         "bonuses": [
-          {
-            "keyword": "product",
-            "weight": 8
-          }
-        ],
-        "penalties": []
-      },
-      "included": false,
-      "override": null
-    },
-    {
-      "slug": "review-resume",
-      "title": "Resume Review for Product Managers",
-      "description": "Comprehensive PM resume review and tailoring against 10 best practices including XYZ+S formula, keyword optimization, job-specific tailoring, and structure. Use when reviewing a PM resume, preparing for job applications, or improving resume impact.",
-      "sourcePath": "~/.codex/skills/review-resume/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.806Z",
-      "primaryDimension": "发现研究",
-      "dimensionScores": {
-        "发现研究": 0,
-        "策略定位": 0,
-        "规划定义": 0,
-        "数据分析": 0,
-        "沟通落地": 0
-      },
-      "pmScore": 2,
-      "basePmScore": 2,
-      "baseIncluded": false,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [],
-          "策略定位": [],
-          "规划定义": [],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "product",
-            "weight": 8
-          },
           {
             "keyword": "pm",
             "weight": 8
@@ -3989,8 +5237,8 @@
         ],
         "penalties": [
           {
-            "keyword": "resume",
-            "weight": 14
+            "keyword": "web game",
+            "weight": 24
           }
         ]
       },
@@ -4001,11 +5249,12 @@
         "forceInclude": false,
         "forceExclude": true,
         "primaryDimension": null,
-        "note": "求职场景工具，不纳入 PM 工作流主榜。",
+        "note": "面向前端游戏开发，不纳入产品相关榜单。",
         "labels": [
           "排除"
         ]
-      }
+      },
+      "detailUrl": "./skills/develop-web-game/"
     },
     {
       "slug": "privacy-policy",
@@ -4019,6 +5268,9 @@
         "策略定位": 0,
         "规划定义": 0,
         "数据分析": 8,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 7,
         "沟通落地": 0
       },
       "pmScore": 0,
@@ -4035,13 +5287,21 @@
               "weight": 8
             }
           ],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [
+            {
+              "keyword": "cover",
+              "weight": 7
+            }
+          ],
           "沟通落地": []
         },
         "bonuses": [],
         "penalties": [
           {
             "keyword": "privacy policy",
-            "weight": 12
+            "weight": 14
           }
         ]
       },
@@ -4052,248 +5312,12 @@
         "forceInclude": false,
         "forceExclude": true,
         "primaryDimension": null,
-        "note": "合规文书类技能，不纳入 PM 主榜。",
+        "note": "合规文书类技能，不纳入产品相关主榜。",
         "labels": [
           "排除"
         ]
-      }
-    },
-    {
-      "slug": "imagegen",
-      "title": "Image Generation Skill",
-      "description": "Use when the user asks to generate or edit images via the OpenAI Image API (for example: generate image, edit/inpaint/mask, background removal or replacement, transparent background, product shots, concept art, covers, or batch variants); run the bundled CLI (`scripts/image_gen.py`) and require `OPENAI_API_KEY` for live calls.",
-      "sourcePath": "~/.codex/skills/imagegen/SKILL.md",
-      "modifiedAt": "2026-03-19T12:06:55.422Z",
-      "primaryDimension": "发现研究",
-      "dimensionScores": {
-        "发现研究": 6,
-        "策略定位": 0,
-        "规划定义": 0,
-        "数据分析": 0,
-        "沟通落地": 0
       },
-      "pmScore": 0,
-      "basePmScore": 0,
-      "baseIncluded": false,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [
-            {
-              "keyword": "user",
-              "weight": 6
-            }
-          ],
-          "策略定位": [],
-          "规划定义": [],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "product",
-            "weight": 8
-          },
-          {
-            "keyword": "user",
-            "weight": 5
-          }
-        ],
-        "penalties": [
-          {
-            "keyword": "image api",
-            "weight": 18
-          },
-          {
-            "keyword": "image",
-            "weight": 8
-          }
-        ]
-      },
-      "included": false,
-      "override": {
-        "applied": true,
-        "scoreDelta": 0,
-        "forceInclude": false,
-        "forceExclude": true,
-        "primaryDimension": null,
-        "note": "偏内容生成，不属于 PM 核心工作流。",
-        "labels": [
-          "排除"
-        ]
-      }
-    },
-    {
-      "slug": "figma-implement-design",
-      "title": "Implement Design",
-      "description": "Translate Figma nodes into production-ready code with 1:1 visual fidelity using the Figma MCP workflow (design context, screenshots, assets, and project-convention translation). Trigger when the user provides Figma URLs or node IDs, or asks to implement designs or components that must match Figma specs. Requires a working Figma MCP server connection.",
-      "sourcePath": "~/.codex/skills/figma-implement-design/SKILL.md",
-      "modifiedAt": "2026-02-27T12:41:34.904Z",
-      "primaryDimension": "发现研究",
-      "dimensionScores": {
-        "发现研究": 6,
-        "策略定位": 0,
-        "规划定义": 0,
-        "数据分析": 0,
-        "沟通落地": 0
-      },
-      "pmScore": 0,
-      "basePmScore": 0,
-      "baseIncluded": false,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [
-            {
-              "keyword": "user",
-              "weight": 6
-            }
-          ],
-          "策略定位": [],
-          "规划定义": [],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "product",
-            "weight": 8
-          },
-          {
-            "keyword": "user",
-            "weight": 5
-          }
-        ],
-        "penalties": [
-          {
-            "keyword": "figma nodes",
-            "weight": 12
-          },
-          {
-            "keyword": "production-ready code",
-            "weight": 12
-          }
-        ]
-      },
-      "included": false,
-      "override": {
-        "applied": true,
-        "scoreDelta": 0,
-        "forceInclude": false,
-        "forceExclude": true,
-        "primaryDimension": null,
-        "note": "偏设计实现，不属于 PM 主榜的核心技能。",
-        "labels": [
-          "排除"
-        ]
-      }
-    },
-    {
-      "slug": "better-icons",
-      "title": "Better Icons",
-      "description": "Use when working with icons in any project. Provides CLI for searching 200+ icon libraries (Iconify) and retrieving SVGs. Commands: `better-icons search <query>` to find icons, `better-icons get <id>` to get SVG. Also available as MCP server for AI agents.",
-      "sourcePath": "~/.codex/skills/better-icons/SKILL.md",
-      "modifiedAt": "2026-03-19T12:17:24.824Z",
-      "primaryDimension": "发现研究",
-      "dimensionScores": {
-        "发现研究": 0,
-        "策略定位": 0,
-        "规划定义": 0,
-        "数据分析": 0,
-        "沟通落地": 0
-      },
-      "pmScore": 0,
-      "basePmScore": 0,
-      "baseIncluded": false,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [],
-          "策略定位": [],
-          "规划定义": [],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [],
-        "penalties": [
-          {
-            "keyword": "icon",
-            "weight": 18
-          },
-          {
-            "keyword": "icons",
-            "weight": 18
-          },
-          {
-            "keyword": "svg",
-            "weight": 15
-          }
-        ]
-      },
-      "included": false,
-      "override": {
-        "applied": true,
-        "scoreDelta": 0,
-        "forceInclude": false,
-        "forceExclude": true,
-        "primaryDimension": null,
-        "note": "偏设计资源工具，不纳入 PM skills 主榜。",
-        "labels": [
-          "排除"
-        ]
-      }
-    },
-    {
-      "slug": "develop-web-game",
-      "title": "Develop Web Game",
-      "description": "Use when Codex is building or iterating on a web game (HTML/JS) and needs a reliable development + testing loop: implement small changes, run a Playwright-based test script with short input bursts and intentional pauses, inspect screenshots/text, and review console errors with render_game_to_text.",
-      "sourcePath": "~/.codex/skills/develop-web-game/SKILL.md",
-      "modifiedAt": "2026-02-27T12:41:39.856Z",
-      "primaryDimension": "发现研究",
-      "dimensionScores": {
-        "发现研究": 0,
-        "策略定位": 0,
-        "规划定义": 0,
-        "数据分析": 0,
-        "沟通落地": 0
-      },
-      "pmScore": 0,
-      "basePmScore": 0,
-      "baseIncluded": false,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [],
-          "策略定位": [],
-          "规划定义": [],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "pm",
-            "weight": 8
-          }
-        ],
-        "penalties": [
-          {
-            "keyword": "web game",
-            "weight": 20
-          },
-          {
-            "keyword": "html/js",
-            "weight": 8
-          }
-        ]
-      },
-      "included": false,
-      "override": {
-        "applied": true,
-        "scoreDelta": 0,
-        "forceInclude": false,
-        "forceExclude": true,
-        "primaryDimension": null,
-        "note": "面向前端游戏开发，不纳入产品经理榜单。",
-        "labels": [
-          "排除"
-        ]
-      }
+      "detailUrl": "./skills/privacy-policy/"
     },
     {
       "slug": "draft-nda",
@@ -4301,12 +5325,15 @@
       "description": "Draft a detailed Non-Disclosure Agreement between two parties covering information types, jurisdiction, and clauses needing legal review. Use when creating confidentiality agreements or preparing an NDA for a partnership.",
       "sourcePath": "~/.codex/skills/draft-nda/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.793Z",
-      "primaryDimension": "发现研究",
+      "primaryDimension": "视觉表达",
       "dimensionScores": {
         "发现研究": 0,
         "策略定位": 0,
         "规划定义": 0,
         "数据分析": 0,
+        "设计体验": 0,
+        "增长营销": 0,
+        "视觉表达": 7,
         "沟通落地": 0
       },
       "pmScore": 0,
@@ -4318,13 +5345,25 @@
           "策略定位": [],
           "规划定义": [],
           "数据分析": [],
+          "设计体验": [],
+          "增长营销": [],
+          "视觉表达": [
+            {
+              "keyword": "cover",
+              "weight": 7
+            }
+          ],
           "沟通落地": []
         },
         "bonuses": [],
         "penalties": [
           {
             "keyword": "nda",
-            "weight": 12
+            "weight": 14
+          },
+          {
+            "keyword": "non-disclosure agreement",
+            "weight": 14
           }
         ]
       },
@@ -4335,11 +5374,12 @@
         "forceInclude": false,
         "forceExclude": true,
         "primaryDimension": null,
-        "note": "法务文书类技能，不纳入 PM 主榜。",
+        "note": "法务文书类技能，不纳入产品相关主榜。",
         "labels": [
           "排除"
         ]
-      }
+      },
+      "detailUrl": "./skills/draft-nda/"
     }
   ]
 }

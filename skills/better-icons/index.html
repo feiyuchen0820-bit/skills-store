@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Better Icons · Skills 详情</title>
+    <meta name="description" content="Use when working with icons in any project. Provides CLI for searching 200+ icon libraries (Iconify) and retrieving SVGs. Commands: `better-icons search &lt;query&gt;` to find icons, `better-icons get &lt;id&gt;` to get SVG. Also available as MCP server for AI agents." />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero-card">
+        <p class="eyebrow">Skill 详情</p>
+        <h1>Better Icons</h1>
+        <p class="hero-copy">Use when working with icons in any project. Provides CLI for searching 200+ icon libraries (Iconify) and retrieving SVGs. Commands: `better-icons search &lt;query&gt;` to find icons, `better-icons get &lt;id&gt;` to get SVG. Also available as MCP server for AI agents.</p>
+        <div class="score-badges">
+          <span class="score-pill">推荐分 46</span>
+          <span class="dimension-pill">视觉表达</span>
+        </div>
+        <div class="override-note">手工规则：图标与视觉素材能力属于设计/画图工作流，应该收录。</div>
+        <div class="toolbar-meta">
+          <span>来源：~/.codex/skills/better-icons/SKILL.md</span>
+          <span>最近修改：2026-03-19T12:17:24.824Z</span>
+        </div>
+      </section>
+
+      <section class="toolbar-card">
+        <div class="skill-bottomline">
+          <a class="link-button" href="../../">← 返回目录</a>
+          <a class="link-button" href="https://github.com/feiyuchen0820-bit/skills-store">仓库</a>
+        </div>
+        <div class="section-label">命中关键词</div>
+        <div class="keyword-list">
+          <span class="keyword-pill">icon +10</span><span class="keyword-pill">icons +10</span><span class="keyword-pill">svg +8</span>
+        </div>
+      </section>
+
+      <section class="skill-card">
+        <div class="section-label">原始 SKILL.md</div>
+        <pre class="skill-markdown">---
+name: better-icons
+description: &#39;Use when working with icons in any project. Provides CLI for searching 200+ icon libraries (Iconify) and retrieving SVGs. Commands: `better-icons search &lt;query&gt;` to find icons, `better-icons get &lt;id&gt;` to get SVG. Also available as MCP server for AI agents.&#39;
+---
+
+# Better Icons
+
+Search and retrieve icons from 200+ libraries via Iconify.
+
+## CLI
+
+```bash
+# Search icons
+better-icons search &lt;query&gt; [--prefix &lt;prefix&gt;] [--limit &lt;n&gt;] [--json]
+
+# Search and download all found icons as SVG files
+better-icons search &lt;query&gt; -d [dir] [--color &lt;color&gt;] [--size &lt;px&gt;]
+
+# Get icon SVG (outputs to stdout)
+better-icons get &lt;icon-id&gt; [--color &lt;color&gt;] [--size &lt;px&gt;] [--json]
+
+# Setup MCP server for AI agents
+better-icons setup [-a cursor,claude-code] [-s global|project]
+```
+
+## Examples
+
+```bash
+better-icons search arrow --limit 10
+better-icons search home --json | jq &#39;.icons[0]&#39;
+better-icons get lucide:home &gt; icon.svg
+better-icons get mdi:home --color &#39;#333&#39; --json
+
+# Batch download all search results
+better-icons search arrow -d              # saves to ./icons/
+better-icons search check -d ./my-icons   # saves to ./my-icons/
+better-icons search star -d -c &#39;#000&#39; -s 24 --limit 64
+```
+
+## Icon ID Format
+
+`prefix:name` - e.g., `lucide:home`, `mdi:arrow-right`, `heroicons:check`
+
+## Popular Collections
+
+`lucide`, `mdi`, `heroicons`, `tabler`, `ph`, `ri`, `solar`, `iconamoon`
+
+---
+
+## MCP Tools (for AI agents)
+
+| Tool | Description |
+|------|-------------|
+| `search_icons` | Search across all libraries |
+| `get_icon` | Get single icon SVG |
+| `get_icons` | Batch retrieve multiple icons |
+| `list_collections` | Browse available icon sets |
+| `recommend_icons` | Smart recommendations for use cases |
+| `find_similar_icons` | Find variations across collections |
+| `sync_icon` | Add icon to project file |
+| `scan_project_icons` | List icons in project |
+
+## TypeScript Interfaces
+
+```typescript
+interface SearchIcons {
+  query: string
+  limit?: number        // 1-999, default 32
+  prefix?: string       // e.g., &#39;mdi&#39;, &#39;lucide&#39;
+  category?: string     // e.g., &#39;General&#39;, &#39;Emoji&#39;
+}
+
+interface GetIcon {
+  icon_id: string       // &#39;prefix:name&#39; format
+  color?: string        // e.g., &#39;#ff0000&#39;, &#39;currentColor&#39;
+  size?: number         // pixels
+}
+
+interface GetIcons {
+  icon_ids: string[]    // max 20
+  color?: string
+  size?: number
+}
+
+interface RecommendIcons {
+  use_case: string      // e.g., &#39;navigation menu&#39;
+  style?: &#39;solid&#39; | &#39;outline&#39; | &#39;any&#39;
+  limit?: number        // default 10
+}
+
+interface SyncIcon {
+  icons_file: string    // absolute path
+  framework: &#39;react&#39; | &#39;vue&#39; | &#39;svelte&#39; | &#39;solid&#39; | &#39;svg&#39;
+  icon_id: string
+  component_name?: string
+}
+```
+
+## API
+
+All icons from `https://api.iconify.design`
+</pre>
+      </section>
+    </main>
+  </body>
+</html>
