@@ -12,6 +12,16 @@ if ! command -v npm >/dev/null 2>&1; then
   exit 1
 fi
 
+if ! command -v gh >/dev/null 2>&1; then
+  echo "gh 未安装，无法自动推送到 GitHub。"
+  exit 1
+fi
+
+if ! gh auth status >/dev/null 2>&1; then
+  echo "gh 尚未登录，请先执行: gh auth login"
+  exit 1
+fi
+
 if [ -f package-lock.json ]; then
   npm ci
 else
@@ -30,6 +40,8 @@ if ! git remote get-url origin >/dev/null 2>&1; then
   exit 1
 fi
 
+gh auth setup-git >/dev/null 2>&1 || true
+
 if [ -n "$(git status --porcelain -- data/skills.json)" ]; then
   git add data/skills.json
   git commit -m "chore: refresh PM skills index $(date '+%Y-%m-%d')"
@@ -38,4 +50,3 @@ if [ -n "$(git status --porcelain -- data/skills.json)" ]; then
 else
   echo "data/skills.json 无变化，跳过提交。"
 fi
-

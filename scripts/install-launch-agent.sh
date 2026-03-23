@@ -10,6 +10,16 @@ LOG_DIR="$HOME/Library/Logs"
 
 cd "$ROOT_DIR"
 
+if ! command -v gh >/dev/null 2>&1; then
+  echo "gh 未安装，请先安装并登录 GitHub。"
+  exit 1
+fi
+
+if ! gh auth status >/dev/null 2>&1; then
+  echo "gh 尚未登录。请先执行: gh auth login"
+  exit 1
+fi
+
 if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   echo "当前目录还不是 git 仓库，请先执行: git init -b main"
   exit 1

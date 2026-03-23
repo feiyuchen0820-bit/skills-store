@@ -304,6 +304,33 @@ function validatePayload(payload) {
   }
 }
 
+function buildComparablePayload(payload) {
+  return {
+    ...payload,
+    meta: {
+      ...payload.meta,
+      generatedAt: null
+    }
+  };
+}
+
+async function readExistingOutput() {
+  try {
+    const raw = await fs.readFile(outputPath, "utf8");
+
+    return {
+      raw,
+      payload: JSON.parse(raw)
+    };
+  } catch (error) {
+    if (error && error.code === "ENOENT") {
+      return null;
+    }
+
+    throw error;
+  }
+}
+
 async function main() {
   const skillFiles = await collectSkillFiles(sourceRoot, taxonomy.excludeDirs);
   const skills = [];
@@ -355,8 +382,26 @@ async function main() {
     skills
   };
 
+  const existingOutput = await readExistingOutput();
+
+  if (existingOutput) {
+    const nextComparable = JSON.stringify(buildComparablePayload(payload));
+    const existingComparable = JSON.stringify(
+      buildComparablePayload(existingOutput.payload)
+    );
+
+    if (nextComparable === existingComparable) {
+      payload.meta.generatedAt = existingOutput.payload.meta.generatedAt;
+    }
+  }
+
+  const nextOutput = `${JSON.stringify(payload, null, 2)}\n`;
+
   await fs.mkdir(path.dirname(outputPath), { recursive: true });
-  await fs.writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+
+  if (!existingOutput || existingOutput.raw !== nextOutput) {
+    await fs.writeFile(outputPath, nextOutput, "utf8");
+  }
 
   if (shouldValidate) {
     validatePayload(payload);
@@ -364,11 +409,16 @@ async function main() {
       `Validation passed: ${payload.meta.includedSkills}/${payload.meta.totalSkills} PM skills included.`
     );
   } else {
-    console.log(
-      `Built ${payload.meta.totalSkills} skills, included ${payload.meta.includedSkills}.`
-    );
+    if (existingOutput && existingOutput.raw === nextOutput) {
+      console.log(
+        `No data changes. Preserved ${payload.meta.includedSkills}/${payload.meta.totalSkills} PM skills.`
+      );
+    } else {
+      console.log(
+        `Built ${payload.meta.totalSkills} skills, included ${payload.meta.includedSkills}.`
+      );
+    }
   }
 }
 
 await main();
-

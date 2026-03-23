@@ -32,6 +32,20 @@ else
   exit 1
 fi
 
+if command -v gh >/dev/null 2>&1; then
+  echo "✓ gh: $(gh --version | head -n 1)"
+else
+  echo "✗ gh 未安装，无法自动创建仓库或每日推送"
+  exit 1
+fi
+
+if gh auth status >/dev/null 2>&1; then
+  echo "✓ gh 已登录"
+else
+  echo "✗ gh 未登录，请先执行: gh auth login"
+  exit 1
+fi
+
 if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   echo "✓ 当前目录已是 git 仓库"
 else
@@ -58,4 +72,3 @@ if [ -f "$LAUNCH_AGENT_TARGET" ]; then
 else
   echo "○ 尚未安装 launchd 定时任务，可执行: npm run install:launchd"
 fi
-

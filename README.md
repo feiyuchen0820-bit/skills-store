@@ -44,6 +44,7 @@ git push -u origin main
 先确保：
 
 - GitHub 远端已配置为 `origin`
+- `gh` 已安装且已登录 GitHub
 - 本机可直接访问 `/Users/chenfeiyu/.codex/skills`
 - 已执行过一次 `npm install`
 
