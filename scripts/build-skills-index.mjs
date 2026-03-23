@@ -9,12 +9,13 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const workspaceRoot = path.resolve(__dirname, "..");
 const taxonomyPath = path.join(workspaceRoot, "config", "pm-taxonomy.json");
+const overridesPath = path.join(workspaceRoot, "config", "pm-overrides.json");
 const outputPath = path.join(workspaceRoot, "data", "skills.json");
 const shouldValidate = process.argv.includes("--validate");
 
 const taxonomy = JSON.parse(await fs.readFile(taxonomyPath, "utf8"));
+const overrides = JSON.parse(await fs.readFile(overridesPath, "utf8"));
 const sourceRoot = process.env.SKILLS_ROOT || taxonomy.sourceRoot;
-
 const dimensionOrder = taxonomy.dimensions.map((dimension) => dimension.key);
 
 function clamp(value, min, max) {
@@ -166,6 +167,28 @@ function formatSourcePath(absolutePath) {
   return absolutePath;
 }
 
+function validateOverrideConfig() {
+  for (const [slug, rule] of Object.entries(overrides.skills || {})) {
+    if (rule.forceInclude && rule.forceExclude) {
+      throw new Error(`手工规则冲突: ${slug} 不能同时 forceInclude 和 forceExclude`);
+    }
+
+    if (
+      rule.primaryDimension &&
+      !dimensionOrder.includes(rule.primaryDimension)
+    ) {
+      throw new Error(`手工规则维度非法: ${slug} -> ${rule.primaryDimension}`);
+    }
+
+    if (
+      "scoreDelta" in rule &&
+      (typeof rule.scoreDelta !== "number" || Number.isNaN(rule.scoreDelta))
+    ) {
+      throw new Error(`手工规则 scoreDelta 非法: ${slug}`);
+    }
+  }
+}
+
 function buildScorecard(skill) {
   const rawHaystack = [skill.slug, skill.title, skill.description]
     .join(" ")
@@ -245,6 +268,57 @@ function buildScorecard(skill) {
   };
 }
 
+function applyManualOverride(skill, scorecard) {
+  const rule = overrides.skills?.[skill.slug];
+
+  if (!rule) {
+    return {
+      ...scorecard,
+      basePmScore: scorecard.pmScore,
+      baseIncluded: scorecard.included,
+      override: null
+    };
+  }
+
+  const scoreDelta =
+    typeof rule.scoreDelta === "number" && !Number.isNaN(rule.scoreDelta)
+      ? rule.scoreDelta
+      : 0;
+  const primaryDimension = rule.primaryDimension || scorecard.primaryDimension;
+  const pmScore = clamp(scorecard.pmScore + scoreDelta, 0, 100);
+
+  let included = pmScore >= taxonomy.includeThreshold;
+
+  if (rule.forceInclude) {
+    included = true;
+  }
+
+  if (rule.forceExclude) {
+    included = false;
+  }
+
+  return {
+    ...scorecard,
+    primaryDimension,
+    pmScore,
+    included,
+    basePmScore: scorecard.pmScore,
+    baseIncluded: scorecard.included,
+    override: {
+      applied: true,
+      scoreDelta,
+      forceInclude: Boolean(rule.forceInclude),
+      forceExclude: Boolean(rule.forceExclude),
+      primaryDimension:
+        rule.primaryDimension && rule.primaryDimension !== scorecard.primaryDimension
+          ? rule.primaryDimension
+          : null,
+      note: String(rule.note || ""),
+      labels: Array.isArray(rule.labels) ? rule.labels : []
+    }
+  };
+}
+
 function validatePayload(payload) {
   const errors = [];
   const skillsBySlug = new Map(payload.skills.map((skill) => [skill.slug, skill]));
@@ -259,8 +333,10 @@ function validatePayload(payload) {
       "primaryDimension",
       "dimensionScores",
       "pmScore",
+      "basePmScore",
       "matchedKeywords",
-      "included"
+      "included",
+      "override"
     ];
 
     for (const field of requiredFields) {
@@ -299,6 +375,23 @@ function validatePayload(payload) {
     }
   }
 
+  for (const [slug, rule] of Object.entries(overrides.skills || {})) {
+    const skill = skillsBySlug.get(slug);
+
+    if (!skill) {
+      errors.push(`手工规则引用了不存在的 skill: ${slug}`);
+      continue;
+    }
+
+    if (rule.forceInclude && !skill.included) {
+      errors.push(`手工 forceInclude 未生效: ${slug}`);
+    }
+
+    if (rule.forceExclude && skill.included) {
+      errors.push(`手工 forceExclude 未生效: ${slug}`);
+    }
+  }
+
   if (errors.length > 0) {
     throw new Error(errors.join("\n"));
   }
@@ -332,6 +425,8 @@ async function readExistingOutput() {
 }
 
 async function main() {
+  validateOverrideConfig();
+
   const skillFiles = await collectSkillFiles(sourceRoot, taxonomy.excludeDirs);
   const skills = [];
 
@@ -342,7 +437,10 @@ async function main() {
     const slug = String(frontmatter.name || path.basename(path.dirname(absolutePath)));
     const title = parseTitle(markdown) || slug;
     const description = String(frontmatter.description || "").trim();
-    const scorecard = buildScorecard({ slug, title, description });
+    const scorecard = applyManualOverride(
+      { slug, title, description },
+      buildScorecard({ slug, title, description })
+    );
 
     skills.push({
       slug,
@@ -353,8 +451,11 @@ async function main() {
       primaryDimension: scorecard.primaryDimension,
       dimensionScores: scorecard.dimensionScores,
       pmScore: scorecard.pmScore,
+      basePmScore: scorecard.basePmScore,
+      baseIncluded: scorecard.baseIncluded,
       matchedKeywords: scorecard.matchedKeywords,
-      included: scorecard.included
+      included: scorecard.included,
+      override: scorecard.override
     });
   }
 
@@ -369,6 +470,13 @@ async function main() {
     countsByDimension[skill.primaryDimension] += 1;
   }
 
+  const manualOverrideCount = skills.filter(
+    (skill) => skill.override?.applied
+  ).length;
+  const manualIncludedCount = includedSkills.filter(
+    (skill) => skill.override?.applied
+  ).length;
+
   const payload = {
     meta: {
       generatedAt: new Date().toISOString(),
@@ -376,6 +484,8 @@ async function main() {
       includeThreshold: taxonomy.includeThreshold,
       totalSkills: skills.length,
       includedSkills: includedSkills.length,
+      manualOverrideCount,
+      manualIncludedCount,
       countsByDimension,
       dimensions: dimensionOrder
     },
@@ -408,17 +518,19 @@ async function main() {
     console.log(
       `Validation passed: ${payload.meta.includedSkills}/${payload.meta.totalSkills} PM skills included.`
     );
-  } else {
-    if (existingOutput && existingOutput.raw === nextOutput) {
-      console.log(
-        `No data changes. Preserved ${payload.meta.includedSkills}/${payload.meta.totalSkills} PM skills.`
-      );
-    } else {
-      console.log(
-        `Built ${payload.meta.totalSkills} skills, included ${payload.meta.includedSkills}.`
-      );
-    }
+    return;
   }
+
+  if (existingOutput && existingOutput.raw === nextOutput) {
+    console.log(
+      `No data changes. Preserved ${payload.meta.includedSkills}/${payload.meta.totalSkills} PM skills.`
+    );
+    return;
+  }
+
+  console.log(
+    `Built ${payload.meta.totalSkills} skills, included ${payload.meta.includedSkills}.`
+  );
 }
 
 await main();

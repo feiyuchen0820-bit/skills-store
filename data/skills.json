@@ -1,15 +1,17 @@
 {
   "meta": {
-    "generatedAt": "2026-03-23T06:52:54.757Z",
+    "generatedAt": "2026-03-23T12:43:21.452Z",
     "sourceRoot": "~/.codex/skills",
     "includeThreshold": 30,
     "totalSkills": 71,
-    "includedSkills": 41,
+    "includedSkills": 52,
+    "manualOverrideCount": 24,
+    "manualIncludedCount": 16,
     "countsByDimension": {
-      "发现研究": 12,
-      "策略定位": 12,
-      "规划定义": 10,
-      "数据分析": 6,
+      "发现研究": 15,
+      "策略定位": 15,
+      "规划定义": 14,
+      "数据分析": 7,
       "沟通落地": 1
     },
     "dimensions": [
@@ -21,81 +23,6 @@
     ]
   },
   "skills": [
-    {
-      "slug": "user-personas",
-      "title": "User Personas",
-      "description": "Create refined user personas from research data — 3 personas with JTBD, pains, gains, and unexpected insights. Use when building personas from survey data, creating user profiles from research, or segmenting users for product decisions.",
-      "sourcePath": "~/.codex/skills/user-personas/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.648Z",
-      "primaryDimension": "发现研究",
-      "dimensionScores": {
-        "发现研究": 62,
-        "策略定位": 0,
-        "规划定义": 0,
-        "数据分析": 8,
-        "沟通落地": 0
-      },
-      "pmScore": 82,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [
-            {
-              "keyword": "research",
-              "weight": 10
-            },
-            {
-              "keyword": "user",
-              "weight": 6
-            },
-            {
-              "keyword": "persona",
-              "weight": 10
-            },
-            {
-              "keyword": "personas",
-              "weight": 10
-            },
-            {
-              "keyword": "segment",
-              "weight": 8
-            },
-            {
-              "keyword": "jtbd",
-              "weight": 10
-            },
-            {
-              "keyword": "insight",
-              "weight": 8
-            }
-          ],
-          "策略定位": [],
-          "规划定义": [],
-          "数据分析": [
-            {
-              "keyword": "data",
-              "weight": 8
-            }
-          ],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "product",
-            "weight": 8
-          },
-          {
-            "keyword": "user",
-            "weight": 5
-          },
-          {
-            "keyword": "research",
-            "weight": 7
-          }
-        ],
-        "penalties": []
-      },
-      "included": true
-    },
     {
       "slug": "interview-script",
       "title": "interview-script",
@@ -110,7 +37,9 @@
         "数据分析": 0,
         "沟通落地": 0
       },
-      "pmScore": 77,
+      "pmScore": 85,
+      "basePmScore": 77,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -169,7 +98,19 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 8,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "用户访谈是 discovery 的核心方法，手工置顶。",
+        "labels": [
+          "核心",
+          "研究"
+        ]
+      }
     },
     {
       "slug": "product-strategy",
@@ -185,7 +126,9 @@
         "数据分析": 20,
         "沟通落地": 0
       },
-      "pmScore": 77,
+      "pmScore": 85,
+      "basePmScore": 77,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -258,58 +201,75 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 8,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "产品策略类技能应稳定处于榜单前列。",
+        "labels": [
+          "核心",
+          "策略"
+        ]
+      }
     },
     {
-      "slug": "gtm-strategy",
-      "title": "GTM Strategy",
-      "description": "Create a go-to-market strategy covering marketing channels, messaging, success metrics, and launch timeline. Use when planning a product launch, creating a GTM plan from scratch, or defining a launch strategy for a new market.",
-      "sourcePath": "~/.codex/skills/gtm-strategy/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.616Z",
-      "primaryDimension": "策略定位",
+      "slug": "user-personas",
+      "title": "User Personas",
+      "description": "Create refined user personas from research data — 3 personas with JTBD, pains, gains, and unexpected insights. Use when building personas from survey data, creating user profiles from research, or segmenting users for product decisions.",
+      "sourcePath": "~/.codex/skills/user-personas/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.648Z",
+      "primaryDimension": "发现研究",
       "dimensionScores": {
-        "发现研究": 0,
-        "策略定位": 36,
-        "规划定义": 6,
-        "数据分析": 20,
+        "发现研究": 62,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 8,
         "沟通落地": 0
       },
-      "pmScore": 73,
+      "pmScore": 82,
+      "basePmScore": 82,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
-          "发现研究": [],
-          "策略定位": [
+          "发现研究": [
             {
-              "keyword": "strategy",
+              "keyword": "research",
               "weight": 10
             },
             {
-              "keyword": "market",
+              "keyword": "user",
+              "weight": 6
+            },
+            {
+              "keyword": "persona",
+              "weight": 10
+            },
+            {
+              "keyword": "personas",
+              "weight": 10
+            },
+            {
+              "keyword": "segment",
               "weight": 8
             },
             {
-              "keyword": "gtm",
-              "weight": 9
+              "keyword": "jtbd",
+              "weight": 10
             },
             {
-              "keyword": "go-to-market",
-              "weight": 9
+              "keyword": "insight",
+              "weight": 8
             }
           ],
-          "规划定义": [
-            {
-              "keyword": "plan",
-              "weight": 6
-            }
-          ],
+          "策略定位": [],
+          "规划定义": [],
           "数据分析": [
             {
-              "keyword": "metric",
-              "weight": 10
-            },
-            {
-              "keyword": "metrics",
-              "weight": 10
+              "keyword": "data",
+              "weight": 8
             }
           ],
           "沟通落地": []
@@ -320,29 +280,18 @@
             "weight": 8
           },
           {
-            "keyword": "strategy",
+            "keyword": "user",
+            "weight": 5
+          },
+          {
+            "keyword": "research",
             "weight": 7
-          },
-          {
-            "keyword": "market",
-            "weight": 6
-          },
-          {
-            "keyword": "metric",
-            "weight": 6
-          },
-          {
-            "keyword": "plan",
-            "weight": 5
-          },
-          {
-            "keyword": "launch",
-            "weight": 5
           }
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "create-prd",
@@ -358,7 +307,9 @@
         "数据分析": 0,
         "沟通落地": 0
       },
-      "pmScore": 71,
+      "pmScore": 81,
+      "basePmScore": 71,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -422,7 +373,106 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 10,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "PRD 是产品经理最高频的定义类交付物，手工上调以保持榜单稳定。",
+        "labels": [
+          "核心",
+          "文档"
+        ]
+      }
+    },
+    {
+      "slug": "gtm-strategy",
+      "title": "GTM Strategy",
+      "description": "Create a go-to-market strategy covering marketing channels, messaging, success metrics, and launch timeline. Use when planning a product launch, creating a GTM plan from scratch, or defining a launch strategy for a new market.",
+      "sourcePath": "~/.codex/skills/gtm-strategy/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.616Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 36,
+        "规划定义": 6,
+        "数据分析": 20,
+        "沟通落地": 0
+      },
+      "pmScore": 73,
+      "basePmScore": 73,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "strategy",
+              "weight": 10
+            },
+            {
+              "keyword": "market",
+              "weight": 8
+            },
+            {
+              "keyword": "gtm",
+              "weight": 9
+            },
+            {
+              "keyword": "go-to-market",
+              "weight": 9
+            }
+          ],
+          "规划定义": [
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [
+            {
+              "keyword": "metric",
+              "weight": 10
+            },
+            {
+              "keyword": "metrics",
+              "weight": 10
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "strategy",
+            "weight": 7
+          },
+          {
+            "keyword": "market",
+            "weight": 6
+          },
+          {
+            "keyword": "metric",
+            "weight": 6
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          },
+          {
+            "keyword": "launch",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": null
     },
     {
       "slug": "sentiment-analysis",
@@ -439,6 +489,8 @@
         "沟通落地": 0
       },
       "pmScore": 67,
+      "basePmScore": 67,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -497,7 +549,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "metrics-dashboard",
@@ -514,6 +567,8 @@
         "沟通落地": 0
       },
       "pmScore": 64,
+      "basePmScore": 64,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -564,7 +619,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "beachhead-segment",
@@ -581,6 +637,8 @@
         "沟通落地": 0
       },
       "pmScore": 64,
+      "basePmScore": 64,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -644,74 +702,8 @@
         ],
         "penalties": []
       },
-      "included": true
-    },
-    {
-      "slug": "pre-mortem",
-      "title": "Pre-Mortem: Risk Analysis for Product Launch",
-      "description": "Run a pre-mortem risk analysis on a PRD or launch plan. Categorizes risks as Tigers (real problems), Paper Tigers (overblown concerns), and Elephants (unspoken worries), then classifies as launch-blocking, fast-follow, or track. Use when preparing for launch, stress-testing a product plan, or identifying what could go wrong.",
-      "sourcePath": "~/.codex/skills/pre-mortem/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.557Z",
-      "primaryDimension": "规划定义",
-      "dimensionScores": {
-        "发现研究": 0,
-        "策略定位": 0,
-        "规划定义": 26,
-        "数据分析": 6,
-        "沟通落地": 0
-      },
-      "pmScore": 58,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [],
-          "策略定位": [],
-          "规划定义": [
-            {
-              "keyword": "prd",
-              "weight": 12
-            },
-            {
-              "keyword": "plan",
-              "weight": 6
-            },
-            {
-              "keyword": "pre-mortem",
-              "weight": 8
-            }
-          ],
-          "数据分析": [
-            {
-              "keyword": "analysis",
-              "weight": 6
-            }
-          ],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "product",
-            "weight": 8
-          },
-          {
-            "keyword": "prd",
-            "weight": 10
-          },
-          {
-            "keyword": "analysis",
-            "weight": 4
-          },
-          {
-            "keyword": "plan",
-            "weight": 5
-          },
-          {
-            "keyword": "launch",
-            "weight": 5
-          }
-        ],
-        "penalties": []
-      },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "ab-test-analysis",
@@ -727,7 +719,9 @@
         "数据分析": 64,
         "沟通落地": 0
       },
-      "pmScore": 56,
+      "pmScore": 62,
+      "basePmScore": 56,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -778,7 +772,89 @@
           }
         ]
       },
-      "included": true
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 6,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "实验分析是增长和优化场景中的高价值 PM 技能。",
+        "labels": [
+          "高频",
+          "数据"
+        ]
+      }
+    },
+    {
+      "slug": "pre-mortem",
+      "title": "Pre-Mortem: Risk Analysis for Product Launch",
+      "description": "Run a pre-mortem risk analysis on a PRD or launch plan. Categorizes risks as Tigers (real problems), Paper Tigers (overblown concerns), and Elephants (unspoken worries), then classifies as launch-blocking, fast-follow, or track. Use when preparing for launch, stress-testing a product plan, or identifying what could go wrong.",
+      "sourcePath": "~/.codex/skills/pre-mortem/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.557Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 26,
+        "数据分析": 6,
+        "沟通落地": 0
+      },
+      "pmScore": 58,
+      "basePmScore": 58,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "prd",
+              "weight": 12
+            },
+            {
+              "keyword": "plan",
+              "weight": 6
+            },
+            {
+              "keyword": "pre-mortem",
+              "weight": 8
+            }
+          ],
+          "数据分析": [
+            {
+              "keyword": "analysis",
+              "weight": 6
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "prd",
+            "weight": 10
+          },
+          {
+            "keyword": "analysis",
+            "weight": 4
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          },
+          {
+            "keyword": "launch",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": null
     },
     {
       "slug": "release-notes",
@@ -795,6 +871,8 @@
         "沟通落地": 17
       },
       "pmScore": 55,
+      "basePmScore": 55,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -850,7 +928,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "positioning-ideas",
@@ -867,6 +946,8 @@
         "沟通落地": 0
       },
       "pmScore": 52,
+      "basePmScore": 52,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -904,7 +985,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "market-segments",
@@ -921,6 +1003,8 @@
         "沟通落地": 0
       },
       "pmScore": 50,
+      "basePmScore": 50,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -972,7 +1056,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "ideal-customer-profile",
@@ -989,6 +1074,8 @@
         "沟通落地": 0
       },
       "pmScore": 49,
+      "basePmScore": 49,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -1031,7 +1118,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "user-segmentation",
@@ -1048,6 +1136,8 @@
         "沟通落地": 0
       },
       "pmScore": 48,
+      "basePmScore": 48,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -1094,7 +1184,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "cohort-analysis",
@@ -1111,6 +1202,8 @@
         "沟通落地": 0
       },
       "pmScore": 48,
+      "basePmScore": 48,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -1170,7 +1263,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "identify-assumptions-new",
@@ -1187,6 +1281,8 @@
         "沟通落地": 0
       },
       "pmScore": 48,
+      "basePmScore": 48,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -1229,7 +1325,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "startup-canvas",
@@ -1246,6 +1343,8 @@
         "沟通落地": 0
       },
       "pmScore": 47,
+      "basePmScore": 47,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -1283,7 +1382,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "ansoff-matrix",
@@ -1300,6 +1400,8 @@
         "沟通落地": 0
       },
       "pmScore": 47,
+      "basePmScore": 47,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -1351,7 +1453,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "analyze-feature-requests",
@@ -1368,6 +1471,8 @@
         "沟通落地": 7
       },
       "pmScore": 46,
+      "basePmScore": 46,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -1420,7 +1525,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "gtm-motions",
@@ -1437,6 +1543,8 @@
         "沟通落地": 0
       },
       "pmScore": 45,
+      "basePmScore": 45,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -1479,7 +1587,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "summarize-interview",
@@ -1496,6 +1605,8 @@
         "沟通落地": 8
       },
       "pmScore": 44,
+      "basePmScore": 44,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -1534,7 +1645,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "north-star-metric",
@@ -1551,6 +1663,8 @@
         "沟通落地": 0
       },
       "pmScore": 44,
+      "basePmScore": 44,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -1584,7 +1698,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "monetization-strategy",
@@ -1601,6 +1716,8 @@
         "沟通落地": 0
       },
       "pmScore": 43,
+      "basePmScore": 43,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -1634,7 +1751,91 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
+    },
+    {
+      "slug": "prioritize-features",
+      "title": "prioritize-features",
+      "description": "Prioritize a backlog of feature ideas based on impact, effort, risk, and strategic alignment with top 5 recommendations. Use when prioritizing a feature backlog, making scope decisions, or ranking product ideas.",
+      "sourcePath": "~/.codex/skills/prioritize-features/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.730Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 26,
+        "数据分析": 12,
+        "沟通落地": 7
+      },
+      "pmScore": 43,
+      "basePmScore": 36,
+      "baseIncluded": true,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "priorit",
+              "weight": 10
+            },
+            {
+              "keyword": "feature",
+              "weight": 7
+            },
+            {
+              "keyword": "backlog",
+              "weight": 9
+            }
+          ],
+          "数据分析": [
+            {
+              "keyword": "a/b",
+              "weight": 12
+            }
+          ],
+          "沟通落地": [
+            {
+              "keyword": "alignment",
+              "weight": 7
+            }
+          ]
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          },
+          {
+            "keyword": "priorit",
+            "weight": 8
+          }
+        ],
+        "penalties": [
+          {
+            "keyword": "nda",
+            "weight": 12
+          }
+        ]
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 7,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "优先级评估是日常路线图与范围管理核心能力。",
+        "labels": [
+          "高频",
+          "规划"
+        ]
+      }
     },
     {
       "slug": "competitive-battlecard",
@@ -1651,6 +1852,8 @@
         "沟通落地": 7
       },
       "pmScore": 41,
+      "basePmScore": 41,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -1694,7 +1897,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "lean-canvas",
@@ -1711,6 +1915,8 @@
         "沟通落地": 0
       },
       "pmScore": 38,
+      "basePmScore": 38,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -1750,7 +1956,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "dummy-dataset",
@@ -1767,6 +1974,8 @@
         "沟通落地": 0
       },
       "pmScore": 38,
+      "basePmScore": 38,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -1796,7 +2005,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "wwas",
@@ -1813,6 +2023,8 @@
         "沟通落地": 0
       },
       "pmScore": 37,
+      "basePmScore": 37,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -1846,7 +2058,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "summarize-meeting",
@@ -1863,6 +2076,8 @@
         "沟通落地": 32
       },
       "pmScore": 36,
+      "basePmScore": 36,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -1896,76 +2111,8 @@
         ],
         "penalties": []
       },
-      "included": true
-    },
-    {
-      "slug": "prioritize-features",
-      "title": "prioritize-features",
-      "description": "Prioritize a backlog of feature ideas based on impact, effort, risk, and strategic alignment with top 5 recommendations. Use when prioritizing a feature backlog, making scope decisions, or ranking product ideas.",
-      "sourcePath": "~/.codex/skills/prioritize-features/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.730Z",
-      "primaryDimension": "规划定义",
-      "dimensionScores": {
-        "发现研究": 0,
-        "策略定位": 0,
-        "规划定义": 26,
-        "数据分析": 12,
-        "沟通落地": 7
-      },
-      "pmScore": 36,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [],
-          "策略定位": [],
-          "规划定义": [
-            {
-              "keyword": "priorit",
-              "weight": 10
-            },
-            {
-              "keyword": "feature",
-              "weight": 7
-            },
-            {
-              "keyword": "backlog",
-              "weight": 9
-            }
-          ],
-          "数据分析": [
-            {
-              "keyword": "a/b",
-              "weight": 12
-            }
-          ],
-          "沟通落地": [
-            {
-              "keyword": "alignment",
-              "weight": 7
-            }
-          ]
-        },
-        "bonuses": [
-          {
-            "keyword": "product",
-            "weight": 8
-          },
-          {
-            "keyword": "feature",
-            "weight": 6
-          },
-          {
-            "keyword": "priorit",
-            "weight": 8
-          }
-        ],
-        "penalties": [
-          {
-            "keyword": "nda",
-            "weight": 12
-          }
-        ]
-      },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "test-scenarios",
@@ -1982,6 +2129,8 @@
         "沟通落地": 0
       },
       "pmScore": 36,
+      "basePmScore": 36,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -2024,7 +2173,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "outcome-roadmap",
@@ -2041,6 +2191,8 @@
         "沟通落地": 0
       },
       "pmScore": 36,
+      "basePmScore": 36,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -2079,7 +2231,67 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
+    },
+    {
+      "slug": "sprint-plan",
+      "title": "sprint-plan",
+      "description": "Plan a sprint with capacity estimation, story selection, dependency mapping, and risk identification. Use when preparing for sprint planning, estimating team capacity, selecting stories, or balancing sprint scope against velocity.",
+      "sourcePath": "~/.codex/skills/sprint-plan/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.574Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 23,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 34,
+      "basePmScore": 28,
+      "baseIncluded": false,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "story",
+              "weight": 9
+            },
+            {
+              "keyword": "sprint",
+              "weight": 8
+            },
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "plan",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 6,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "迭代计划与跨团队协作强相关，手工纳入。",
+        "labels": [
+          "协作"
+        ]
+      }
     },
     {
       "slug": "user-stories",
@@ -2096,6 +2308,8 @@
         "沟通落地": 0
       },
       "pmScore": 34,
+      "basePmScore": 34,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -2134,7 +2348,64 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
+    },
+    {
+      "slug": "opportunity-solution-tree",
+      "title": "opportunity-solution-tree",
+      "description": "Build an Opportunity Solution Tree (OST) to structure product discovery — map a desired outcome to opportunities, solutions, and experiments. Based on Teresa Torres' Continuous Discovery Habits. Use when structuring discovery work, mapping opportunities to solutions, or deciding what to build next.",
+      "sourcePath": "~/.codex/skills/opportunity-solution-tree/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.721Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 18,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 34,
+      "basePmScore": 26,
+      "baseIncluded": false,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "discovery",
+              "weight": 10
+            },
+            {
+              "keyword": "opportunity",
+              "weight": 8
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 8,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "OST 是持续产品发现的重要框架，手工补足权重。",
+        "labels": [
+          "发现",
+          "框架"
+        ]
+      }
     },
     {
       "slug": "customer-journey-map",
@@ -2151,6 +2422,8 @@
         "沟通落地": 0
       },
       "pmScore": 33,
+      "basePmScore": 33,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -2184,7 +2457,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "value-proposition",
@@ -2201,6 +2475,8 @@
         "沟通落地": 0
       },
       "pmScore": 32,
+      "basePmScore": 32,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -2239,7 +2515,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "brainstorm-experiments-existing",
@@ -2256,6 +2533,8 @@
         "沟通落地": 0
       },
       "pmScore": 32,
+      "basePmScore": 32,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -2299,7 +2578,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "brainstorm-ideas-new",
@@ -2316,6 +2596,8 @@
         "沟通落地": 0
       },
       "pmScore": 32,
+      "basePmScore": 32,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -2350,7 +2632,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "value-prop-statements",
@@ -2367,6 +2650,8 @@
         "沟通落地": 0
       },
       "pmScore": 31,
+      "basePmScore": 31,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -2396,7 +2681,365 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
+    },
+    {
+      "slug": "retro",
+      "title": "retro",
+      "description": "Facilitate a structured sprint retrospective — what went well, what didn't, and prioritized action items with owners and deadlines. Use when running a retrospective, reflecting on a sprint, creating action items from team feedback, or learning how to run effective retros.",
+      "sourcePath": "~/.codex/skills/retro/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.570Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 9,
+        "策略定位": 0,
+        "规划定义": 18,
+        "数据分析": 0,
+        "沟通落地": 9
+      },
+      "pmScore": 31,
+      "basePmScore": 26,
+      "baseIncluded": false,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "feedback",
+              "weight": 9
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "priorit",
+              "weight": 10
+            },
+            {
+              "keyword": "sprint",
+              "weight": 8
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": [
+            {
+              "keyword": "retro",
+              "weight": 9
+            }
+          ]
+        },
+        "bonuses": [
+          {
+            "keyword": "priorit",
+            "weight": 8
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 5,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "复盘属于 PM 常见的节奏管理与团队协作动作。",
+        "labels": [
+          "协作"
+        ]
+      }
+    },
+    {
+      "slug": "business-model",
+      "title": "Business Model Canvas",
+      "description": "Generate a Business Model Canvas with all 9 building blocks. Use when creating a business model, documenting how a business creates value, or analyzing an existing business model.",
+      "sourcePath": "~/.codex/skills/business-model/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.743Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 17,
+        "规划定义": 0,
+        "数据分析": 12,
+        "沟通落地": 0
+      },
+      "pmScore": 31,
+      "basePmScore": 17,
+      "baseIncluded": false,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "business model",
+              "weight": 10
+            },
+            {
+              "keyword": "canvas",
+              "weight": 7
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "a/b",
+              "weight": 12
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 14,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "商业模式分析是策略 PM 的重要方法，手工提升。",
+        "labels": [
+          "策略"
+        ]
+      }
+    },
+    {
+      "slug": "stakeholder-map",
+      "title": "stakeholder-map",
+      "description": "Build a stakeholder map using a power/interest grid, identify communication strategies per quadrant, and generate a communication plan. Use when managing stakeholders, preparing for a launch, aligning cross-functional teams, or planning stakeholder engagement.",
+      "sourcePath": "~/.codex/skills/stakeholder-map/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.578Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 14,
+        "数据分析": 0,
+        "沟通落地": 8
+      },
+      "pmScore": 31,
+      "basePmScore": 24,
+      "baseIncluded": false,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "stakeholder",
+              "weight": 8
+            },
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": [
+            {
+              "keyword": "communication",
+              "weight": 8
+            }
+          ]
+        },
+        "bonuses": [
+          {
+            "keyword": "plan",
+            "weight": 5
+          },
+          {
+            "keyword": "launch",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 7,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "关键人管理是资深 PM 的高价值能力。",
+        "labels": [
+          "沟通"
+        ]
+      }
+    },
+    {
+      "slug": "competitor-analysis",
+      "title": "Competitor Analysis",
+      "description": "Analyze competitors with strengths, weaknesses, and differentiation opportunities. Identifies direct competitors and maps the competitive landscape. Use when doing competitive research, preparing a competitive brief, or finding differentiation opportunities.",
+      "sourcePath": "~/.codex/skills/competitor-analysis/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.625Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 10,
+        "策略定位": 9,
+        "规划定义": 0,
+        "数据分析": 6,
+        "沟通落地": 0
+      },
+      "pmScore": 31,
+      "basePmScore": 21,
+      "baseIncluded": false,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "research",
+              "weight": 10
+            }
+          ],
+          "策略定位": [
+            {
+              "keyword": "competitor",
+              "weight": 9
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "analysis",
+              "weight": 6
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "research",
+            "weight": 7
+          },
+          {
+            "keyword": "analysis",
+            "weight": 4
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 10,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "竞品分析虽然文本特征不强，但属于典型 PM 研究能力。",
+        "labels": [
+          "研究",
+          "策略"
+        ]
+      }
+    },
+    {
+      "slug": "iot-query",
+      "title": "IoT 智能家居竞品功能研究引擎",
+      "description": "IoT 智能家居竞品功能研究引擎（Capability Research Task）。触发场景： 1. 用户输入能力主题研究，如\"语音助手功能研究\"、\"自动化能力研究\"、\"智能门锁生态研究\" 2. 用户说\"分析 [功能/平台]\"、\"对比 [能力]\"、\"[平台] 最新动态\"、\"研究 [主题]\" 3. 用户提出具体能力问题，如\"三星 Matter 摄像头支持到哪一步了\" 不触发场景：生成完整周报（用 iot-weekly-research）；速读单篇文章（用 iot-url）。",
+      "sourcePath": "~/.codex/skills/iot-query/SKILL.md",
+      "modifiedAt": "2026-03-19T08:10:35.971Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 10,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 31,
+      "basePmScore": 17,
+      "baseIncluded": false,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "research",
+              "weight": 10
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "research",
+            "weight": 7
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 14,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "垂类竞品研究技能对行业 PM 很有价值，手工纳入。",
+        "labels": [
+          "行业研究"
+        ]
+      }
+    },
+    {
+      "slug": "product-vision",
+      "title": "Product Vision",
+      "description": "Brainstorm an inspiring, achievable, and emotional product vision that motivates teams and aligns stakeholders. Use when defining or refining a product vision, creating a vision statement, or aligning the team around a shared direction.",
+      "sourcePath": "~/.codex/skills/product-vision/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.775Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 9,
+        "规划定义": 8,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 31,
+      "basePmScore": 17,
+      "baseIncluded": false,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "vision",
+              "weight": 9
+            }
+          ],
+          "规划定义": [
+            {
+              "keyword": "stakeholder",
+              "weight": 8
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 14,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "产品愿景对中高阶 PM 很关键，需纳入主榜。",
+        "labels": [
+          "策略"
+        ]
+      }
     },
     {
       "slug": "job-stories",
@@ -2413,6 +3056,8 @@
         "沟通落地": 0
       },
       "pmScore": 30,
+      "basePmScore": 30,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -2451,7 +3096,8 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
     },
     {
       "slug": "pricing-strategy",
@@ -2468,6 +3114,8 @@
         "沟通落地": 0
       },
       "pmScore": 30,
+      "basePmScore": 30,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -2502,7 +3150,58 @@
         ],
         "penalties": []
       },
-      "included": true
+      "included": true,
+      "override": null
+    },
+    {
+      "slug": "sql-queries",
+      "title": "SQL Query Generator",
+      "description": "Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL, MySQL, and other dialects. Reads database schemas from uploaded diagrams or documentation. Use when writing SQL, building data reports, exploring databases, or translating business questions into queries.",
+      "sourcePath": "~/.codex/skills/sql-queries/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.529Z",
+      "primaryDimension": "数据分析",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 18,
+        "沟通落地": 0
+      },
+      "pmScore": 30,
+      "basePmScore": 18,
+      "baseIncluded": false,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "sql",
+              "weight": 10
+            },
+            {
+              "keyword": "data",
+              "weight": 8
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 12,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "SQL 是 PM 自助分析的重要基础能力。",
+        "labels": [
+          "分析"
+        ]
+      }
     },
     {
       "slug": "brainstorm-ideas-existing",
@@ -2519,6 +3218,8 @@
         "沟通落地": 0
       },
       "pmScore": 30,
+      "basePmScore": 30,
+      "baseIncluded": true,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -2553,53 +3254,8 @@
         ],
         "penalties": []
       },
-      "included": true
-    },
-    {
-      "slug": "sprint-plan",
-      "title": "sprint-plan",
-      "description": "Plan a sprint with capacity estimation, story selection, dependency mapping, and risk identification. Use when preparing for sprint planning, estimating team capacity, selecting stories, or balancing sprint scope against velocity.",
-      "sourcePath": "~/.codex/skills/sprint-plan/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.574Z",
-      "primaryDimension": "规划定义",
-      "dimensionScores": {
-        "发现研究": 0,
-        "策略定位": 0,
-        "规划定义": 23,
-        "数据分析": 0,
-        "沟通落地": 0
-      },
-      "pmScore": 28,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [],
-          "策略定位": [],
-          "规划定义": [
-            {
-              "keyword": "story",
-              "weight": 9
-            },
-            {
-              "keyword": "sprint",
-              "weight": 8
-            },
-            {
-              "keyword": "plan",
-              "weight": 6
-            }
-          ],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "plan",
-            "weight": 5
-          }
-        ],
-        "penalties": []
-      },
-      "included": false
+      "included": true,
+      "override": null
     },
     {
       "slug": "marketing-ideas",
@@ -2616,6 +3272,8 @@
         "沟通落地": 0
       },
       "pmScore": 27,
+      "basePmScore": 27,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -2650,101 +3308,8 @@
         ],
         "penalties": []
       },
-      "included": false
-    },
-    {
-      "slug": "opportunity-solution-tree",
-      "title": "opportunity-solution-tree",
-      "description": "Build an Opportunity Solution Tree (OST) to structure product discovery — map a desired outcome to opportunities, solutions, and experiments. Based on Teresa Torres' Continuous Discovery Habits. Use when structuring discovery work, mapping opportunities to solutions, or deciding what to build next.",
-      "sourcePath": "~/.codex/skills/opportunity-solution-tree/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.721Z",
-      "primaryDimension": "发现研究",
-      "dimensionScores": {
-        "发现研究": 18,
-        "策略定位": 0,
-        "规划定义": 0,
-        "数据分析": 0,
-        "沟通落地": 0
-      },
-      "pmScore": 26,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [
-            {
-              "keyword": "discovery",
-              "weight": 10
-            },
-            {
-              "keyword": "opportunity",
-              "weight": 8
-            }
-          ],
-          "策略定位": [],
-          "规划定义": [],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "product",
-            "weight": 8
-          }
-        ],
-        "penalties": []
-      },
-      "included": false
-    },
-    {
-      "slug": "retro",
-      "title": "retro",
-      "description": "Facilitate a structured sprint retrospective — what went well, what didn't, and prioritized action items with owners and deadlines. Use when running a retrospective, reflecting on a sprint, creating action items from team feedback, or learning how to run effective retros.",
-      "sourcePath": "~/.codex/skills/retro/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.570Z",
-      "primaryDimension": "规划定义",
-      "dimensionScores": {
-        "发现研究": 9,
-        "策略定位": 0,
-        "规划定义": 18,
-        "数据分析": 0,
-        "沟通落地": 9
-      },
-      "pmScore": 26,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [
-            {
-              "keyword": "feedback",
-              "weight": 9
-            }
-          ],
-          "策略定位": [],
-          "规划定义": [
-            {
-              "keyword": "priorit",
-              "weight": 10
-            },
-            {
-              "keyword": "sprint",
-              "weight": 8
-            }
-          ],
-          "数据分析": [],
-          "沟通落地": [
-            {
-              "keyword": "retro",
-              "weight": 9
-            }
-          ]
-        },
-        "bonuses": [
-          {
-            "keyword": "priorit",
-            "weight": 8
-          }
-        ],
-        "penalties": []
-      },
-      "included": false
+      "included": false,
+      "override": null
     },
     {
       "slug": "porters-five-forces",
@@ -2761,6 +3326,8 @@
         "沟通落地": 0
       },
       "pmScore": 26,
+      "basePmScore": 26,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -2795,58 +3362,126 @@
         ],
         "penalties": []
       },
-      "included": false
+      "included": false,
+      "override": null
     },
     {
-      "slug": "stakeholder-map",
-      "title": "stakeholder-map",
-      "description": "Build a stakeholder map using a power/interest grid, identify communication strategies per quadrant, and generate a communication plan. Use when managing stakeholders, preparing for a launch, aligning cross-functional teams, or planning stakeholder engagement.",
-      "sourcePath": "~/.codex/skills/stakeholder-map/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.578Z",
+      "slug": "prioritize-assumptions",
+      "title": "prioritize-assumptions",
+      "description": "Prioritize assumptions using an Impact × Risk matrix and suggest experiments for each. Use when triaging a list of assumptions, deciding what to test first, or applying the assumption prioritization canvas.",
+      "sourcePath": "~/.codex/skills/prioritize-assumptions/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.726Z",
       "primaryDimension": "规划定义",
       "dimensionScores": {
-        "发现研究": 0,
-        "策略定位": 0,
-        "规划定义": 14,
+        "发现研究": 7,
+        "策略定位": 7,
+        "规划定义": 10,
         "数据分析": 0,
-        "沟通落地": 8
+        "沟通落地": 0
       },
-      "pmScore": 24,
+      "pmScore": 25,
+      "basePmScore": 18,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
-          "发现研究": [],
-          "策略定位": [],
+          "发现研究": [
+            {
+              "keyword": "assumption",
+              "weight": 7
+            }
+          ],
+          "策略定位": [
+            {
+              "keyword": "canvas",
+              "weight": 7
+            }
+          ],
           "规划定义": [
             {
-              "keyword": "stakeholder",
-              "weight": 8
-            },
-            {
-              "keyword": "plan",
-              "weight": 6
+              "keyword": "priorit",
+              "weight": 10
             }
           ],
           "数据分析": [],
-          "沟通落地": [
-            {
-              "keyword": "communication",
-              "weight": 8
-            }
-          ]
+          "沟通落地": []
         },
         "bonuses": [
           {
-            "keyword": "plan",
-            "weight": 5
-          },
-          {
-            "keyword": "launch",
-            "weight": 5
+            "keyword": "priorit",
+            "weight": 8
           }
         ],
         "penalties": []
       },
-      "included": false
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 7,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "假设优先级属于 discovery 核心能力，应进入主榜。",
+        "labels": [
+          "发现",
+          "风险"
+        ]
+      }
+    },
+    {
+      "slug": "brainstorm-okrs",
+      "title": "Brainstorm Team OKRs",
+      "description": "Brainstorm team-level OKRs aligned with company objectives — qualitative objectives with measurable key results. Use when setting quarterly OKRs, aligning team goals with company strategy, drafting objectives, or learning how to write effective OKRs.",
+      "sourcePath": "~/.codex/skills/brainstorm-okrs/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.534Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 10,
+        "规划定义": 8,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 22,
+      "basePmScore": 17,
+      "baseIncluded": false,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "strategy",
+              "weight": 10
+            }
+          ],
+          "规划定义": [
+            {
+              "keyword": "okr",
+              "weight": 8
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "strategy",
+            "weight": 7
+          }
+        ],
+        "penalties": []
+      },
+      "included": true,
+      "override": {
+        "applied": true,
+        "scoreDelta": 5,
+        "forceInclude": true,
+        "forceExclude": false,
+        "primaryDimension": null,
+        "note": "OKR 对目标管理和团队协同有直接价值。",
+        "labels": [
+          "目标"
+        ]
+      }
     },
     {
       "slug": "brainstorm-experiments-new",
@@ -2863,6 +3498,8 @@
         "沟通落地": 0
       },
       "pmScore": 22,
+      "basePmScore": 22,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -2888,59 +3525,8 @@
         ],
         "penalties": []
       },
-      "included": false
-    },
-    {
-      "slug": "competitor-analysis",
-      "title": "Competitor Analysis",
-      "description": "Analyze competitors with strengths, weaknesses, and differentiation opportunities. Identifies direct competitors and maps the competitive landscape. Use when doing competitive research, preparing a competitive brief, or finding differentiation opportunities.",
-      "sourcePath": "~/.codex/skills/competitor-analysis/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.625Z",
-      "primaryDimension": "发现研究",
-      "dimensionScores": {
-        "发现研究": 10,
-        "策略定位": 9,
-        "规划定义": 0,
-        "数据分析": 6,
-        "沟通落地": 0
-      },
-      "pmScore": 21,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [
-            {
-              "keyword": "research",
-              "weight": 10
-            }
-          ],
-          "策略定位": [
-            {
-              "keyword": "competitor",
-              "weight": 9
-            }
-          ],
-          "规划定义": [],
-          "数据分析": [
-            {
-              "keyword": "analysis",
-              "weight": 6
-            }
-          ],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "research",
-            "weight": 7
-          },
-          {
-            "keyword": "analysis",
-            "weight": 4
-          }
-        ],
-        "penalties": []
-      },
-      "included": false
+      "included": false,
+      "override": null
     },
     {
       "slug": "growth-loops",
@@ -2957,6 +3543,8 @@
         "沟通落地": 0
       },
       "pmScore": 21,
+      "basePmScore": 21,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -2987,7 +3575,8 @@
         ],
         "penalties": []
       },
-      "included": false
+      "included": false,
+      "override": null
     },
     {
       "slug": "identify-assumptions-existing",
@@ -3004,6 +3593,8 @@
         "沟通落地": 0
       },
       "pmScore": 21,
+      "basePmScore": 21,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -3034,44 +3625,8 @@
         ],
         "penalties": []
       },
-      "included": false
-    },
-    {
-      "slug": "sql-queries",
-      "title": "SQL Query Generator",
-      "description": "Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL, MySQL, and other dialects. Reads database schemas from uploaded diagrams or documentation. Use when writing SQL, building data reports, exploring databases, or translating business questions into queries.",
-      "sourcePath": "~/.codex/skills/sql-queries/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.529Z",
-      "primaryDimension": "数据分析",
-      "dimensionScores": {
-        "发现研究": 0,
-        "策略定位": 0,
-        "规划定义": 0,
-        "数据分析": 18,
-        "沟通落地": 0
-      },
-      "pmScore": 18,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [],
-          "策略定位": [],
-          "规划定义": [],
-          "数据分析": [
-            {
-              "keyword": "sql",
-              "weight": 10
-            },
-            {
-              "keyword": "data",
-              "weight": 8
-            }
-          ],
-          "沟通落地": []
-        },
-        "bonuses": [],
-        "penalties": []
-      },
-      "included": false
+      "included": false,
+      "override": null
     },
     {
       "slug": "prioritization-frameworks",
@@ -3088,6 +3643,8 @@
         "沟通落地": 0
       },
       "pmScore": 18,
+      "basePmScore": 18,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -3114,221 +3671,8 @@
         ],
         "penalties": []
       },
-      "included": false
-    },
-    {
-      "slug": "prioritize-assumptions",
-      "title": "prioritize-assumptions",
-      "description": "Prioritize assumptions using an Impact × Risk matrix and suggest experiments for each. Use when triaging a list of assumptions, deciding what to test first, or applying the assumption prioritization canvas.",
-      "sourcePath": "~/.codex/skills/prioritize-assumptions/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.726Z",
-      "primaryDimension": "规划定义",
-      "dimensionScores": {
-        "发现研究": 7,
-        "策略定位": 7,
-        "规划定义": 10,
-        "数据分析": 0,
-        "沟通落地": 0
-      },
-      "pmScore": 18,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [
-            {
-              "keyword": "assumption",
-              "weight": 7
-            }
-          ],
-          "策略定位": [
-            {
-              "keyword": "canvas",
-              "weight": 7
-            }
-          ],
-          "规划定义": [
-            {
-              "keyword": "priorit",
-              "weight": 10
-            }
-          ],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "priorit",
-            "weight": 8
-          }
-        ],
-        "penalties": []
-      },
-      "included": false
-    },
-    {
-      "slug": "business-model",
-      "title": "Business Model Canvas",
-      "description": "Generate a Business Model Canvas with all 9 building blocks. Use when creating a business model, documenting how a business creates value, or analyzing an existing business model.",
-      "sourcePath": "~/.codex/skills/business-model/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.743Z",
-      "primaryDimension": "策略定位",
-      "dimensionScores": {
-        "发现研究": 0,
-        "策略定位": 17,
-        "规划定义": 0,
-        "数据分析": 12,
-        "沟通落地": 0
-      },
-      "pmScore": 17,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [],
-          "策略定位": [
-            {
-              "keyword": "business model",
-              "weight": 10
-            },
-            {
-              "keyword": "canvas",
-              "weight": 7
-            }
-          ],
-          "规划定义": [],
-          "数据分析": [
-            {
-              "keyword": "a/b",
-              "weight": 12
-            }
-          ],
-          "沟通落地": []
-        },
-        "bonuses": [],
-        "penalties": []
-      },
-      "included": false
-    },
-    {
-      "slug": "brainstorm-okrs",
-      "title": "Brainstorm Team OKRs",
-      "description": "Brainstorm team-level OKRs aligned with company objectives — qualitative objectives with measurable key results. Use when setting quarterly OKRs, aligning team goals with company strategy, drafting objectives, or learning how to write effective OKRs.",
-      "sourcePath": "~/.codex/skills/brainstorm-okrs/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.534Z",
-      "primaryDimension": "策略定位",
-      "dimensionScores": {
-        "发现研究": 0,
-        "策略定位": 10,
-        "规划定义": 8,
-        "数据分析": 0,
-        "沟通落地": 0
-      },
-      "pmScore": 17,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [],
-          "策略定位": [
-            {
-              "keyword": "strategy",
-              "weight": 10
-            }
-          ],
-          "规划定义": [
-            {
-              "keyword": "okr",
-              "weight": 8
-            }
-          ],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "strategy",
-            "weight": 7
-          }
-        ],
-        "penalties": []
-      },
-      "included": false
-    },
-    {
-      "slug": "iot-query",
-      "title": "IoT 智能家居竞品功能研究引擎",
-      "description": "IoT 智能家居竞品功能研究引擎（Capability Research Task）。触发场景： 1. 用户输入能力主题研究，如\"语音助手功能研究\"、\"自动化能力研究\"、\"智能门锁生态研究\" 2. 用户说\"分析 [功能/平台]\"、\"对比 [能力]\"、\"[平台] 最新动态\"、\"研究 [主题]\" 3. 用户提出具体能力问题，如\"三星 Matter 摄像头支持到哪一步了\" 不触发场景：生成完整周报（用 iot-weekly-research）；速读单篇文章（用 iot-url）。",
-      "sourcePath": "~/.codex/skills/iot-query/SKILL.md",
-      "modifiedAt": "2026-03-19T08:10:35.971Z",
-      "primaryDimension": "发现研究",
-      "dimensionScores": {
-        "发现研究": 10,
-        "策略定位": 0,
-        "规划定义": 0,
-        "数据分析": 0,
-        "沟通落地": 0
-      },
-      "pmScore": 17,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [
-            {
-              "keyword": "research",
-              "weight": 10
-            }
-          ],
-          "策略定位": [],
-          "规划定义": [],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "research",
-            "weight": 7
-          }
-        ],
-        "penalties": []
-      },
-      "included": false
-    },
-    {
-      "slug": "product-vision",
-      "title": "Product Vision",
-      "description": "Brainstorm an inspiring, achievable, and emotional product vision that motivates teams and aligns stakeholders. Use when defining or refining a product vision, creating a vision statement, or aligning the team around a shared direction.",
-      "sourcePath": "~/.codex/skills/product-vision/SKILL.md",
-      "modifiedAt": "2026-03-19T08:29:09.775Z",
-      "primaryDimension": "策略定位",
-      "dimensionScores": {
-        "发现研究": 0,
-        "策略定位": 9,
-        "规划定义": 8,
-        "数据分析": 0,
-        "沟通落地": 0
-      },
-      "pmScore": 17,
-      "matchedKeywords": {
-        "dimensions": {
-          "发现研究": [],
-          "策略定位": [
-            {
-              "keyword": "vision",
-              "weight": 9
-            }
-          ],
-          "规划定义": [
-            {
-              "keyword": "stakeholder",
-              "weight": 8
-            }
-          ],
-          "数据分析": [],
-          "沟通落地": []
-        },
-        "bonuses": [
-          {
-            "keyword": "product",
-            "weight": 8
-          }
-        ],
-        "penalties": []
-      },
-      "included": false
+      "included": false,
+      "override": null
     },
     {
       "slug": "pestle-analysis",
@@ -3345,6 +3689,8 @@
         "沟通落地": 0
       },
       "pmScore": 17,
+      "basePmScore": 17,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -3380,7 +3726,8 @@
         ],
         "penalties": []
       },
-      "included": false
+      "included": false,
+      "override": null
     },
     {
       "slug": "swot-analysis",
@@ -3397,6 +3744,8 @@
         "沟通落地": 0
       },
       "pmScore": 16,
+      "basePmScore": 16,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -3436,7 +3785,8 @@
           }
         ]
       },
-      "included": false
+      "included": false,
+      "override": null
     },
     {
       "slug": "market-sizing",
@@ -3453,6 +3803,8 @@
         "沟通落地": 0
       },
       "pmScore": 14,
+      "basePmScore": 14,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -3479,7 +3831,8 @@
         ],
         "penalties": []
       },
-      "included": false
+      "included": false,
+      "override": null
     },
     {
       "slug": "mijia-app-figma-spec",
@@ -3496,6 +3849,8 @@
         "沟通落地": 0
       },
       "pmScore": 9,
+      "basePmScore": 9,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -3512,7 +3867,18 @@
         "bonuses": [],
         "penalties": []
       },
-      "included": false
+      "included": false,
+      "override": {
+        "applied": true,
+        "scoreDelta": 0,
+        "forceInclude": false,
+        "forceExclude": true,
+        "primaryDimension": null,
+        "note": "偏设计规范映射，默认不计入通用 PM 榜单。",
+        "labels": [
+          "排除"
+        ]
+      }
     },
     {
       "slug": "grammar-check",
@@ -3529,6 +3895,8 @@
         "沟通落地": 8
       },
       "pmScore": 8,
+      "basePmScore": 8,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -3545,7 +3913,8 @@
         "bonuses": [],
         "penalties": []
       },
-      "included": false
+      "included": false,
+      "override": null
     },
     {
       "slug": "product-name",
@@ -3562,6 +3931,8 @@
         "沟通落地": 0
       },
       "pmScore": 8,
+      "basePmScore": 8,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -3578,7 +3949,8 @@
         ],
         "penalties": []
       },
-      "included": false
+      "included": false,
+      "override": null
     },
     {
       "slug": "review-resume",
@@ -3595,6 +3967,8 @@
         "沟通落地": 0
       },
       "pmScore": 2,
+      "basePmScore": 2,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -3620,7 +3994,18 @@
           }
         ]
       },
-      "included": false
+      "included": false,
+      "override": {
+        "applied": true,
+        "scoreDelta": 0,
+        "forceInclude": false,
+        "forceExclude": true,
+        "primaryDimension": null,
+        "note": "求职场景工具，不纳入 PM 工作流主榜。",
+        "labels": [
+          "排除"
+        ]
+      }
     },
     {
       "slug": "privacy-policy",
@@ -3637,6 +4022,8 @@
         "沟通落地": 0
       },
       "pmScore": 0,
+      "basePmScore": 0,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -3658,7 +4045,18 @@
           }
         ]
       },
-      "included": false
+      "included": false,
+      "override": {
+        "applied": true,
+        "scoreDelta": 0,
+        "forceInclude": false,
+        "forceExclude": true,
+        "primaryDimension": null,
+        "note": "合规文书类技能，不纳入 PM 主榜。",
+        "labels": [
+          "排除"
+        ]
+      }
     },
     {
       "slug": "imagegen",
@@ -3675,6 +4073,8 @@
         "沟通落地": 0
       },
       "pmScore": 0,
+      "basePmScore": 0,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -3709,7 +4109,18 @@
           }
         ]
       },
-      "included": false
+      "included": false,
+      "override": {
+        "applied": true,
+        "scoreDelta": 0,
+        "forceInclude": false,
+        "forceExclude": true,
+        "primaryDimension": null,
+        "note": "偏内容生成，不属于 PM 核心工作流。",
+        "labels": [
+          "排除"
+        ]
+      }
     },
     {
       "slug": "figma-implement-design",
@@ -3726,6 +4137,8 @@
         "沟通落地": 0
       },
       "pmScore": 0,
+      "basePmScore": 0,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [
@@ -3760,7 +4173,18 @@
           }
         ]
       },
-      "included": false
+      "included": false,
+      "override": {
+        "applied": true,
+        "scoreDelta": 0,
+        "forceInclude": false,
+        "forceExclude": true,
+        "primaryDimension": null,
+        "note": "偏设计实现，不属于 PM 主榜的核心技能。",
+        "labels": [
+          "排除"
+        ]
+      }
     },
     {
       "slug": "better-icons",
@@ -3777,6 +4201,8 @@
         "沟通落地": 0
       },
       "pmScore": 0,
+      "basePmScore": 0,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -3801,7 +4227,18 @@
           }
         ]
       },
-      "included": false
+      "included": false,
+      "override": {
+        "applied": true,
+        "scoreDelta": 0,
+        "forceInclude": false,
+        "forceExclude": true,
+        "primaryDimension": null,
+        "note": "偏设计资源工具，不纳入 PM skills 主榜。",
+        "labels": [
+          "排除"
+        ]
+      }
     },
     {
       "slug": "develop-web-game",
@@ -3818,6 +4255,8 @@
         "沟通落地": 0
       },
       "pmScore": 0,
+      "basePmScore": 0,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -3843,7 +4282,18 @@
           }
         ]
       },
-      "included": false
+      "included": false,
+      "override": {
+        "applied": true,
+        "scoreDelta": 0,
+        "forceInclude": false,
+        "forceExclude": true,
+        "primaryDimension": null,
+        "note": "面向前端游戏开发，不纳入产品经理榜单。",
+        "labels": [
+          "排除"
+        ]
+      }
     },
     {
       "slug": "draft-nda",
@@ -3860,6 +4310,8 @@
         "沟通落地": 0
       },
       "pmScore": 0,
+      "basePmScore": 0,
+      "baseIncluded": false,
       "matchedKeywords": {
         "dimensions": {
           "发现研究": [],
@@ -3876,7 +4328,18 @@
           }
         ]
       },
-      "included": false
+      "included": false,
+      "override": {
+        "applied": true,
+        "scoreDelta": 0,
+        "forceInclude": false,
+        "forceExclude": true,
+        "primaryDimension": null,
+        "note": "法务文书类技能，不纳入 PM 主榜。",
+        "labels": [
+          "排除"
+        ]
+      }
     }
   ]
 }

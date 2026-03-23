@@ -49,6 +49,36 @@
           />
         </label>
         <div id="tabs" class="tabs" aria-label="PM 维度筛选"></div>
+        <div class="toolbar-controls">
+          <div id="filter-tabs" class="filter-tabs" aria-label="结果过滤"></div>
+          <label class="sort-panel" for="sort-select">
+            <span class="search-label">排序方式</span>
+            <select id="sort-select">
+              <option value="score">按推荐分</option>
+              <option value="updated">按最近更新</option>
+              <option value="title">按名称</option>
+            </select>
+          </label>
+        </div>
+        <div class="insight-grid">
+          <article class="insight-card">
+            <span id="current-results" class="insight-value">-</span>
+            <span class="stat-label">当前结果</span>
+          </article>
+          <article class="insight-card">
+            <span id="favorite-results" class="insight-value">-</span>
+            <span class="stat-label">我的收藏</span>
+          </article>
+          <article class="insight-card">
+            <span id="manual-results" class="insight-value">-</span>
+            <span class="stat-label">手工规则命中</span>
+          </article>
+          <article class="insight-card">
+            <span id="top-dimension" class="insight-value">-</span>
+            <span class="stat-label">当前最多维度</span>
+          </article>
+        </div>
+        <div id="dimension-breakdown" class="dimension-breakdown"></div>
         <div class="toolbar-meta">
           <span id="results-summary">正在加载数据...</span>
           <span class="threshold-note">默认阈值：PM 推荐分 ≥ 30</span>
@@ -66,4 +96,3 @@
     <script type="module" src="./app.js"></script>
   </body>
 </html>
-

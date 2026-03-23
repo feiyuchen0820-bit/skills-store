@@ -1,0 +1,142 @@
+{
+  "skills": {
+    "create-prd": {
+      "scoreDelta": 10,
+      "forceInclude": true,
+      "labels": ["核心", "文档"],
+      "note": "PRD 是产品经理最高频的定义类交付物，手工上调以保持榜单稳定。"
+    },
+    "product-strategy": {
+      "scoreDelta": 8,
+      "forceInclude": true,
+      "labels": ["核心", "策略"],
+      "note": "产品策略类技能应稳定处于榜单前列。"
+    },
+    "interview-script": {
+      "scoreDelta": 8,
+      "forceInclude": true,
+      "labels": ["核心", "研究"],
+      "note": "用户访谈是 discovery 的核心方法，手工置顶。"
+    },
+    "prioritize-features": {
+      "scoreDelta": 7,
+      "forceInclude": true,
+      "labels": ["高频", "规划"],
+      "note": "优先级评估是日常路线图与范围管理核心能力。"
+    },
+    "ab-test-analysis": {
+      "scoreDelta": 6,
+      "forceInclude": true,
+      "labels": ["高频", "数据"],
+      "note": "实验分析是增长和优化场景中的高价值 PM 技能。"
+    },
+    "sprint-plan": {
+      "scoreDelta": 6,
+      "forceInclude": true,
+      "labels": ["协作"],
+      "note": "迭代计划与跨团队协作强相关，手工纳入。"
+    },
+    "retro": {
+      "scoreDelta": 5,
+      "forceInclude": true,
+      "labels": ["协作"],
+      "note": "复盘属于 PM 常见的节奏管理与团队协作动作。"
+    },
+    "stakeholder-map": {
+      "scoreDelta": 7,
+      "forceInclude": true,
+      "labels": ["沟通"],
+      "note": "关键人管理是资深 PM 的高价值能力。"
+    },
+    "opportunity-solution-tree": {
+      "scoreDelta": 8,
+      "forceInclude": true,
+      "labels": ["发现", "框架"],
+      "note": "OST 是持续产品发现的重要框架，手工补足权重。"
+    },
+    "prioritize-assumptions": {
+      "scoreDelta": 7,
+      "forceInclude": true,
+      "labels": ["发现", "风险"],
+      "note": "假设优先级属于 discovery 核心能力，应进入主榜。"
+    },
+    "competitor-analysis": {
+      "scoreDelta": 10,
+      "forceInclude": true,
+      "labels": ["研究", "策略"],
+      "note": "竞品分析虽然文本特征不强，但属于典型 PM 研究能力。"
+    },
+    "business-model": {
+      "scoreDelta": 14,
+      "forceInclude": true,
+      "labels": ["策略"],
+      "note": "商业模式分析是策略 PM 的重要方法，手工提升。"
+    },
+    "product-vision": {
+      "scoreDelta": 14,
+      "forceInclude": true,
+      "labels": ["策略"],
+      "note": "产品愿景对中高阶 PM 很关键，需纳入主榜。"
+    },
+    "brainstorm-okrs": {
+      "scoreDelta": 5,
+      "forceInclude": true,
+      "labels": ["目标"],
+      "note": "OKR 对目标管理和团队协同有直接价值。"
+    },
+    "sql-queries": {
+      "scoreDelta": 12,
+      "forceInclude": true,
+      "primaryDimension": "数据分析",
+      "labels": ["分析"],
+      "note": "SQL 是 PM 自助分析的重要基础能力。"
+    },
+    "iot-query": {
+      "scoreDelta": 14,
+      "forceInclude": true,
+      "primaryDimension": "发现研究",
+      "labels": ["行业研究"],
+      "note": "垂类竞品研究技能对行业 PM 很有价值，手工纳入。"
+    },
+    "review-resume": {
+      "forceExclude": true,
+      "labels": ["排除"],
+      "note": "求职场景工具，不纳入 PM 工作流主榜。"
+    },
+    "better-icons": {
+      "forceExclude": true,
+      "labels": ["排除"],
+      "note": "偏设计资源工具，不纳入 PM skills 主榜。"
+    },
+    "imagegen": {
+      "forceExclude": true,
+      "labels": ["排除"],
+      "note": "偏内容生成，不属于 PM 核心工作流。"
+    },
+    "develop-web-game": {
+      "forceExclude": true,
+      "labels": ["排除"],
+      "note": "面向前端游戏开发，不纳入产品经理榜单。"
+    },
+    "figma-implement-design": {
+      "forceExclude": true,
+      "labels": ["排除"],
+      "note": "偏设计实现，不属于 PM 主榜的核心技能。"
+    },
+    "draft-nda": {
+      "forceExclude": true,
+      "labels": ["排除"],
+      "note": "法务文书类技能，不纳入 PM 主榜。"
+    },
+    "privacy-policy": {
+      "forceExclude": true,
+      "labels": ["排除"],
+      "note": "合规文书类技能，不纳入 PM 主榜。"
+    },
+    "mijia-app-figma-spec": {
+      "forceExclude": true,
+      "labels": ["排除"],
+      "note": "偏设计规范映射，默认不计入通用 PM 榜单。"
+    }
+  }
+}
