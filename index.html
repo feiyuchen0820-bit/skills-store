@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>PM Skills H5 目录站</title>
+    <meta
+      name="description"
+      content="按 PM 维度自动筛选、打分并排序的 skills H5 目录站。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero-card">
+        <p class="eyebrow">PM Skills H5 目录站</p>
+        <h1>产品经理 Skills 排行榜</h1>
+        <p class="hero-copy">
+          基于本地 skills 描述自动分类、打分和排序。默认只展示 PM 推荐分达标的
+          skill。
+        </p>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span id="generated-at" class="stat-value">-</span>
+            <span class="stat-label">最后更新时间</span>
+          </article>
+          <article class="stat-card">
+            <span id="total-skills" class="stat-value">-</span>
+            <span class="stat-label">总 Skills 数</span>
+          </article>
+          <article class="stat-card">
+            <span id="included-skills" class="stat-value">-</span>
+            <span class="stat-label">PM 收录数</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="toolbar-card">
+        <label class="search-panel" for="search-input">
+          <span class="search-label">搜索 skill</span>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="按名称、标题或描述搜索"
+            autocomplete="off"
+          />
+        </label>
+        <div id="tabs" class="tabs" aria-label="PM 维度筛选"></div>
+        <div class="toolbar-meta">
+          <span id="results-summary">正在加载数据...</span>
+          <span class="threshold-note">默认阈值：PM 推荐分 ≥ 30</span>
+        </div>
+      </section>
+
+      <section class="list-section">
+        <div id="cards" class="cards"></div>
+        <div id="empty-state" class="empty-state hidden">
+          当前筛选条件下没有可展示的 skill。
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
+

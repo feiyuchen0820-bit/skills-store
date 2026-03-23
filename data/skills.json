@@ -1,0 +1,3882 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-23T06:52:54.757Z",
+    "sourceRoot": "~/.codex/skills",
+    "includeThreshold": 30,
+    "totalSkills": 71,
+    "includedSkills": 41,
+    "countsByDimension": {
+      "发现研究": 12,
+      "策略定位": 12,
+      "规划定义": 10,
+      "数据分析": 6,
+      "沟通落地": 1
+    },
+    "dimensions": [
+      "发现研究",
+      "策略定位",
+      "规划定义",
+      "数据分析",
+      "沟通落地"
+    ]
+  },
+  "skills": [
+    {
+      "slug": "user-personas",
+      "title": "User Personas",
+      "description": "Create refined user personas from research data — 3 personas with JTBD, pains, gains, and unexpected insights. Use when building personas from survey data, creating user profiles from research, or segmenting users for product decisions.",
+      "sourcePath": "~/.codex/skills/user-personas/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.648Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 62,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 8,
+        "沟通落地": 0
+      },
+      "pmScore": 82,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "research",
+              "weight": 10
+            },
+            {
+              "keyword": "user",
+              "weight": 6
+            },
+            {
+              "keyword": "persona",
+              "weight": 10
+            },
+            {
+              "keyword": "personas",
+              "weight": 10
+            },
+            {
+              "keyword": "segment",
+              "weight": 8
+            },
+            {
+              "keyword": "jtbd",
+              "weight": 10
+            },
+            {
+              "keyword": "insight",
+              "weight": 8
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "data",
+              "weight": 8
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "user",
+            "weight": 5
+          },
+          {
+            "keyword": "research",
+            "weight": 7
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "interview-script",
+      "title": "interview-script",
+      "description": "Create a structured customer interview script with JTBD probing questions, warm-up, core exploration, and wrap-up sections. Follows The Mom Test principles — no leading questions, no pitching, focus on past behavior. Use when preparing for user interviews, creating interview guides, or planning discovery research.",
+      "sourcePath": "~/.codex/skills/interview-script/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.712Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 54,
+        "策略定位": 0,
+        "规划定义": 6,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 77,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "research",
+              "weight": 10
+            },
+            {
+              "keyword": "discovery",
+              "weight": 10
+            },
+            {
+              "keyword": "interview",
+              "weight": 10
+            },
+            {
+              "keyword": "customer",
+              "weight": 8
+            },
+            {
+              "keyword": "user",
+              "weight": 6
+            },
+            {
+              "keyword": "jtbd",
+              "weight": 10
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "customer",
+            "weight": 6
+          },
+          {
+            "keyword": "user",
+            "weight": 5
+          },
+          {
+            "keyword": "research",
+            "weight": 7
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "product-strategy",
+      "title": "Product Strategy Canvas",
+      "description": "Create a comprehensive product strategy using the 9-section Product Strategy Canvas — vision, segments, costs, value propositions, trade-offs, metrics, growth, capabilities, and defensibility. Use when building a product strategy, creating a strategic plan, or defining product direction.",
+      "sourcePath": "~/.codex/skills/product-strategy/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.770Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 8,
+        "策略定位": 51,
+        "规划定义": 6,
+        "数据分析": 20,
+        "沟通落地": 0
+      },
+      "pmScore": 77,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "segment",
+              "weight": 8
+            }
+          ],
+          "策略定位": [
+            {
+              "keyword": "strategy",
+              "weight": 10
+            },
+            {
+              "keyword": "vision",
+              "weight": 9
+            },
+            {
+              "keyword": "position",
+              "weight": 8
+            },
+            {
+              "keyword": "value proposition",
+              "weight": 9
+            },
+            {
+              "keyword": "growth",
+              "weight": 8
+            },
+            {
+              "keyword": "canvas",
+              "weight": 7
+            }
+          ],
+          "规划定义": [
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [
+            {
+              "keyword": "metric",
+              "weight": 10
+            },
+            {
+              "keyword": "metrics",
+              "weight": 10
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "strategy",
+            "weight": 7
+          },
+          {
+            "keyword": "metric",
+            "weight": 6
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "gtm-strategy",
+      "title": "GTM Strategy",
+      "description": "Create a go-to-market strategy covering marketing channels, messaging, success metrics, and launch timeline. Use when planning a product launch, creating a GTM plan from scratch, or defining a launch strategy for a new market.",
+      "sourcePath": "~/.codex/skills/gtm-strategy/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.616Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 36,
+        "规划定义": 6,
+        "数据分析": 20,
+        "沟通落地": 0
+      },
+      "pmScore": 73,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "strategy",
+              "weight": 10
+            },
+            {
+              "keyword": "market",
+              "weight": 8
+            },
+            {
+              "keyword": "gtm",
+              "weight": 9
+            },
+            {
+              "keyword": "go-to-market",
+              "weight": 9
+            }
+          ],
+          "规划定义": [
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [
+            {
+              "keyword": "metric",
+              "weight": 10
+            },
+            {
+              "keyword": "metrics",
+              "weight": 10
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "strategy",
+            "weight": 7
+          },
+          {
+            "keyword": "market",
+            "weight": 6
+          },
+          {
+            "keyword": "metric",
+            "weight": 6
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          },
+          {
+            "keyword": "launch",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "create-prd",
+      "title": "Create a Product Requirements Document",
+      "description": "Create a Product Requirements Document using a comprehensive 8-section template covering problem, objectives, segments, value propositions, solution, and release planning. Use when writing a PRD, documenting product requirements, preparing a feature spec, or reviewing an existing PRD.",
+      "sourcePath": "~/.codex/skills/create-prd/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.539Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 8,
+        "策略定位": 17,
+        "规划定义": 42,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 71,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "segment",
+              "weight": 8
+            }
+          ],
+          "策略定位": [
+            {
+              "keyword": "position",
+              "weight": 8
+            },
+            {
+              "keyword": "value proposition",
+              "weight": 9
+            }
+          ],
+          "规划定义": [
+            {
+              "keyword": "prd",
+              "weight": 12
+            },
+            {
+              "keyword": "requirements",
+              "weight": 10
+            },
+            {
+              "keyword": "feature",
+              "weight": 7
+            },
+            {
+              "keyword": "release",
+              "weight": 7
+            },
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          },
+          {
+            "keyword": "prd",
+            "weight": 10
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "sentiment-analysis",
+      "title": "Sentiment Analysis",
+      "description": "Analyze user feedback data to identify segments with sentiment scores, JTBD, and product satisfaction insights. Use when analyzing user feedback at scale, running sentiment analysis on reviews or surveys, or identifying satisfaction patterns.",
+      "sourcePath": "~/.codex/skills/sentiment-analysis/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.644Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 50,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 14,
+        "沟通落地": 0
+      },
+      "pmScore": 67,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "user",
+              "weight": 6
+            },
+            {
+              "keyword": "segment",
+              "weight": 8
+            },
+            {
+              "keyword": "feedback",
+              "weight": 9
+            },
+            {
+              "keyword": "jtbd",
+              "weight": 10
+            },
+            {
+              "keyword": "insight",
+              "weight": 8
+            },
+            {
+              "keyword": "sentiment",
+              "weight": 9
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "analysis",
+              "weight": 6
+            },
+            {
+              "keyword": "data",
+              "weight": 8
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "user",
+            "weight": 5
+          },
+          {
+            "keyword": "analysis",
+            "weight": 4
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "metrics-dashboard",
+      "title": "metrics-dashboard",
+      "description": "Define and design a product metrics dashboard with key metrics, data sources, visualization types, and alert thresholds. Use when creating a metrics dashboard, defining KPIs, setting up product analytics, or building a data monitoring plan.",
+      "sourcePath": "~/.codex/skills/metrics-dashboard/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.717Z",
+      "primaryDimension": "数据分析",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 6,
+        "数据分析": 45,
+        "沟通落地": 0
+      },
+      "pmScore": 64,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [
+            {
+              "keyword": "metric",
+              "weight": 10
+            },
+            {
+              "keyword": "metrics",
+              "weight": 10
+            },
+            {
+              "keyword": "dashboard",
+              "weight": 9
+            },
+            {
+              "keyword": "analytics",
+              "weight": 8
+            },
+            {
+              "keyword": "data",
+              "weight": 8
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "metric",
+            "weight": 6
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "beachhead-segment",
+      "title": "Beachhead Segment",
+      "description": "Identify the first beachhead market segment for a product launch. Evaluates segments against burning pain, willingness to pay, winnable market share, and referral potential. Use when choosing a first market, targeting an initial customer segment, or planning market entry strategy.",
+      "sourcePath": "~/.codex/skills/beachhead-segment/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.599Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 16,
+        "策略定位": 27,
+        "规划定义": 6,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 64,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "customer",
+              "weight": 8
+            },
+            {
+              "keyword": "segment",
+              "weight": 8
+            }
+          ],
+          "策略定位": [
+            {
+              "keyword": "strategy",
+              "weight": 10
+            },
+            {
+              "keyword": "market",
+              "weight": 8
+            },
+            {
+              "keyword": "beachhead",
+              "weight": 9
+            }
+          ],
+          "规划定义": [
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "customer",
+            "weight": 6
+          },
+          {
+            "keyword": "strategy",
+            "weight": 7
+          },
+          {
+            "keyword": "market",
+            "weight": 6
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          },
+          {
+            "keyword": "launch",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "pre-mortem",
+      "title": "Pre-Mortem: Risk Analysis for Product Launch",
+      "description": "Run a pre-mortem risk analysis on a PRD or launch plan. Categorizes risks as Tigers (real problems), Paper Tigers (overblown concerns), and Elephants (unspoken worries), then classifies as launch-blocking, fast-follow, or track. Use when preparing for launch, stress-testing a product plan, or identifying what could go wrong.",
+      "sourcePath": "~/.codex/skills/pre-mortem/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.557Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 26,
+        "数据分析": 6,
+        "沟通落地": 0
+      },
+      "pmScore": 58,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "prd",
+              "weight": 12
+            },
+            {
+              "keyword": "plan",
+              "weight": 6
+            },
+            {
+              "keyword": "pre-mortem",
+              "weight": 8
+            }
+          ],
+          "数据分析": [
+            {
+              "keyword": "analysis",
+              "weight": 6
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "prd",
+            "weight": 10
+          },
+          {
+            "keyword": "analysis",
+            "weight": 4
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          },
+          {
+            "keyword": "launch",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "ab-test-analysis",
+      "title": "ab-test-analysis",
+      "description": "Analyze A/B test results with statistical significance, sample size validation, confidence intervals, and ship/extend/stop recommendations. Use when evaluating experiment results, checking if a test reached significance, interpreting split test data, or deciding whether to ship a variant.",
+      "sourcePath": "~/.codex/skills/ab-test-analysis/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.518Z",
+      "primaryDimension": "数据分析",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 64,
+        "沟通落地": 0
+      },
+      "pmScore": 56,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "a/b",
+              "weight": 12
+            },
+            {
+              "keyword": "ab test",
+              "weight": 12
+            },
+            {
+              "keyword": "sample size",
+              "weight": 9
+            },
+            {
+              "keyword": "confidence interval",
+              "weight": 9
+            },
+            {
+              "keyword": "statistical",
+              "weight": 8
+            },
+            {
+              "keyword": "analysis",
+              "weight": 6
+            },
+            {
+              "keyword": "data",
+              "weight": 8
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "analysis",
+            "weight": 4
+          }
+        ],
+        "penalties": [
+          {
+            "keyword": "nda",
+            "weight": 12
+          }
+        ]
+      },
+      "included": true
+    },
+    {
+      "slug": "release-notes",
+      "title": "release-notes",
+      "description": "Generate user-facing release notes from tickets, PRDs, or changelogs. Creates clear, engaging summaries organized by category (new features, improvements, fixes). Use when writing release notes, creating changelogs, announcing product updates, or summarizing what shipped.",
+      "sourcePath": "~/.codex/skills/release-notes/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.566Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 6,
+        "策略定位": 0,
+        "规划定义": 26,
+        "数据分析": 0,
+        "沟通落地": 17
+      },
+      "pmScore": 55,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "user",
+              "weight": 6
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "prd",
+              "weight": 12
+            },
+            {
+              "keyword": "feature",
+              "weight": 7
+            },
+            {
+              "keyword": "release",
+              "weight": 7
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": [
+            {
+              "keyword": "release notes",
+              "weight": 10
+            },
+            {
+              "keyword": "notes",
+              "weight": 7
+            }
+          ]
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "user",
+            "weight": 5
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          },
+          {
+            "keyword": "prd",
+            "weight": 10
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "positioning-ideas",
+      "title": "Positioning Ideas",
+      "description": "Brainstorm product positioning ideas differentiated from competitors. Identifies top competitors and generates positioning statements with rationale. Use when developing product positioning, differentiating from competitors, or crafting brand positioning strategy.",
+      "sourcePath": "~/.codex/skills/positioning-ideas/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.667Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 37,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 52,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "strategy",
+              "weight": 10
+            },
+            {
+              "keyword": "positioning",
+              "weight": 10
+            },
+            {
+              "keyword": "position",
+              "weight": 8
+            },
+            {
+              "keyword": "competitor",
+              "weight": 9
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "strategy",
+            "weight": 7
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "market-segments",
+      "title": "Market Segments",
+      "description": "Identify 3-5 potential customer segments with demographics, JTBD, and product fit analysis. Use when exploring market segments, identifying target audiences, evaluating new markets, or learning how to segment a market.",
+      "sourcePath": "~/.codex/skills/market-segments/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.635Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 26,
+        "策略定位": 8,
+        "规划定义": 0,
+        "数据分析": 6,
+        "沟通落地": 0
+      },
+      "pmScore": 50,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "customer",
+              "weight": 8
+            },
+            {
+              "keyword": "segment",
+              "weight": 8
+            },
+            {
+              "keyword": "jtbd",
+              "weight": 10
+            }
+          ],
+          "策略定位": [
+            {
+              "keyword": "market",
+              "weight": 8
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "analysis",
+              "weight": 6
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "customer",
+            "weight": 6
+          },
+          {
+            "keyword": "market",
+            "weight": 6
+          },
+          {
+            "keyword": "analysis",
+            "weight": 4
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "ideal-customer-profile",
+      "title": "Ideal Customer Profile",
+      "description": "Identify the Ideal Customer Profile (ICP) from research data with demographics, behaviors, JTBD, and needs. Use when defining your ICP, analyzing PMF survey data, or understanding who your best customers are.",
+      "sourcePath": "~/.codex/skills/ideal-customer-profile/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.621Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 28,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 8,
+        "沟通落地": 0
+      },
+      "pmScore": 49,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "research",
+              "weight": 10
+            },
+            {
+              "keyword": "customer",
+              "weight": 8
+            },
+            {
+              "keyword": "jtbd",
+              "weight": 10
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "data",
+              "weight": 8
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "pm",
+            "weight": 8
+          },
+          {
+            "keyword": "customer",
+            "weight": 6
+          },
+          {
+            "keyword": "research",
+            "weight": 7
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "user-segmentation",
+      "title": "User Segmentation",
+      "description": "Segment users from feedback data based on behavior, JTBD, and needs. Identifies at least 3 distinct user segments. Use when segmenting a user base, analyzing diverse user feedback, or building a segmentation model.",
+      "sourcePath": "~/.codex/skills/user-segmentation/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.653Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 43,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 20,
+        "沟通落地": 0
+      },
+      "pmScore": 48,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "user",
+              "weight": 6
+            },
+            {
+              "keyword": "segment",
+              "weight": 8
+            },
+            {
+              "keyword": "segmentation",
+              "weight": 10
+            },
+            {
+              "keyword": "feedback",
+              "weight": 9
+            },
+            {
+              "keyword": "jtbd",
+              "weight": 10
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "a/b",
+              "weight": 12
+            },
+            {
+              "keyword": "data",
+              "weight": 8
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "user",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "cohort-analysis",
+      "title": "Cohort Analysis & Retention Explorer",
+      "description": "Perform cohort analysis on user engagement data — retention curves, feature adoption trends, and segment-level insights. Use when analyzing user retention by cohort, studying feature adoption over time, investigating churn patterns, or identifying engagement trends.",
+      "sourcePath": "~/.codex/skills/cohort-analysis/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.523Z",
+      "primaryDimension": "数据分析",
+      "dimensionScores": {
+        "发现研究": 22,
+        "策略定位": 0,
+        "规划定义": 7,
+        "数据分析": 33,
+        "沟通落地": 0
+      },
+      "pmScore": 48,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "user",
+              "weight": 6
+            },
+            {
+              "keyword": "segment",
+              "weight": 8
+            },
+            {
+              "keyword": "insight",
+              "weight": 8
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "feature",
+              "weight": 7
+            }
+          ],
+          "数据分析": [
+            {
+              "keyword": "cohort",
+              "weight": 10
+            },
+            {
+              "keyword": "retention",
+              "weight": 9
+            },
+            {
+              "keyword": "analysis",
+              "weight": 6
+            },
+            {
+              "keyword": "data",
+              "weight": 8
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "user",
+            "weight": 5
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          },
+          {
+            "keyword": "analysis",
+            "weight": 4
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "identify-assumptions-new",
+      "title": "identify-assumptions-new",
+      "description": "Identify risky assumptions for a new product idea across 8 risk categories including Go-to-Market, Strategy, and Team. Use when evaluating startup risks, assessing a new product concept, or mapping assumptions for a new venture.",
+      "sourcePath": "~/.codex/skills/identify-assumptions-new/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.708Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 7,
+        "策略定位": 27,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 48,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "assumption",
+              "weight": 7
+            }
+          ],
+          "策略定位": [
+            {
+              "keyword": "strategy",
+              "weight": 10
+            },
+            {
+              "keyword": "market",
+              "weight": 8
+            },
+            {
+              "keyword": "go-to-market",
+              "weight": 9
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "strategy",
+            "weight": 7
+          },
+          {
+            "keyword": "market",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "startup-canvas",
+      "title": "Startup Canvas",
+      "description": "Generate a Startup Canvas combining Product Strategy (9 sections) and Business Model (costs + revenue) for a new product. An alternative to BMC and Lean Canvas that separates strategy from business model. Use when launching a new product or evaluating a startup concept.",
+      "sourcePath": "~/.codex/skills/startup-canvas/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.779Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 27,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 47,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "strategy",
+              "weight": 10
+            },
+            {
+              "keyword": "business model",
+              "weight": 10
+            },
+            {
+              "keyword": "canvas",
+              "weight": 7
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "strategy",
+            "weight": 7
+          },
+          {
+            "keyword": "launch",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "ansoff-matrix",
+      "title": "Ansoff Matrix",
+      "description": "Generate an Ansoff Matrix analysis mapping growth strategies across market penetration, market development, product development, and diversification. Use when considering growth options, planning market expansion, or evaluating strategic growth paths.",
+      "sourcePath": "~/.codex/skills/ansoff-matrix/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.739Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 16,
+        "规划定义": 6,
+        "数据分析": 6,
+        "沟通落地": 0
+      },
+      "pmScore": 47,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "market",
+              "weight": 8
+            },
+            {
+              "keyword": "growth",
+              "weight": 8
+            }
+          ],
+          "规划定义": [
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [
+            {
+              "keyword": "analysis",
+              "weight": 6
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "pm",
+            "weight": 8
+          },
+          {
+            "keyword": "market",
+            "weight": 6
+          },
+          {
+            "keyword": "analysis",
+            "weight": 4
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "analyze-feature-requests",
+      "title": "analyze-feature-requests",
+      "description": "Analyze and prioritize a list of feature requests by theme, strategic alignment, impact, effort, and risk. Use when reviewing customer feature requests, triaging a backlog, or making prioritization decisions.",
+      "sourcePath": "~/.codex/skills/analyze-feature-requests/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.680Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 8,
+        "策略定位": 0,
+        "规划定义": 26,
+        "数据分析": 12,
+        "沟通落地": 7
+      },
+      "pmScore": 46,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "customer",
+              "weight": 8
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "priorit",
+              "weight": 10
+            },
+            {
+              "keyword": "feature",
+              "weight": 7
+            },
+            {
+              "keyword": "backlog",
+              "weight": 9
+            }
+          ],
+          "数据分析": [
+            {
+              "keyword": "a/b",
+              "weight": 12
+            }
+          ],
+          "沟通落地": [
+            {
+              "keyword": "alignment",
+              "weight": 7
+            }
+          ]
+        },
+        "bonuses": [
+          {
+            "keyword": "customer",
+            "weight": 6
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          },
+          {
+            "keyword": "priorit",
+            "weight": 8
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "gtm-motions",
+      "title": "GTM Motions",
+      "description": "Identify the best GTM motions and tools across 7 motion types: Inbound, Outbound, Paid Digital, Community, Partners, ABM, and PLG. Use when selecting marketing channels, choosing between inbound and outbound strategy, or planning cross-channel campaigns.",
+      "sourcePath": "~/.codex/skills/gtm-motions/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.611Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 27,
+        "规划定义": 6,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 45,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "strategy",
+              "weight": 10
+            },
+            {
+              "keyword": "market",
+              "weight": 8
+            },
+            {
+              "keyword": "gtm",
+              "weight": 9
+            }
+          ],
+          "规划定义": [
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "strategy",
+            "weight": 7
+          },
+          {
+            "keyword": "market",
+            "weight": 6
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "summarize-interview",
+      "title": "summarize-interview",
+      "description": "Summarize a customer interview transcript into a structured template with JTBD, satisfaction signals, and action items. Use when processing interview recordings or transcripts, synthesizing discovery interviews, or creating interview summaries.",
+      "sourcePath": "~/.codex/skills/summarize-interview/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.734Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 38,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 8
+      },
+      "pmScore": 44,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "discovery",
+              "weight": 10
+            },
+            {
+              "keyword": "interview",
+              "weight": 10
+            },
+            {
+              "keyword": "customer",
+              "weight": 8
+            },
+            {
+              "keyword": "jtbd",
+              "weight": 10
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": [
+            {
+              "keyword": "summarize",
+              "weight": 8
+            }
+          ]
+        },
+        "bonuses": [
+          {
+            "keyword": "customer",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "north-star-metric",
+      "title": "North Star Metric",
+      "description": "Define a North Star Metric and 3-5 supporting input metrics that form a metrics constellation. Classify the business game (Attention, Transaction, Productivity) and validate against 7 criteria for an effective North Star. Use when choosing a North Star Metric, setting up a metrics framework, learning about the North Star Framework, or deciding what to measure.",
+      "sourcePath": "~/.codex/skills/north-star-metric/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.662Z",
+      "primaryDimension": "数据分析",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 30,
+        "沟通落地": 0
+      },
+      "pmScore": 44,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "metric",
+              "weight": 10
+            },
+            {
+              "keyword": "metrics",
+              "weight": 10
+            },
+            {
+              "keyword": "north star",
+              "weight": 10
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "metric",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "monetization-strategy",
+      "title": "Monetization Strategy",
+      "description": "Brainstorm 3-5 monetization strategies with audience fit, risks, and validation experiments. Use when exploring revenue models, evaluating pricing strategies, or deciding how to monetize a product.",
+      "sourcePath": "~/.codex/skills/monetization-strategy/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.752Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 28,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 43,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "strategy",
+              "weight": 10
+            },
+            {
+              "keyword": "pricing",
+              "weight": 9
+            },
+            {
+              "keyword": "monetization",
+              "weight": 9
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "strategy",
+            "weight": 7
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "competitive-battlecard",
+      "title": "competitive-battlecard",
+      "description": "Create sales-ready competitive battlecards comparing your product against a specific competitor — positioning, feature comparison, objection handling, and win/loss patterns. Use when preparing sales teams, creating competitive materials, or responding to 'why not competitor X?'",
+      "sourcePath": "~/.codex/skills/competitive-battlecard/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.603Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 27,
+        "规划定义": 7,
+        "数据分析": 0,
+        "沟通落地": 7
+      },
+      "pmScore": 41,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "positioning",
+              "weight": 10
+            },
+            {
+              "keyword": "position",
+              "weight": 8
+            },
+            {
+              "keyword": "competitor",
+              "weight": 9
+            }
+          ],
+          "规划定义": [
+            {
+              "keyword": "feature",
+              "weight": 7
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": [
+            {
+              "keyword": "battlecard",
+              "weight": 7
+            }
+          ]
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "lean-canvas",
+      "title": "Lean Canvas",
+      "description": "Generate a Lean Canvas with problem, solution, metrics, cost structure, UVP, unfair advantage, channels, segments, and revenue. Use when exploring a lean startup canvas, testing a business hypothesis, or modeling a new venture.",
+      "sourcePath": "~/.codex/skills/lean-canvas/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.748Z",
+      "primaryDimension": "数据分析",
+      "dimensionScores": {
+        "发现研究": 8,
+        "策略定位": 7,
+        "规划定义": 0,
+        "数据分析": 32,
+        "沟通落地": 0
+      },
+      "pmScore": 38,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "segment",
+              "weight": 8
+            }
+          ],
+          "策略定位": [
+            {
+              "keyword": "canvas",
+              "weight": 7
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "a/b",
+              "weight": 12
+            },
+            {
+              "keyword": "metric",
+              "weight": 10
+            },
+            {
+              "keyword": "metrics",
+              "weight": 10
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "metric",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "dummy-dataset",
+      "title": "Dummy Dataset Generation",
+      "description": "Generate realistic dummy datasets for testing with customizable columns, constraints, and output formats (CSV, JSON, SQL, Python script). Use when creating test data, building mock datasets, or generating sample data for development and demos.",
+      "sourcePath": "~/.codex/skills/dummy-dataset/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.544Z",
+      "primaryDimension": "数据分析",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 30,
+        "沟通落地": 0
+      },
+      "pmScore": 38,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "a/b",
+              "weight": 12
+            },
+            {
+              "keyword": "sql",
+              "weight": 10
+            },
+            {
+              "keyword": "data",
+              "weight": 8
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "pm",
+            "weight": 8
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "wwas",
+      "title": "Why-What-Acceptance (WWA)",
+      "description": "Create product backlog items in Why-What-Acceptance format — independent, valuable, testable items with strategic context. Use when writing structured backlog items, breaking features into work items, or using the WWA format.",
+      "sourcePath": "~/.codex/skills/wwas/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.595Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 23,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 37,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "feature",
+              "weight": 7
+            },
+            {
+              "keyword": "backlog",
+              "weight": 9
+            },
+            {
+              "keyword": "acceptance",
+              "weight": 7
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "summarize-meeting",
+      "title": "Summarize Meeting",
+      "description": "Summarize a meeting transcript into structured notes with date, participants, topic, key decisions, summary points, and action items. Use when processing meeting recordings, creating meeting notes, writing meeting minutes, or recapping discussions.",
+      "sourcePath": "~/.codex/skills/summarize-meeting/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.582Z",
+      "primaryDimension": "沟通落地",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 32
+      },
+      "pmScore": 36,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": [
+            {
+              "keyword": "meeting",
+              "weight": 9
+            },
+            {
+              "keyword": "summary",
+              "weight": 8
+            },
+            {
+              "keyword": "summarize",
+              "weight": 8
+            },
+            {
+              "keyword": "notes",
+              "weight": 7
+            }
+          ]
+        },
+        "bonuses": [
+          {
+            "keyword": "summary",
+            "weight": 4
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "prioritize-features",
+      "title": "prioritize-features",
+      "description": "Prioritize a backlog of feature ideas based on impact, effort, risk, and strategic alignment with top 5 recommendations. Use when prioritizing a feature backlog, making scope decisions, or ranking product ideas.",
+      "sourcePath": "~/.codex/skills/prioritize-features/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.730Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 26,
+        "数据分析": 12,
+        "沟通落地": 7
+      },
+      "pmScore": 36,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "priorit",
+              "weight": 10
+            },
+            {
+              "keyword": "feature",
+              "weight": 7
+            },
+            {
+              "keyword": "backlog",
+              "weight": 9
+            }
+          ],
+          "数据分析": [
+            {
+              "keyword": "a/b",
+              "weight": 12
+            }
+          ],
+          "沟通落地": [
+            {
+              "keyword": "alignment",
+              "weight": 7
+            }
+          ]
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          },
+          {
+            "keyword": "priorit",
+            "weight": 8
+          }
+        ],
+        "penalties": [
+          {
+            "keyword": "nda",
+            "weight": 12
+          }
+        ]
+      },
+      "included": true
+    },
+    {
+      "slug": "test-scenarios",
+      "title": "Test Scenarios",
+      "description": "Create comprehensive test scenarios from user stories with test objectives, starting conditions, user roles, step-by-step actions, and expected outcomes. Use when writing QA test cases, creating test plans, defining acceptance tests, or preparing for feature validation.",
+      "sourcePath": "~/.codex/skills/test-scenarios/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.586Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 6,
+        "策略定位": 0,
+        "规划定义": 20,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 36,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "user",
+              "weight": 6
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "feature",
+              "weight": 7
+            },
+            {
+              "keyword": "plan",
+              "weight": 6
+            },
+            {
+              "keyword": "acceptance",
+              "weight": 7
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "user",
+            "weight": 5
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "outcome-roadmap",
+      "title": "Transform Roadmap to Outcome-Focused Format",
+      "description": "Transform an output-focused roadmap into an outcome-focused one that communicates strategic intent. Rewrites initiatives as outcome statements reflecting user and business impacts. Use when shifting to outcome roadmaps, making a roadmap more strategic, or rewriting feature lists as outcomes.",
+      "sourcePath": "~/.codex/skills/outcome-roadmap/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.553Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 6,
+        "策略定位": 0,
+        "规划定义": 17,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 36,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "user",
+              "weight": 6
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "roadmap",
+              "weight": 10
+            },
+            {
+              "keyword": "feature",
+              "weight": 7
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "user",
+            "weight": 5
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          },
+          {
+            "keyword": "roadmap",
+            "weight": 8
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "user-stories",
+      "title": "User Stories",
+      "description": "Create user stories following the 3 C's (Card, Conversation, Confirmation) and INVEST criteria with descriptions, design links, and acceptance criteria. Use when writing user stories, breaking down features into backlog items, or defining acceptance criteria.",
+      "sourcePath": "~/.codex/skills/user-stories/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.591Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 6,
+        "策略定位": 0,
+        "规划定义": 23,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 34,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "user",
+              "weight": 6
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "feature",
+              "weight": 7
+            },
+            {
+              "keyword": "backlog",
+              "weight": 9
+            },
+            {
+              "keyword": "acceptance",
+              "weight": 7
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "user",
+            "weight": 5
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "customer-journey-map",
+      "title": "customer-journey-map",
+      "description": "Create an end-to-end customer journey map with stages, touchpoints, emotions, pain points, and opportunities. Use when mapping the customer experience, identifying friction points, improving onboarding, or visualizing the user journey.",
+      "sourcePath": "~/.codex/skills/customer-journey-map/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.630Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 22,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 33,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "customer",
+              "weight": 8
+            },
+            {
+              "keyword": "user",
+              "weight": 6
+            },
+            {
+              "keyword": "journey",
+              "weight": 8
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "customer",
+            "weight": 6
+          },
+          {
+            "keyword": "user",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "value-proposition",
+      "title": "Value Proposition",
+      "description": "Design a detailed value proposition using a 6-part JTBD template — Who, Why, What before, How, What after, Alternatives. Use when creating a value proposition, analyzing customer value delivery, or articulating why customers should choose your product.",
+      "sourcePath": "~/.codex/skills/value-proposition/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.789Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 18,
+        "策略定位": 17,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 32,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "customer",
+              "weight": 8
+            },
+            {
+              "keyword": "jtbd",
+              "weight": 10
+            }
+          ],
+          "策略定位": [
+            {
+              "keyword": "position",
+              "weight": 8
+            },
+            {
+              "keyword": "value proposition",
+              "weight": 9
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "customer",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "brainstorm-experiments-existing",
+      "title": "brainstorm-experiments-existing",
+      "description": "Design experiments to test assumptions for an existing product — prototypes, A/B tests, spikes, and other low-effort validation methods. Use when validating assumptions, testing feature ideas cheaply, or planning product experiments.",
+      "sourcePath": "~/.codex/skills/brainstorm-experiments-existing/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.684Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 7,
+        "策略定位": 0,
+        "规划定义": 13,
+        "数据分析": 12,
+        "沟通落地": 0
+      },
+      "pmScore": 32,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "assumption",
+              "weight": 7
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "feature",
+              "weight": 7
+            },
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [
+            {
+              "keyword": "a/b",
+              "weight": 12
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "brainstorm-ideas-new",
+      "title": "brainstorm-ideas-new",
+      "description": "Brainstorm feature ideas for a new product in initial discovery from PM, Designer, and Engineer perspectives. Use when starting product discovery for a new product, exploring features for a startup idea, or doing initial ideation.",
+      "sourcePath": "~/.codex/skills/brainstorm-ideas-new/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.699Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 10,
+        "策略定位": 0,
+        "规划定义": 7,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 32,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "discovery",
+              "weight": 10
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "feature",
+              "weight": 7
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "pm",
+            "weight": 8
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "value-prop-statements",
+      "title": "Value Proposition Statements",
+      "description": "Generate value proposition statements for marketing, sales, and onboarding from existing value propositions. Use when writing marketing copy, creating sales messaging, or crafting onboarding messages.",
+      "sourcePath": "~/.codex/skills/value-prop-statements/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.676Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 25,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 31,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "position",
+              "weight": 8
+            },
+            {
+              "keyword": "market",
+              "weight": 8
+            },
+            {
+              "keyword": "value proposition",
+              "weight": 9
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "market",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "job-stories",
+      "title": "Job Stories",
+      "description": "Create job stories using the 'When [situation], I want to [motivation], so I can [outcome]' format with detailed acceptance criteria. Use when writing job stories, creating JTBD-style backlog items, or expressing user situations and motivations.",
+      "sourcePath": "~/.codex/skills/job-stories/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.549Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 25,
+        "策略定位": 0,
+        "规划定义": 16,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 30,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "user",
+              "weight": 6
+            },
+            {
+              "keyword": "jtbd",
+              "weight": 10
+            },
+            {
+              "keyword": "job stories",
+              "weight": 9
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "backlog",
+              "weight": 9
+            },
+            {
+              "keyword": "acceptance",
+              "weight": 7
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "user",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "pricing-strategy",
+      "title": "pricing-strategy",
+      "description": "Analyze and design pricing strategies including pricing models, competitive pricing analysis, willingness-to-pay estimation, and price elasticity. Use when setting prices, evaluating pricing models, preparing for a pricing change, or comparing freemium vs paid approaches.",
+      "sourcePath": "~/.codex/skills/pricing-strategy/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.765Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 19,
+        "规划定义": 0,
+        "数据分析": 6,
+        "沟通落地": 0
+      },
+      "pmScore": 30,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "strategy",
+              "weight": 10
+            },
+            {
+              "keyword": "pricing",
+              "weight": 9
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "analysis",
+              "weight": 6
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "strategy",
+            "weight": 7
+          },
+          {
+            "keyword": "analysis",
+            "weight": 4
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "brainstorm-ideas-existing",
+      "title": "brainstorm-ideas-existing",
+      "description": "Brainstorm product ideas for an existing product using multi-perspective ideation from PM, Designer, and Engineer viewpoints. Use when generating new feature ideas, brainstorming solutions for an identified opportunity, or ideating with a product trio.",
+      "sourcePath": "~/.codex/skills/brainstorm-ideas-existing/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.694Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 8,
+        "策略定位": 0,
+        "规划定义": 7,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 30,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "opportunity",
+              "weight": 8
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "feature",
+              "weight": 7
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "pm",
+            "weight": 8
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": true
+    },
+    {
+      "slug": "sprint-plan",
+      "title": "sprint-plan",
+      "description": "Plan a sprint with capacity estimation, story selection, dependency mapping, and risk identification. Use when preparing for sprint planning, estimating team capacity, selecting stories, or balancing sprint scope against velocity.",
+      "sourcePath": "~/.codex/skills/sprint-plan/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.574Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 23,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 28,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "story",
+              "weight": 9
+            },
+            {
+              "keyword": "sprint",
+              "weight": 8
+            },
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "plan",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "marketing-ideas",
+      "title": "Marketing Ideas",
+      "description": "Generate 5 creative, cost-effective marketing ideas with channels, messaging, and engagement rationale. Use when brainstorming marketing campaigns, planning product promotion, or looking for creative marketing tactics.",
+      "sourcePath": "~/.codex/skills/marketing-ideas/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.658Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 8,
+        "规划定义": 6,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 27,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "market",
+              "weight": 8
+            }
+          ],
+          "规划定义": [
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "market",
+            "weight": 6
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "opportunity-solution-tree",
+      "title": "opportunity-solution-tree",
+      "description": "Build an Opportunity Solution Tree (OST) to structure product discovery — map a desired outcome to opportunities, solutions, and experiments. Based on Teresa Torres' Continuous Discovery Habits. Use when structuring discovery work, mapping opportunities to solutions, or deciding what to build next.",
+      "sourcePath": "~/.codex/skills/opportunity-solution-tree/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.721Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 18,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 26,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "discovery",
+              "weight": 10
+            },
+            {
+              "keyword": "opportunity",
+              "weight": 8
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "retro",
+      "title": "retro",
+      "description": "Facilitate a structured sprint retrospective — what went well, what didn't, and prioritized action items with owners and deadlines. Use when running a retrospective, reflecting on a sprint, creating action items from team feedback, or learning how to run effective retros.",
+      "sourcePath": "~/.codex/skills/retro/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.570Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 9,
+        "策略定位": 0,
+        "规划定义": 18,
+        "数据分析": 0,
+        "沟通落地": 9
+      },
+      "pmScore": 26,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "feedback",
+              "weight": 9
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "priorit",
+              "weight": 10
+            },
+            {
+              "keyword": "sprint",
+              "weight": 8
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": [
+            {
+              "keyword": "retro",
+              "weight": 9
+            }
+          ]
+        },
+        "bonuses": [
+          {
+            "keyword": "priorit",
+            "weight": 8
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "porters-five-forces",
+      "title": "Porter's Five Forces",
+      "description": "Perform Porter's Five Forces analysis — competitive rivalry, supplier power, buyer power, threat of substitutes, and threat of new entrants. Use when analyzing industry dynamics, assessing competitive forces, or evaluating market attractiveness.",
+      "sourcePath": "~/.codex/skills/porters-five-forces/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.761Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 16,
+        "规划定义": 0,
+        "数据分析": 6,
+        "沟通落地": 0
+      },
+      "pmScore": 26,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "market",
+              "weight": 8
+            },
+            {
+              "keyword": "porter",
+              "weight": 8
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "analysis",
+              "weight": 6
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "market",
+            "weight": 6
+          },
+          {
+            "keyword": "analysis",
+            "weight": 4
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "stakeholder-map",
+      "title": "stakeholder-map",
+      "description": "Build a stakeholder map using a power/interest grid, identify communication strategies per quadrant, and generate a communication plan. Use when managing stakeholders, preparing for a launch, aligning cross-functional teams, or planning stakeholder engagement.",
+      "sourcePath": "~/.codex/skills/stakeholder-map/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.578Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 14,
+        "数据分析": 0,
+        "沟通落地": 8
+      },
+      "pmScore": 24,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "stakeholder",
+              "weight": 8
+            },
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": [
+            {
+              "keyword": "communication",
+              "weight": 8
+            }
+          ]
+        },
+        "bonuses": [
+          {
+            "keyword": "plan",
+            "weight": 5
+          },
+          {
+            "keyword": "launch",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "brainstorm-experiments-new",
+      "title": "brainstorm-experiments-new",
+      "description": "Design lean startup experiments (pretotypes) for a new product. Creates XYZ hypotheses and suggests low-effort validation methods like landing pages, explainer videos, and pre-orders. Use when validating a new product idea, creating pretotypes, or testing market demand.",
+      "sourcePath": "~/.codex/skills/brainstorm-experiments-new/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.689Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 8,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 22,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "market",
+              "weight": 8
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "market",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "competitor-analysis",
+      "title": "Competitor Analysis",
+      "description": "Analyze competitors with strengths, weaknesses, and differentiation opportunities. Identifies direct competitors and maps the competitive landscape. Use when doing competitive research, preparing a competitive brief, or finding differentiation opportunities.",
+      "sourcePath": "~/.codex/skills/competitor-analysis/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.625Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 10,
+        "策略定位": 9,
+        "规划定义": 0,
+        "数据分析": 6,
+        "沟通落地": 0
+      },
+      "pmScore": 21,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "research",
+              "weight": 10
+            }
+          ],
+          "策略定位": [
+            {
+              "keyword": "competitor",
+              "weight": 9
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "analysis",
+              "weight": 6
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "research",
+            "weight": 7
+          },
+          {
+            "keyword": "analysis",
+            "weight": 4
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "growth-loops",
+      "title": "Growth Loops",
+      "description": "Identify growth loops (flywheels) for sustainable traction. Evaluates 5 loop types: Viral, Usage, Collaboration, User-Generated, and Referral. Use when designing growth mechanisms, building product-led traction, or understanding how growth loops work.",
+      "sourcePath": "~/.codex/skills/growth-loops/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.607Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 6,
+        "策略定位": 8,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 21,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "user",
+              "weight": 6
+            }
+          ],
+          "策略定位": [
+            {
+              "keyword": "growth",
+              "weight": 8
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "user",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "identify-assumptions-existing",
+      "title": "identify-assumptions-existing",
+      "description": "Identify risky assumptions for a feature idea in an existing product across Value, Usability, Viability, and Feasibility. Uses multi-perspective devil's advocate thinking. Use when stress-testing a feature idea, doing risk assessment, or preparing for assumption mapping.",
+      "sourcePath": "~/.codex/skills/identify-assumptions-existing/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.703Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 7,
+        "策略定位": 0,
+        "规划定义": 7,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 21,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "assumption",
+              "weight": 7
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "feature",
+              "weight": 7
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "feature",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "sql-queries",
+      "title": "SQL Query Generator",
+      "description": "Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL, MySQL, and other dialects. Reads database schemas from uploaded diagrams or documentation. Use when writing SQL, building data reports, exploring databases, or translating business questions into queries.",
+      "sourcePath": "~/.codex/skills/sql-queries/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.529Z",
+      "primaryDimension": "数据分析",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 18,
+        "沟通落地": 0
+      },
+      "pmScore": 18,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "sql",
+              "weight": 10
+            },
+            {
+              "keyword": "data",
+              "weight": 8
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "prioritization-frameworks",
+      "title": "prioritization-frameworks",
+      "description": "Reference guide to 9 prioritization frameworks with formulas, when-to-use guidance, and templates — RICE, ICE, Kano, MoSCoW, Opportunity Score, and more. Use when selecting a prioritization method, comparing frameworks like RICE vs ICE, or learning how different prioritization approaches work.",
+      "sourcePath": "~/.codex/skills/prioritization-frameworks/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.561Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 8,
+        "策略定位": 0,
+        "规划定义": 10,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 18,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "opportunity",
+              "weight": 8
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [
+            {
+              "keyword": "priorit",
+              "weight": 10
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "priorit",
+            "weight": 8
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "prioritize-assumptions",
+      "title": "prioritize-assumptions",
+      "description": "Prioritize assumptions using an Impact × Risk matrix and suggest experiments for each. Use when triaging a list of assumptions, deciding what to test first, or applying the assumption prioritization canvas.",
+      "sourcePath": "~/.codex/skills/prioritize-assumptions/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.726Z",
+      "primaryDimension": "规划定义",
+      "dimensionScores": {
+        "发现研究": 7,
+        "策略定位": 7,
+        "规划定义": 10,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 18,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "assumption",
+              "weight": 7
+            }
+          ],
+          "策略定位": [
+            {
+              "keyword": "canvas",
+              "weight": 7
+            }
+          ],
+          "规划定义": [
+            {
+              "keyword": "priorit",
+              "weight": 10
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "priorit",
+            "weight": 8
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "business-model",
+      "title": "Business Model Canvas",
+      "description": "Generate a Business Model Canvas with all 9 building blocks. Use when creating a business model, documenting how a business creates value, or analyzing an existing business model.",
+      "sourcePath": "~/.codex/skills/business-model/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.743Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 17,
+        "规划定义": 0,
+        "数据分析": 12,
+        "沟通落地": 0
+      },
+      "pmScore": 17,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "business model",
+              "weight": 10
+            },
+            {
+              "keyword": "canvas",
+              "weight": 7
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "a/b",
+              "weight": 12
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "brainstorm-okrs",
+      "title": "Brainstorm Team OKRs",
+      "description": "Brainstorm team-level OKRs aligned with company objectives — qualitative objectives with measurable key results. Use when setting quarterly OKRs, aligning team goals with company strategy, drafting objectives, or learning how to write effective OKRs.",
+      "sourcePath": "~/.codex/skills/brainstorm-okrs/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.534Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 10,
+        "规划定义": 8,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 17,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "strategy",
+              "weight": 10
+            }
+          ],
+          "规划定义": [
+            {
+              "keyword": "okr",
+              "weight": 8
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "strategy",
+            "weight": 7
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "iot-query",
+      "title": "IoT 智能家居竞品功能研究引擎",
+      "description": "IoT 智能家居竞品功能研究引擎（Capability Research Task）。触发场景： 1. 用户输入能力主题研究，如\"语音助手功能研究\"、\"自动化能力研究\"、\"智能门锁生态研究\" 2. 用户说\"分析 [功能/平台]\"、\"对比 [能力]\"、\"[平台] 最新动态\"、\"研究 [主题]\" 3. 用户提出具体能力问题，如\"三星 Matter 摄像头支持到哪一步了\" 不触发场景：生成完整周报（用 iot-weekly-research）；速读单篇文章（用 iot-url）。",
+      "sourcePath": "~/.codex/skills/iot-query/SKILL.md",
+      "modifiedAt": "2026-03-19T08:10:35.971Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 10,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 17,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "research",
+              "weight": 10
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "research",
+            "weight": 7
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "product-vision",
+      "title": "Product Vision",
+      "description": "Brainstorm an inspiring, achievable, and emotional product vision that motivates teams and aligns stakeholders. Use when defining or refining a product vision, creating a vision statement, or aligning the team around a shared direction.",
+      "sourcePath": "~/.codex/skills/product-vision/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.775Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 9,
+        "规划定义": 8,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 17,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "vision",
+              "weight": 9
+            }
+          ],
+          "规划定义": [
+            {
+              "keyword": "stakeholder",
+              "weight": 8
+            }
+          ],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "pestle-analysis",
+      "title": "PESTLE Analysis",
+      "description": "Perform a PESTLE analysis covering Political, Economic, Social, Technological, Legal, and Environmental factors. Use when assessing the macro environment, doing strategic planning, or evaluating external factors affecting your business.",
+      "sourcePath": "~/.codex/skills/pestle-analysis/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.757Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 8,
+        "规划定义": 6,
+        "数据分析": 6,
+        "沟通落地": 0
+      },
+      "pmScore": 17,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "pestle",
+              "weight": 8
+            }
+          ],
+          "规划定义": [
+            {
+              "keyword": "plan",
+              "weight": 6
+            }
+          ],
+          "数据分析": [
+            {
+              "keyword": "analysis",
+              "weight": 6
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "analysis",
+            "weight": 4
+          },
+          {
+            "keyword": "plan",
+            "weight": 5
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "swot-analysis",
+      "title": "SWOT Analysis",
+      "description": "Perform a detailed SWOT analysis — strengths, weaknesses, opportunities, and threats with actionable recommendations. Use when doing strategic assessment, competitive analysis, or evaluating a product or business position.",
+      "sourcePath": "~/.codex/skills/swot-analysis/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.784Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 16,
+        "规划定义": 0,
+        "数据分析": 6,
+        "沟通落地": 0
+      },
+      "pmScore": 16,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "position",
+              "weight": 8
+            },
+            {
+              "keyword": "swot",
+              "weight": 8
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "analysis",
+              "weight": 6
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "analysis",
+            "weight": 4
+          }
+        ],
+        "penalties": [
+          {
+            "keyword": "nda",
+            "weight": 12
+          }
+        ]
+      },
+      "included": false
+    },
+    {
+      "slug": "market-sizing",
+      "title": "Estimate Market Size (TAM, SAM, SOM)",
+      "description": "Estimate market size using TAM, SAM, and SOM with top-down and bottom-up approaches. Use when sizing a market opportunity, estimating addressable market, preparing for investor pitches, or evaluating market entry.",
+      "sourcePath": "~/.codex/skills/market-sizing/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.640Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 8,
+        "策略定位": 8,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 14,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "opportunity",
+              "weight": 8
+            }
+          ],
+          "策略定位": [
+            {
+              "keyword": "market",
+              "weight": 8
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "market",
+            "weight": 6
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "mijia-app-figma-spec",
+      "title": "Mijia App Figma Spec",
+      "description": "Apply the official Mijia Harmony app Figma design language to new pages, flow design, UI reviews, and implementation guidance. Use when Codex needs to design, restyle, critique, or map work to the Mijia Figma spec file `1sfio83buMLRzVwpokEudA`, especially for homepage tabs, notification center, camera, add-device, provisioning, and family-management flows.",
+      "sourcePath": "~/.codex/skills/mijia-app-figma-spec/SKILL.md",
+      "modifiedAt": "2026-03-18T12:27:23.045Z",
+      "primaryDimension": "策略定位",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 9,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 9,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [
+            {
+              "keyword": "vision",
+              "weight": 9
+            }
+          ],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "grammar-check",
+      "title": "Grammar and Flow Checking",
+      "description": "Identify grammar, logical, and flow errors in text and suggest targeted fixes without rewriting the entire text. Use when proofreading content, checking writing quality, or reviewing a draft.",
+      "sourcePath": "~/.codex/skills/grammar-check/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.798Z",
+      "primaryDimension": "沟通落地",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 8
+      },
+      "pmScore": 8,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": [
+            {
+              "keyword": "grammar",
+              "weight": 8
+            }
+          ]
+        },
+        "bonuses": [],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "product-name",
+      "title": "Product Name",
+      "description": "Brainstorm 5 unique, memorable product names with rationale aligned to brand values and target audience. Use when naming a new product, rebranding, or exploring product name ideas.",
+      "sourcePath": "~/.codex/skills/product-name/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.671Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 8,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          }
+        ],
+        "penalties": []
+      },
+      "included": false
+    },
+    {
+      "slug": "review-resume",
+      "title": "Resume Review for Product Managers",
+      "description": "Comprehensive PM resume review and tailoring against 10 best practices including XYZ+S formula, keyword optimization, job-specific tailoring, and structure. Use when reviewing a PM resume, preparing for job applications, or improving resume impact.",
+      "sourcePath": "~/.codex/skills/review-resume/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.806Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 2,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "pm",
+            "weight": 8
+          }
+        ],
+        "penalties": [
+          {
+            "keyword": "resume",
+            "weight": 14
+          }
+        ]
+      },
+      "included": false
+    },
+    {
+      "slug": "privacy-policy",
+      "title": "Privacy Policy Generator",
+      "description": "Draft a detailed privacy policy covering data types, jurisdiction, GDPR and compliance considerations, and clauses needing legal review. Use when creating a privacy policy, updating data protection documentation, or preparing for compliance.",
+      "sourcePath": "~/.codex/skills/privacy-policy/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.802Z",
+      "primaryDimension": "数据分析",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 8,
+        "沟通落地": 0
+      },
+      "pmScore": 0,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [
+            {
+              "keyword": "data",
+              "weight": 8
+            }
+          ],
+          "沟通落地": []
+        },
+        "bonuses": [],
+        "penalties": [
+          {
+            "keyword": "privacy policy",
+            "weight": 12
+          }
+        ]
+      },
+      "included": false
+    },
+    {
+      "slug": "imagegen",
+      "title": "Image Generation Skill",
+      "description": "Use when the user asks to generate or edit images via the OpenAI Image API (for example: generate image, edit/inpaint/mask, background removal or replacement, transparent background, product shots, concept art, covers, or batch variants); run the bundled CLI (`scripts/image_gen.py`) and require `OPENAI_API_KEY` for live calls.",
+      "sourcePath": "~/.codex/skills/imagegen/SKILL.md",
+      "modifiedAt": "2026-03-19T12:06:55.422Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 6,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 0,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "user",
+              "weight": 6
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "user",
+            "weight": 5
+          }
+        ],
+        "penalties": [
+          {
+            "keyword": "image api",
+            "weight": 18
+          },
+          {
+            "keyword": "image",
+            "weight": 8
+          }
+        ]
+      },
+      "included": false
+    },
+    {
+      "slug": "figma-implement-design",
+      "title": "Implement Design",
+      "description": "Translate Figma nodes into production-ready code with 1:1 visual fidelity using the Figma MCP workflow (design context, screenshots, assets, and project-convention translation). Trigger when the user provides Figma URLs or node IDs, or asks to implement designs or components that must match Figma specs. Requires a working Figma MCP server connection.",
+      "sourcePath": "~/.codex/skills/figma-implement-design/SKILL.md",
+      "modifiedAt": "2026-02-27T12:41:34.904Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 6,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 0,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [
+            {
+              "keyword": "user",
+              "weight": 6
+            }
+          ],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "product",
+            "weight": 8
+          },
+          {
+            "keyword": "user",
+            "weight": 5
+          }
+        ],
+        "penalties": [
+          {
+            "keyword": "figma nodes",
+            "weight": 12
+          },
+          {
+            "keyword": "production-ready code",
+            "weight": 12
+          }
+        ]
+      },
+      "included": false
+    },
+    {
+      "slug": "better-icons",
+      "title": "Better Icons",
+      "description": "Use when working with icons in any project. Provides CLI for searching 200+ icon libraries (Iconify) and retrieving SVGs. Commands: `better-icons search <query>` to find icons, `better-icons get <id>` to get SVG. Also available as MCP server for AI agents.",
+      "sourcePath": "~/.codex/skills/better-icons/SKILL.md",
+      "modifiedAt": "2026-03-19T12:17:24.824Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 0,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [],
+        "penalties": [
+          {
+            "keyword": "icon",
+            "weight": 18
+          },
+          {
+            "keyword": "icons",
+            "weight": 18
+          },
+          {
+            "keyword": "svg",
+            "weight": 15
+          }
+        ]
+      },
+      "included": false
+    },
+    {
+      "slug": "develop-web-game",
+      "title": "Develop Web Game",
+      "description": "Use when Codex is building or iterating on a web game (HTML/JS) and needs a reliable development + testing loop: implement small changes, run a Playwright-based test script with short input bursts and intentional pauses, inspect screenshots/text, and review console errors with render_game_to_text.",
+      "sourcePath": "~/.codex/skills/develop-web-game/SKILL.md",
+      "modifiedAt": "2026-02-27T12:41:39.856Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 0,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [
+          {
+            "keyword": "pm",
+            "weight": 8
+          }
+        ],
+        "penalties": [
+          {
+            "keyword": "web game",
+            "weight": 20
+          },
+          {
+            "keyword": "html/js",
+            "weight": 8
+          }
+        ]
+      },
+      "included": false
+    },
+    {
+      "slug": "draft-nda",
+      "title": "NDA (Non-Disclosure Agreement) Drafting",
+      "description": "Draft a detailed Non-Disclosure Agreement between two parties covering information types, jurisdiction, and clauses needing legal review. Use when creating confidentiality agreements or preparing an NDA for a partnership.",
+      "sourcePath": "~/.codex/skills/draft-nda/SKILL.md",
+      "modifiedAt": "2026-03-19T08:29:09.793Z",
+      "primaryDimension": "发现研究",
+      "dimensionScores": {
+        "发现研究": 0,
+        "策略定位": 0,
+        "规划定义": 0,
+        "数据分析": 0,
+        "沟通落地": 0
+      },
+      "pmScore": 0,
+      "matchedKeywords": {
+        "dimensions": {
+          "发现研究": [],
+          "策略定位": [],
+          "规划定义": [],
+          "数据分析": [],
+          "沟通落地": []
+        },
+        "bonuses": [],
+        "penalties": [
+          {
+            "keyword": "nda",
+            "weight": 12
+          }
+        ]
+      },
+      "included": false
+    }
+  ]
+}

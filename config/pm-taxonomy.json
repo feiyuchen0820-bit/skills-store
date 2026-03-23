@@ -1,0 +1,161 @@
+{
+  "sourceRoot": "/Users/chenfeiyu/.codex/skills",
+  "excludeDirs": [
+    ".system"
+  ],
+  "includeThreshold": 30,
+  "dimensions": [
+    {
+      "key": "发现研究",
+      "keywords": {
+        "research": 10,
+        "discovery": 10,
+        "interview": 10,
+        "customer": 8,
+        "user": 6,
+        "persona": 10,
+        "personas": 10,
+        "segment": 8,
+        "segmentation": 10,
+        "journey": 8,
+        "feedback": 9,
+        "jtbd": 10,
+        "job stories": 9,
+        "job-to-be-done": 9,
+        "assumption": 7,
+        "opportunity": 8,
+        "insight": 8,
+        "sentiment": 9
+      }
+    },
+    {
+      "key": "策略定位",
+      "keywords": {
+        "strategy": 10,
+        "vision": 9,
+        "positioning": 10,
+        "position": 8,
+        "competitor": 9,
+        "market": 8,
+        "gtm": 9,
+        "go-to-market": 9,
+        "pricing": 9,
+        "monetization": 9,
+        "business model": 10,
+        "value proposition": 9,
+        "growth": 8,
+        "beachhead": 9,
+        "swot": 8,
+        "pestle": 8,
+        "porter": 8,
+        "canvas": 7
+      }
+    },
+    {
+      "key": "规划定义",
+      "keywords": {
+        "prd": 12,
+        "requirements": 10,
+        "roadmap": 10,
+        "priorit": 10,
+        "feature": 7,
+        "backlog": 9,
+        "story": 9,
+        "sprint": 8,
+        "stakeholder": 8,
+        "okr": 8,
+        "release": 7,
+        "plan": 6,
+        "pre-mortem": 8,
+        "acceptance": 7
+      }
+    },
+    {
+      "key": "数据分析",
+      "keywords": {
+        "a/b": 12,
+        "ab test": 12,
+        "sample size": 9,
+        "confidence interval": 9,
+        "statistical": 8,
+        "cohort": 10,
+        "metric": 10,
+        "metrics": 10,
+        "dashboard": 9,
+        "sql": 10,
+        "analytics": 8,
+        "retention": 9,
+        "north star": 10,
+        "analysis": 6,
+        "data": 8
+      }
+    },
+    {
+      "key": "沟通落地",
+      "keywords": {
+        "meeting": 9,
+        "summary": 8,
+        "summarize": 8,
+        "release notes": 10,
+        "retro": 9,
+        "grammar": 8,
+        "communication": 8,
+        "battlecard": 7,
+        "notes": 7,
+        "alignment": 7,
+        "workshop": 6
+      }
+    }
+  ],
+  "bonusKeywords": {
+    "product": 8,
+    "pm": 8,
+    "customer": 6,
+    "user": 5,
+    "strategy": 7,
+    "feature": 6,
+    "roadmap": 8,
+    "prd": 10,
+    "research": 7,
+    "priorit": 8,
+    "market": 6,
+    "metric": 6,
+    "analysis": 4,
+    "plan": 5,
+    "summary": 4,
+    "launch": 5
+  },
+  "penaltyKeywords": {
+    "icon": 18,
+    "icons": 18,
+    "svg": 15,
+    "web game": 20,
+    "html/js": 8,
+    "image api": 18,
+    "image": 8,
+    "resume": 14,
+    "nda": 12,
+    "privacy policy": 12,
+    "figma nodes": 12,
+    "production-ready code": 12,
+    "skill installer": 14,
+    "skill creator": 14,
+    "openai docs": 14
+  },
+  "validation": {
+    "mustInclude": [
+      "create-prd",
+      "interview-script",
+      "product-strategy",
+      "prioritize-features",
+      "ab-test-analysis"
+    ],
+    "mustExclude": [
+      "better-icons",
+      "imagegen",
+      "develop-web-game",
+      "review-resume"
+    ]
+  }
+}
+

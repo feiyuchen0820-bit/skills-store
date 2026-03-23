@@ -1,0 +1,14 @@
+{
+  "name": "skills-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PM skills H5 directory site with local daily refresh.",
+  "scripts": {
+    "build:data": "node scripts/build-skills-index.mjs",
+    "refresh": "node scripts/build-skills-index.mjs --validate",
+    "preview": "python3 -m http.server 4173",
+    "check": "bash scripts/check-setup.sh",
+    "install:launchd": "bash scripts/install-launch-agent.sh",
+    "uninstall:launchd": "bash scripts/uninstall-launch-agent.sh"
+  }
+}
