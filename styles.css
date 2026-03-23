@@ -356,6 +356,32 @@ h1 {
   color: #a66d00;
 }
 
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 9px 12px;
+  border-radius: 999px;
+  background: var(--brand-soft);
+  color: var(--brand);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.skill-markdown {
+  margin: 0;
+  padding: 16px;
+  border-radius: 18px;
+  background: #0f172a;
+  color: #e5edf8;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-x: auto;
+}
+
 .override-note {
   margin-top: 12px;
   padding: 12px 14px;

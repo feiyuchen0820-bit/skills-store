@@ -11,6 +11,7 @@ const workspaceRoot = path.resolve(__dirname, "..");
 const taxonomyPath = path.join(workspaceRoot, "config", "pm-taxonomy.json");
 const overridesPath = path.join(workspaceRoot, "config", "pm-overrides.json");
 const outputPath = path.join(workspaceRoot, "data", "skills.json");
+const detailsRoot = path.join(workspaceRoot, "skills");
 const shouldValidate = process.argv.includes("--validate");
 
 const taxonomy = JSON.parse(await fs.readFile(taxonomyPath, "utf8"));
@@ -28,6 +29,15 @@ function normalizeForSearch(value) {
     .replace(/[^\p{L}\p{N}]+/gu, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
 }
 
 function matchesKeyword(rawHaystack, normalizedHaystack, keyword) {
@@ -165,6 +175,10 @@ function formatSourcePath(absolutePath) {
   }
 
   return absolutePath;
+}
+
+function buildDetailUrl(slug) {
+  return `./skills/${slug}/`;
 }
 
 function validateOverrideConfig() {
@@ -329,6 +343,7 @@ function validatePayload(payload) {
       "title",
       "description",
       "sourcePath",
+      "detailUrl",
       "modifiedAt",
       "primaryDimension",
       "dimensionScores",
@@ -407,6 +422,85 @@ function buildComparablePayload(payload) {
   };
 }
 
+function renderDetailPage(skill) {
+  const keywordList = [
+    ...(skill.matchedKeywords.dimensions[skill.primaryDimension] || []),
+    ...(skill.matchedKeywords.bonuses || [])
+  ]
+    .slice(0, 10)
+    .map((item) => `${item.keyword} +${item.weight}`)
+    .join(" · ");
+
+  const overrideNote = skill.override?.note
+    ? `<div class="override-note">手工规则：${escapeHtml(skill.override.note)}</div>`
+    : "";
+
+  return `<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>${escapeHtml(skill.title)} · Skills 详情</title>
+    <meta name="description" content="${escapeHtml(skill.description)}" />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero-card">
+        <p class="eyebrow">Skill 详情</p>
+        <h1>${escapeHtml(skill.title)}</h1>
+        <p class="hero-copy">${escapeHtml(skill.description)}</p>
+        <div class="score-badges">
+          <span class="score-pill">推荐分 ${skill.pmScore}</span>
+          <span class="dimension-pill">${escapeHtml(skill.primaryDimension)}</span>
+        </div>
+        ${overrideNote}
+        <div class="toolbar-meta">
+          <span>来源：${escapeHtml(skill.sourcePath)}</span>
+          <span>最近修改：${escapeHtml(skill.modifiedAt)}</span>
+        </div>
+      </section>
+
+      <section class="toolbar-card">
+        <div class="skill-bottomline">
+          <a class="link-button" href="../../">← 返回目录</a>
+          <a class="link-button" href="https://github.com/feiyuchen0820-bit/skills-store">仓库</a>
+        </div>
+        <div class="section-label">命中关键词</div>
+        <div class="keyword-list">
+          ${
+            keywordList
+              ? keywordList
+                  .split(" · ")
+                  .map((item) => `<span class="keyword-pill">${escapeHtml(item)}</span>`)
+                  .join("")
+              : '<span class="keyword-pill">暂无关键词命中</span>'
+          }
+        </div>
+      </section>
+
+      <section class="skill-card">
+        <div class="section-label">原始 SKILL.md</div>
+        <pre class="skill-markdown">${escapeHtml(skill.markdown)}</pre>
+      </section>
+    </main>
+  </body>
+</html>
+`;
+}
+
+async function writeDetailPages(skills) {
+  await fs.rm(detailsRoot, { recursive: true, force: true });
+  await fs.mkdir(detailsRoot, { recursive: true });
+
+  for (const skill of skills) {
+    const detailDirectory = path.join(detailsRoot, skill.slug);
+    const detailPath = path.join(detailDirectory, "index.html");
+    await fs.mkdir(detailDirectory, { recursive: true });
+    await fs.writeFile(detailPath, renderDetailPage(skill), "utf8");
+  }
+}
+
 async function readExistingOutput() {
   try {
     const raw = await fs.readFile(outputPath, "utf8");
@@ -455,7 +549,9 @@ async function main() {
       baseIncluded: scorecard.baseIncluded,
       matchedKeywords: scorecard.matchedKeywords,
       included: scorecard.included,
-      override: scorecard.override
+      override: scorecard.override,
+      detailUrl: buildDetailUrl(slug),
+      markdown
     });
   }
 
@@ -489,7 +585,22 @@ async function main() {
       countsByDimension,
       dimensions: dimensionOrder
     },
-    skills
+    skills: skills.map((skill) => ({
+      slug: skill.slug,
+      title: skill.title,
+      description: skill.description,
+      sourcePath: skill.sourcePath,
+      modifiedAt: skill.modifiedAt,
+      primaryDimension: skill.primaryDimension,
+      dimensionScores: skill.dimensionScores,
+      pmScore: skill.pmScore,
+      basePmScore: skill.basePmScore,
+      baseIncluded: skill.baseIncluded,
+      matchedKeywords: skill.matchedKeywords,
+      included: skill.included,
+      override: skill.override,
+      detailUrl: skill.detailUrl
+    }))
   };
 
   const existingOutput = await readExistingOutput();
@@ -508,6 +619,7 @@ async function main() {
   const nextOutput = `${JSON.stringify(payload, null, 2)}\n`;
 
   await fs.mkdir(path.dirname(outputPath), { recursive: true });
+  await writeDetailPages(skills);
 
   if (!existingOutput || existingOutput.raw !== nextOutput) {
     await fs.writeFile(outputPath, nextOutput, "utf8");
@@ -516,14 +628,14 @@ async function main() {
   if (shouldValidate) {
     validatePayload(payload);
     console.log(
-      `Validation passed: ${payload.meta.includedSkills}/${payload.meta.totalSkills} PM skills included.`
+      `Validation passed: ${payload.meta.includedSkills}/${payload.meta.totalSkills} related skills included.`
     );
     return;
   }
 
   if (existingOutput && existingOutput.raw === nextOutput) {
     console.log(
-      `No data changes. Preserved ${payload.meta.includedSkills}/${payload.meta.totalSkills} PM skills.`
+      `No data changes. Preserved ${payload.meta.includedSkills}/${payload.meta.totalSkills} related skills.`
     );
     return;
   }

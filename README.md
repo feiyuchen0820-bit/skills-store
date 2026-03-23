@@ -1,13 +1,13 @@
-# PM Skills H5 目录站
+# 产品相关 Skills 目录站
 
-一个面向产品经理的静态 skills 目录站：从本机 `/Users/chenfeiyu/.codex/skills` 读取 skill 元数据，按 PM 5 维自动分类、打分、排序，并生成可发布到 GitHub Pages 的 H5 页面。
+一个面向产品、设计、战略、增长等工作流的静态 skills 目录站：从本机 `/Users/chenfeiyu/.codex/skills` 读取 skill 元数据，按多维度自动分类、打分、排序，并生成可发布到 GitHub Pages 的 H5 页面。
 
 ## 文件结构
 
 - `package.json`：构建、校验和本地预览脚本
-- `config/pm-taxonomy.json`：PM 维度、加分词、惩罚词和校验名单
+- `config/pm-taxonomy.json`：产品相关维度、加分词、惩罚词和校验名单
 - `config/pm-overrides.json`：手工置顶、降权、强制收录/排除规则
-- `scripts/build-skills-index.mjs`：扫描 skill 并生成 `data/skills.json`
+- `scripts/build-skills-index.mjs`：扫描 skill 并生成 `data/skills.json` 与 `skills/<slug>/index.html`
 - `index.html`、`styles.css`、`app.js`：静态 H5 页面
 - `scripts/daily-refresh.sh`：每日更新数据并按需推送
 - `automation/com.skills-store.daily-refresh.plist`：macOS `launchd` 每日 09:00 定时任务模板
@@ -30,7 +30,7 @@
 ```bash
 git init -b main
 git add .
-git commit -m "feat: bootstrap PM skills site"
+git commit -m "feat: bootstrap skills site"
 git remote add origin <你的 GitHub 仓库地址>
 git push -u origin main
 ```
@@ -89,10 +89,10 @@ npm run check
 
 ## 评分规则
 
-- 总分公式：`PM 推荐分 = max(维度分) + PM 加分 - 非 PM 惩罚`
+- 总分公式：`推荐分 = max(维度分) + 产品相关加分 - 非相关惩罚`
 - 若 `config/pm-overrides.json` 命中，会在自动分基础上叠加 `scoreDelta`
 - 支持 `forceInclude`、`forceExclude`、`primaryDimension` 手工修正
-- 收录阈值：`PM 推荐分 >= 30`
+- 当前收录阈值：`推荐分 >= 15`
 - 数据源只使用：`slug + title + description`
 - `.system` 目录下的系统 skills 不进入站点目录
 
@@ -106,3 +106,4 @@ npm run check
   - `primaryDimension`：手工指定主维度
   - `labels`、`note`：前端展示说明
 - 页面内“收藏”保存在浏览器 `localStorage`，只对当前浏览器生效，不会同步到仓库
+- 每个 skill 会生成站内详情页，可从首页卡片点击“查看详情”跳转

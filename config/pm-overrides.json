@@ -95,48 +95,105 @@
       "scoreDelta": 14,
       "forceInclude": true,
       "primaryDimension": "发现研究",
-      "labels": ["行业研究"],
+      "labels": ["行业研究", "中文"],
       "note": "垂类竞品研究技能对行业 PM 很有价值，手工纳入。"
+    },
+    "mijia-app-figma-spec": {
+      "scoreDelta": 20,
+      "forceInclude": true,
+      "primaryDimension": "设计体验",
+      "labels": ["中文", "设计"],
+      "note": "这是中文设计规范类 skill，应该纳入产品相关榜单。"
+    },
+    "figma-implement-design": {
+      "scoreDelta": 18,
+      "forceInclude": true,
+      "primaryDimension": "设计体验",
+      "labels": ["设计", "实现"],
+      "note": "Figma 到实现的链路对产品和设计协作都很关键。"
+    },
+    "better-icons": {
+      "scoreDelta": 18,
+      "forceInclude": true,
+      "primaryDimension": "视觉表达",
+      "labels": ["设计", "图标"],
+      "note": "图标与视觉素材能力属于设计/画图工作流，应该收录。"
+    },
+    "imagegen": {
+      "scoreDelta": 18,
+      "forceInclude": true,
+      "primaryDimension": "视觉表达",
+      "labels": ["画图", "视觉生成"],
+      "note": "图像生成与视觉创意属于画图类工作流，应该收录。"
+    },
+    "marketing-ideas": {
+      "scoreDelta": 6,
+      "forceInclude": true,
+      "primaryDimension": "增长营销",
+      "labels": ["增长"],
+      "note": "营销创意是产品增长相关技能。"
+    },
+    "growth-loops": {
+      "scoreDelta": 6,
+      "forceInclude": true,
+      "primaryDimension": "增长营销",
+      "labels": ["增长"],
+      "note": "增长循环属于增长策略方法，应收录。"
+    },
+    "porters-five-forces": {
+      "scoreDelta": 4,
+      "forceInclude": true,
+      "primaryDimension": "策略定位",
+      "labels": ["战略"],
+      "note": "五力模型属于经典战略分析框架。"
+    },
+    "pestle-analysis": {
+      "scoreDelta": 4,
+      "forceInclude": true,
+      "primaryDimension": "策略定位",
+      "labels": ["战略"],
+      "note": "PESTLE 属于宏观战略分析工具。"
+    },
+    "swot-analysis": {
+      "scoreDelta": 4,
+      "forceInclude": true,
+      "primaryDimension": "策略定位",
+      "labels": ["战略"],
+      "note": "SWOT 属于常见战略分析技能。"
+    },
+    "market-sizing": {
+      "scoreDelta": 4,
+      "forceInclude": true,
+      "primaryDimension": "策略定位",
+      "labels": ["战略", "市场"],
+      "note": "市场规模测算是产品战略分析的重要一环。"
+    },
+    "product-name": {
+      "scoreDelta": 8,
+      "forceInclude": true,
+      "primaryDimension": "增长营销",
+      "labels": ["品牌"],
+      "note": "产品命名属于品牌与增长表达的一部分。"
     },
     "review-resume": {
       "forceExclude": true,
       "labels": ["排除"],
-      "note": "求职场景工具，不纳入 PM 工作流主榜。"
-    },
-    "better-icons": {
-      "forceExclude": true,
-      "labels": ["排除"],
-      "note": "偏设计资源工具，不纳入 PM skills 主榜。"
-    },
-    "imagegen": {
-      "forceExclude": true,
-      "labels": ["排除"],
-      "note": "偏内容生成，不属于 PM 核心工作流。"
+      "note": "求职场景工具，不纳入产品工作流主榜。"
     },
     "develop-web-game": {
       "forceExclude": true,
       "labels": ["排除"],
-      "note": "面向前端游戏开发，不纳入产品经理榜单。"
-    },
-    "figma-implement-design": {
-      "forceExclude": true,
-      "labels": ["排除"],
-      "note": "偏设计实现，不属于 PM 主榜的核心技能。"
+      "note": "面向前端游戏开发，不纳入产品相关榜单。"
     },
     "draft-nda": {
       "forceExclude": true,
       "labels": ["排除"],
-      "note": "法务文书类技能，不纳入 PM 主榜。"
+      "note": "法务文书类技能，不纳入产品相关主榜。"
     },
     "privacy-policy": {
       "forceExclude": true,
       "labels": ["排除"],
-      "note": "合规文书类技能，不纳入 PM 主榜。"
-    },
-    "mijia-app-figma-spec": {
-      "forceExclude": true,
-      "labels": ["排除"],
-      "note": "偏设计规范映射，默认不计入通用 PM 榜单。"
+      "note": "合规文书类技能，不纳入产品相关主榜。"
     }
   }
 }

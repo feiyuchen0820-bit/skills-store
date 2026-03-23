@@ -17,6 +17,7 @@ const emptyStateElement = document.querySelector("#empty-state");
 const searchInput = document.querySelector("#search-input");
 const sortSelectElement = document.querySelector("#sort-select");
 const resultsSummaryElement = document.querySelector("#results-summary");
+const thresholdNoteElement = document.querySelector("#threshold-note");
 const generatedAtElement = document.querySelector("#generated-at");
 const totalSkillsElement = document.querySelector("#total-skills");
 const includedSkillsElement = document.querySelector("#included-skills");
@@ -323,9 +324,10 @@ function renderCards() {
                 <div class="skill-slug">${escapeHtml(skill.slug)}</div>
               </div>
               <div class="score-badges">
-                <span class="score-pill">PM 推荐分 ${skill.pmScore}</span>
+                <span class="score-pill">推荐分 ${skill.pmScore}</span>
                 <span class="dimension-pill">${escapeHtml(skill.primaryDimension)}</span>
                 ${overridePill}
+                <a class="link-button" href="${escapeHtml(skill.detailUrl)}">查看详情</a>
                 <button class="favorite-button${isFavorite(skill.slug) ? " active" : ""}" data-favorite-slug="${escapeHtml(skill.slug)}">${favoriteButtonLabel}</button>
               </div>
             </div>
@@ -355,7 +357,7 @@ function renderCards() {
   }
 
   const scopeLabel =
-    state.selectedTab === "总榜" ? "全部 PM 维度" : state.selectedTab;
+    state.selectedTab === "总榜" ? "全部相关维度" : state.selectedTab;
   const filterLabel =
     state.filterMode === "all"
       ? "全部收录"
@@ -372,6 +374,7 @@ function renderSummary() {
   generatedAtElement.textContent = formatDateTime(meta.generatedAt);
   totalSkillsElement.textContent = String(meta.totalSkills);
   includedSkillsElement.textContent = `${meta.includedSkills}（手工 ${meta.manualIncludedCount}）`;
+  thresholdNoteElement.textContent = `默认阈值：推荐分 ≥ ${meta.includeThreshold}`;
 }
 
 function render() {

@@ -42,11 +42,11 @@ fi
 
 gh auth setup-git >/dev/null 2>&1 || true
 
-if [ -n "$(git status --porcelain -- data/skills.json)" ]; then
-  git add data/skills.json
-  git commit -m "chore: refresh PM skills index $(date '+%Y-%m-%d')"
+if [ -n "$(git status --porcelain -- data/skills.json skills)" ]; then
+  git add data/skills.json skills
+  git commit -m "chore: refresh skills index $(date '+%Y-%m-%d')"
   git push origin "$TARGET_BRANCH"
-  echo "已推送最新 data/skills.json 到 origin/$TARGET_BRANCH。"
+  echo "已推送最新 skills 数据与详情页到 origin/${TARGET_BRANCH}。"
 else
-  echo "data/skills.json 无变化，跳过提交。"
+  echo "skills 数据与详情页无变化，跳过提交。"
 fi

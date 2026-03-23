@@ -6,20 +6,20 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>PM Skills H5 目录站</title>
+    <title>产品相关 Skills 目录站</title>
     <meta
       name="description"
-      content="按 PM 维度自动筛选、打分并排序的 skills H5 目录站。"
+      content="按产品、设计、战略、增长等维度自动筛选、打分并排序的 skills 目录站。"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main class="page-shell">
       <section class="hero-card">
-        <p class="eyebrow">PM Skills H5 目录站</p>
-        <h1>产品经理 Skills 排行榜</h1>
+        <p class="eyebrow">产品相关 Skills 目录站</p>
+        <h1>产品 / 设计 / 战略 Skills 排行榜</h1>
         <p class="hero-copy">
-          基于本地 skills 描述自动分类、打分和排序。默认只展示 PM 推荐分达标的
+          基于本地 skills 描述自动分类、打分和排序。默认只展示推荐分达标的
           skill。
         </p>
         <div class="stats-grid">
@@ -33,7 +33,7 @@
           </article>
           <article class="stat-card">
             <span id="included-skills" class="stat-value">-</span>
-            <span class="stat-label">PM 收录数</span>
+            <span class="stat-label">收录数</span>
           </article>
         </div>
       </section>
@@ -48,7 +48,7 @@
             autocomplete="off"
           />
         </label>
-        <div id="tabs" class="tabs" aria-label="PM 维度筛选"></div>
+        <div id="tabs" class="tabs" aria-label="产品相关维度筛选"></div>
         <div class="toolbar-controls">
           <div id="filter-tabs" class="filter-tabs" aria-label="结果过滤"></div>
           <label class="sort-panel" for="sort-select">
@@ -81,7 +81,7 @@
         <div id="dimension-breakdown" class="dimension-breakdown"></div>
         <div class="toolbar-meta">
           <span id="results-summary">正在加载数据...</span>
-          <span class="threshold-note">默认阈值：PM 推荐分 ≥ 30</span>
+          <span id="threshold-note" class="threshold-note">默认阈值：推荐分 ≥ 15</span>
         </div>
       </section>
 

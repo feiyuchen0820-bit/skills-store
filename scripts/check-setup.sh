@@ -7,7 +7,7 @@ SKILLS_ROOT="${SKILLS_ROOT:-/Users/chenfeiyu/.codex/skills}"
 
 cd "$ROOT_DIR"
 
-echo "== PM Skills Site Setup Check =="
+echo "== Product Skills Site Setup Check =="
 echo "workspace: $ROOT_DIR"
 echo "skills root: $SKILLS_ROOT"
 
