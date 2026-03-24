@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-23T12:54:36.912Z",
+    "generatedAt": "2026-03-24T02:10:10.617Z",
     "sourceRoot": "~/.codex/skills",
     "includeThreshold": 15,
     "totalSkills": 71,
@@ -32,7 +32,9 @@
     {
       "slug": "figma-implement-design",
       "title": "Implement Design",
+      "titleZh": "Figma 设计实现",
       "description": "Translate Figma nodes into production-ready code with 1:1 visual fidelity using the Figma MCP workflow (design context, screenshots, assets, and project-convention translation). Trigger when the user provides Figma URLs or node IDs, or asks to implement designs or components that must match Figma specs. Requires a working Figma MCP server connection.",
+      "summaryZh": "把 Figma 节点转成高还原度的界面实现代码。",
       "sourcePath": "~/.codex/skills/figma-implement-design/SKILL.md",
       "modifiedAt": "2026-02-27T12:41:34.904Z",
       "primaryDimension": "设计体验",
@@ -124,7 +126,9 @@
     {
       "slug": "mijia-app-figma-spec",
       "title": "Mijia App Figma Spec",
+      "titleZh": "米家 App Figma 规范",
       "description": "Apply the official Mijia Harmony app Figma design language to new pages, flow design, UI reviews, and implementation guidance. Use when Codex needs to design, restyle, critique, or map work to the Mijia Figma spec file `1sfio83buMLRzVwpokEudA`, especially for homepage tabs, notification center, camera, add-device, provisioning, and family-management flows.",
+      "summaryZh": "基于米家 Harmony Figma 规范做页面设计、评审和实现映射。",
       "sourcePath": "~/.codex/skills/mijia-app-figma-spec/SKILL.md",
       "modifiedAt": "2026-03-18T12:27:23.045Z",
       "primaryDimension": "设计体验",
@@ -211,7 +215,9 @@
     {
       "slug": "interview-script",
       "title": "interview-script",
+      "titleZh": "用户访谈提纲",
       "description": "Create a structured customer interview script with JTBD probing questions, warm-up, core exploration, and wrap-up sections. Follows The Mom Test principles — no leading questions, no pitching, focus on past behavior. Use when preparing for user interviews, creating interview guides, or planning discovery research.",
+      "summaryZh": "生成结构化的用户或客户访谈脚本。",
       "sourcePath": "~/.codex/skills/interview-script/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.712Z",
       "primaryDimension": "发现研究",
@@ -317,7 +323,9 @@
     {
       "slug": "product-strategy",
       "title": "Product Strategy Canvas",
+      "titleZh": "产品战略画布",
       "description": "Create a comprehensive product strategy using the 9-section Product Strategy Canvas — vision, segments, costs, value propositions, trade-offs, metrics, growth, capabilities, and defensibility. Use when building a product strategy, creating a strategic plan, or defining product direction.",
+      "summaryZh": "用战略画布梳理产品方向、价值和竞争优势。",
       "sourcePath": "~/.codex/skills/product-strategy/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.770Z",
       "primaryDimension": "策略定位",
@@ -437,7 +445,9 @@
     {
       "slug": "user-personas",
       "title": "User Personas",
+      "titleZh": "用户画像",
       "description": "Create refined user personas from research data — 3 personas with JTBD, pains, gains, and unexpected insights. Use when building personas from survey data, creating user profiles from research, or segmenting users for product decisions.",
+      "summaryZh": "从研究数据中提炼用户画像、痛点和目标。",
       "sourcePath": "~/.codex/skills/user-personas/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.648Z",
       "primaryDimension": "发现研究",
@@ -527,7 +537,9 @@
     {
       "slug": "create-prd",
       "title": "Create a Product Requirements Document",
+      "titleZh": "PRD 文档",
       "description": "Create a Product Requirements Document using a comprehensive 8-section template covering problem, objectives, segments, value propositions, solution, and release planning. Use when writing a PRD, documenting product requirements, preparing a feature spec, or reviewing an existing PRD.",
+      "summaryZh": "生成结构化的产品需求文档。",
       "sourcePath": "~/.codex/skills/create-prd/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.539Z",
       "primaryDimension": "规划定义",
@@ -642,7 +654,9 @@
     {
       "slug": "gtm-strategy",
       "title": "GTM Strategy",
+      "titleZh": "GTM 上市策略",
       "description": "Create a go-to-market strategy covering marketing channels, messaging, success metrics, and launch timeline. Use when planning a product launch, creating a GTM plan from scratch, or defining a launch strategy for a new market.",
+      "summaryZh": "制定产品上市、渠道和增长传播策略。",
       "sourcePath": "~/.codex/skills/gtm-strategy/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.616Z",
       "primaryDimension": "策略定位",
@@ -758,7 +772,9 @@
     {
       "slug": "sentiment-analysis",
       "title": "Sentiment Analysis",
+      "titleZh": "情感分析",
       "description": "Analyze user feedback data to identify segments with sentiment scores, JTBD, and product satisfaction insights. Use when analyzing user feedback at scale, running sentiment analysis on reviews or surveys, or identifying satisfaction patterns.",
+      "summaryZh": "分析用户反馈中的情绪、主题和满意度信号。",
       "sourcePath": "~/.codex/skills/sentiment-analysis/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.644Z",
       "primaryDimension": "发现研究",
@@ -843,7 +859,9 @@
     {
       "slug": "metrics-dashboard",
       "title": "metrics-dashboard",
+      "titleZh": "指标看板设计",
       "description": "Define and design a product metrics dashboard with key metrics, data sources, visualization types, and alert thresholds. Use when creating a metrics dashboard, defining KPIs, setting up product analytics, or building a data monitoring plan.",
+      "summaryZh": "定义产品指标、看板结构和预警逻辑。",
       "sourcePath": "~/.codex/skills/metrics-dashboard/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.717Z",
       "primaryDimension": "数据分析",
@@ -933,7 +951,9 @@
     {
       "slug": "beachhead-segment",
       "title": "Beachhead Segment",
+      "titleZh": "滩头市场选择",
       "description": "Identify the first beachhead market segment for a product launch. Evaluates segments against burning pain, willingness to pay, winnable market share, and referral potential. Use when choosing a first market, targeting an initial customer segment, or planning market entry strategy.",
+      "summaryZh": "识别最适合切入的首个目标市场。",
       "sourcePath": "~/.codex/skills/beachhead-segment/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.599Z",
       "primaryDimension": "策略定位",
@@ -1032,7 +1052,9 @@
     {
       "slug": "imagegen",
       "title": "Image Generation Skill",
+      "titleZh": "图像生成",
       "description": "Use when the user asks to generate or edit images via the OpenAI Image API (for example: generate image, edit/inpaint/mask, background removal or replacement, transparent background, product shots, concept art, covers, or batch variants); run the bundled CLI (`scripts/image_gen.py`) and require `OPENAI_API_KEY` for live calls.",
+      "summaryZh": "生成、编辑和替换图片等视觉素材。",
       "sourcePath": "~/.codex/skills/imagegen/SKILL.md",
       "modifiedAt": "2026-03-19T12:06:55.422Z",
       "primaryDimension": "视觉表达",
@@ -1117,7 +1139,9 @@
     {
       "slug": "ab-test-analysis",
       "title": "ab-test-analysis",
+      "titleZh": "A/B 测试分析",
       "description": "Analyze A/B test results with statistical significance, sample size validation, confidence intervals, and ship/extend/stop recommendations. Use when evaluating experiment results, checking if a test reached significance, interpreting split test data, or deciding whether to ship a variant.",
+      "summaryZh": "分析实验显著性、样本量和结论建议。",
       "sourcePath": "~/.codex/skills/ab-test-analysis/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.518Z",
       "primaryDimension": "数据分析",
@@ -1210,7 +1234,9 @@
     {
       "slug": "marketing-ideas",
       "title": "Marketing Ideas",
+      "titleZh": "营销创意",
       "description": "Generate 5 creative, cost-effective marketing ideas with channels, messaging, and engagement rationale. Use when brainstorming marketing campaigns, planning product promotion, or looking for creative marketing tactics.",
+      "summaryZh": "生成适合产品推广的营销点子和活动方案。",
       "sourcePath": "~/.codex/skills/marketing-ideas/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.658Z",
       "primaryDimension": "增长营销",
@@ -1298,7 +1324,9 @@
     {
       "slug": "pre-mortem",
       "title": "Pre-Mortem: Risk Analysis for Product Launch",
+      "titleZh": "预演复盘",
       "description": "Run a pre-mortem risk analysis on a PRD or launch plan. Categorizes risks as Tigers (real problems), Paper Tigers (overblown concerns), and Elephants (unspoken worries), then classifies as launch-blocking, fast-follow, or track. Use when preparing for launch, stress-testing a product plan, or identifying what could go wrong.",
+      "summaryZh": "在发布前预判潜在问题和失败风险。",
       "sourcePath": "~/.codex/skills/pre-mortem/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.557Z",
       "primaryDimension": "规划定义",
@@ -1380,7 +1408,9 @@
     {
       "slug": "iot-query",
       "title": "IoT 智能家居竞品功能研究引擎",
+      "titleZh": "IoT 智能家居竞品研究",
       "description": "IoT 智能家居竞品功能研究引擎（Capability Research Task）。触发场景： 1. 用户输入能力主题研究，如\"语音助手功能研究\"、\"自动化能力研究\"、\"智能门锁生态研究\" 2. 用户说\"分析 [功能/平台]\"、\"对比 [能力]\"、\"[平台] 最新动态\"、\"研究 [主题]\" 3. 用户提出具体能力问题，如\"三星 Matter 摄像头支持到哪一步了\" 不触发场景：生成完整周报（用 iot-weekly-research）；速读单篇文章（用 iot-url）。",
+      "summaryZh": "研究智能家居能力主题与竞品平台演进。",
       "sourcePath": "~/.codex/skills/iot-query/SKILL.md",
       "modifiedAt": "2026-03-19T08:10:35.971Z",
       "primaryDimension": "发现研究",
@@ -1456,7 +1486,9 @@
     {
       "slug": "release-notes",
       "title": "release-notes",
+      "titleZh": "发布说明",
       "description": "Generate user-facing release notes from tickets, PRDs, or changelogs. Creates clear, engaging summaries organized by category (new features, improvements, fixes). Use when writing release notes, creating changelogs, announcing product updates, or summarizing what shipped.",
+      "summaryZh": "生成面向用户的版本更新说明。",
       "sourcePath": "~/.codex/skills/release-notes/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.566Z",
       "primaryDimension": "规划定义",
@@ -1538,7 +1570,9 @@
     {
       "slug": "positioning-ideas",
       "title": "Positioning Ideas",
+      "titleZh": "定位方案",
       "description": "Brainstorm product positioning ideas differentiated from competitors. Identifies top competitors and generates positioning statements with rationale. Use when developing product positioning, differentiating from competitors, or crafting brand positioning strategy.",
+      "summaryZh": "输出产品定位、差异化与表达建议。",
       "sourcePath": "~/.codex/skills/positioning-ideas/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.667Z",
       "primaryDimension": "策略定位",
@@ -1611,7 +1645,9 @@
     {
       "slug": "market-segments",
       "title": "Market Segments",
+      "titleZh": "市场细分",
       "description": "Identify 3-5 potential customer segments with demographics, JTBD, and product fit analysis. Use when exploring market segments, identifying target audiences, evaluating new markets, or learning how to segment a market.",
+      "summaryZh": "识别潜在用户细分与匹配场景。",
       "sourcePath": "~/.codex/skills/market-segments/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.635Z",
       "primaryDimension": "发现研究",
@@ -1689,7 +1725,9 @@
     {
       "slug": "ideal-customer-profile",
       "title": "Ideal Customer Profile",
+      "titleZh": "理想客户画像 ICP",
       "description": "Identify the Ideal Customer Profile (ICP) from research data with demographics, behaviors, JTBD, and needs. Use when defining your ICP, analyzing PMF survey data, or understanding who your best customers are.",
+      "summaryZh": "定义理想客户画像和关键特征。",
       "sourcePath": "~/.codex/skills/ideal-customer-profile/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.621Z",
       "primaryDimension": "发现研究",
@@ -1758,7 +1796,9 @@
     {
       "slug": "user-segmentation",
       "title": "User Segmentation",
+      "titleZh": "用户分群",
       "description": "Segment users from feedback data based on behavior, JTBD, and needs. Identifies at least 3 distinct user segments. Use when segmenting a user base, analyzing diverse user feedback, or building a segmentation model.",
+      "summaryZh": "按行为、需求和反馈对用户做分层。",
       "sourcePath": "~/.codex/skills/user-segmentation/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.653Z",
       "primaryDimension": "发现研究",
@@ -1836,7 +1876,9 @@
     {
       "slug": "cohort-analysis",
       "title": "Cohort Analysis & Retention Explorer",
+      "titleZh": "Cohort 队列分析",
       "description": "Perform cohort analysis on user engagement data — retention curves, feature adoption trends, and segment-level insights. Use when analyzing user retention by cohort, studying feature adoption over time, investigating churn patterns, or identifying engagement trends.",
+      "summaryZh": "分析用户留存、活跃和采用趋势。",
       "sourcePath": "~/.codex/skills/cohort-analysis/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.523Z",
       "primaryDimension": "数据分析",
@@ -1922,7 +1964,9 @@
     {
       "slug": "identify-assumptions-new",
       "title": "identify-assumptions-new",
+      "titleZh": "新产品假设识别",
       "description": "Identify risky assumptions for a new product idea across 8 risk categories including Go-to-Market, Strategy, and Team. Use when evaluating startup risks, assessing a new product concept, or mapping assumptions for a new venture.",
+      "summaryZh": "识别新产品方案中的关键高风险假设。",
       "sourcePath": "~/.codex/skills/identify-assumptions-new/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.708Z",
       "primaryDimension": "策略定位",
@@ -1991,7 +2035,9 @@
     {
       "slug": "startup-canvas",
       "title": "Startup Canvas",
+      "titleZh": "创业画布",
       "description": "Generate a Startup Canvas combining Product Strategy (9 sections) and Business Model (costs + revenue) for a new product. An alternative to BMC and Lean Canvas that separates strategy from business model. Use when launching a new product or evaluating a startup concept.",
+      "summaryZh": "梳理创业项目的战略与商业模式要素。",
       "sourcePath": "~/.codex/skills/startup-canvas/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.779Z",
       "primaryDimension": "策略定位",
@@ -2060,7 +2106,9 @@
     {
       "slug": "ansoff-matrix",
       "title": "Ansoff Matrix",
+      "titleZh": "安索夫矩阵",
       "description": "Generate an Ansoff Matrix analysis mapping growth strategies across market penetration, market development, product development, and diversification. Use when considering growth options, planning market expansion, or evaluating strategic growth paths.",
+      "summaryZh": "用安索夫矩阵规划增长路径。",
       "sourcePath": "~/.codex/skills/ansoff-matrix/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.739Z",
       "primaryDimension": "策略定位",
@@ -2143,7 +2191,9 @@
     {
       "slug": "better-icons",
       "title": "Better Icons",
+      "titleZh": "图标资源",
       "description": "Use when working with icons in any project. Provides CLI for searching 200+ icon libraries (Iconify) and retrieving SVGs. Commands: `better-icons search <query>` to find icons, `better-icons get <id>` to get SVG. Also available as MCP server for AI agents.",
+      "summaryZh": "搜索、获取和复用图标 SVG 资源。",
       "sourcePath": "~/.codex/skills/better-icons/SKILL.md",
       "modifiedAt": "2026-03-19T12:17:24.824Z",
       "primaryDimension": "视觉表达",
@@ -2205,7 +2255,9 @@
     {
       "slug": "analyze-feature-requests",
       "title": "analyze-feature-requests",
+      "titleZh": "功能需求分析",
       "description": "Analyze and prioritize a list of feature requests by theme, strategic alignment, impact, effort, and risk. Use when reviewing customer feature requests, triaging a backlog, or making prioritization decisions.",
+      "summaryZh": "归类并优先排序用户功能请求。",
       "sourcePath": "~/.codex/skills/analyze-feature-requests/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.680Z",
       "primaryDimension": "规划定义",
@@ -2284,7 +2336,9 @@
     {
       "slug": "gtm-motions",
       "title": "GTM Motions",
+      "titleZh": "GTM 动作选择",
       "description": "Identify the best GTM motions and tools across 7 motion types: Inbound, Outbound, Paid Digital, Community, Partners, ABM, and PLG. Use when selecting marketing channels, choosing between inbound and outbound strategy, or planning cross-channel campaigns.",
+      "summaryZh": "选择适合的上市动作、渠道和打法。",
       "sourcePath": "~/.codex/skills/gtm-motions/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.611Z",
       "primaryDimension": "策略定位",
@@ -2366,7 +2420,9 @@
     {
       "slug": "growth-loops",
       "title": "Growth Loops",
+      "titleZh": "增长循环",
       "description": "Identify growth loops (flywheels) for sustainable traction. Evaluates 5 loop types: Viral, Usage, Collaboration, User-Generated, and Referral. Use when designing growth mechanisms, building product-led traction, or understanding how growth loops work.",
+      "summaryZh": "设计增长飞轮与自驱增长机制。",
       "sourcePath": "~/.codex/skills/growth-loops/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.607Z",
       "primaryDimension": "增长营销",
@@ -2455,7 +2511,9 @@
     {
       "slug": "summarize-interview",
       "title": "summarize-interview",
+      "titleZh": "访谈总结",
       "description": "Summarize a customer interview transcript into a structured template with JTBD, satisfaction signals, and action items. Use when processing interview recordings or transcripts, synthesizing discovery interviews, or creating interview summaries.",
+      "summaryZh": "把用户访谈整理成结构化洞察。",
       "sourcePath": "~/.codex/skills/summarize-interview/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.734Z",
       "primaryDimension": "发现研究",
@@ -2525,7 +2583,9 @@
     {
       "slug": "north-star-metric",
       "title": "North Star Metric",
+      "titleZh": "北极星指标",
       "description": "Define a North Star Metric and 3-5 supporting input metrics that form a metrics constellation. Classify the business game (Attention, Transaction, Productivity) and validate against 7 criteria for an effective North Star. Use when choosing a North Star Metric, setting up a metrics framework, learning about the North Star Framework, or deciding what to measure.",
+      "summaryZh": "定义北极星指标及其输入指标体系。",
       "sourcePath": "~/.codex/skills/north-star-metric/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.662Z",
       "primaryDimension": "数据分析",
@@ -2585,7 +2645,9 @@
     {
       "slug": "monetization-strategy",
       "title": "Monetization Strategy",
+      "titleZh": "变现策略",
       "description": "Brainstorm 3-5 monetization strategies with audience fit, risks, and validation experiments. Use when exploring revenue models, evaluating pricing strategies, or deciding how to monetize a product.",
+      "summaryZh": "设计和比较产品变现模式。",
       "sourcePath": "~/.codex/skills/monetization-strategy/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.752Z",
       "primaryDimension": "策略定位",
@@ -2645,7 +2707,9 @@
     {
       "slug": "market-sizing",
       "title": "Estimate Market Size (TAM, SAM, SOM)",
+      "titleZh": "市场规模测算",
       "description": "Estimate market size using TAM, SAM, and SOM with top-down and bottom-up approaches. Use when sizing a market opportunity, estimating addressable market, preparing for investor pitches, or evaluating market entry.",
+      "summaryZh": "估算 TAM、SAM、SOM 等市场规模。",
       "sourcePath": "~/.codex/skills/market-sizing/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.640Z",
       "primaryDimension": "策略定位",
@@ -2721,7 +2785,9 @@
     {
       "slug": "competitive-battlecard",
       "title": "competitive-battlecard",
+      "titleZh": "竞争作战卡",
       "description": "Create sales-ready competitive battlecards comparing your product against a specific competitor — positioning, feature comparison, objection handling, and win/loss patterns. Use when preparing sales teams, creating competitive materials, or responding to 'why not competitor X?'",
+      "summaryZh": "生成竞品对比和销售应对卡片。",
       "sourcePath": "~/.codex/skills/competitive-battlecard/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.603Z",
       "primaryDimension": "策略定位",
@@ -2801,7 +2867,9 @@
     {
       "slug": "prioritize-features",
       "title": "prioritize-features",
+      "titleZh": "功能优先级排序",
       "description": "Prioritize a backlog of feature ideas based on impact, effort, risk, and strategic alignment with top 5 recommendations. Use when prioritizing a feature backlog, making scope decisions, or ranking product ideas.",
+      "summaryZh": "对功能 backlog 做影响、成本和风险排序。",
       "sourcePath": "~/.codex/skills/prioritize-features/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.730Z",
       "primaryDimension": "规划定义",
@@ -2891,7 +2959,9 @@
     {
       "slug": "brainstorm-experiments-existing",
       "title": "brainstorm-experiments-existing",
+      "titleZh": "现有产品实验脑暴",
       "description": "Design experiments to test assumptions for an existing product — prototypes, A/B tests, spikes, and other low-effort validation methods. Use when validating assumptions, testing feature ideas cheaply, or planning product experiments.",
+      "summaryZh": "为现有产品设计低成本验证实验。",
       "sourcePath": "~/.codex/skills/brainstorm-experiments-existing/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.684Z",
       "primaryDimension": "设计体验",
@@ -2970,7 +3040,9 @@
     {
       "slug": "brainstorm-ideas-existing",
       "title": "brainstorm-ideas-existing",
+      "titleZh": "现有产品创意脑暴",
       "description": "Brainstorm product ideas for an existing product using multi-perspective ideation from PM, Designer, and Engineer viewpoints. Use when generating new feature ideas, brainstorming solutions for an identified opportunity, or ideating with a product trio.",
+      "summaryZh": "围绕现有产品生成多角度的新点子。",
       "sourcePath": "~/.codex/skills/brainstorm-ideas-existing/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.694Z",
       "primaryDimension": "设计体验",
@@ -3040,7 +3112,9 @@
     {
       "slug": "brainstorm-ideas-new",
       "title": "brainstorm-ideas-new",
+      "titleZh": "新产品创意脑暴",
       "description": "Brainstorm feature ideas for a new product in initial discovery from PM, Designer, and Engineer perspectives. Use when starting product discovery for a new product, exploring features for a startup idea, or doing initial ideation.",
+      "summaryZh": "为新产品探索功能想法和方向。",
       "sourcePath": "~/.codex/skills/brainstorm-ideas-new/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.699Z",
       "primaryDimension": "设计体验",
@@ -3115,7 +3189,9 @@
     {
       "slug": "lean-canvas",
       "title": "Lean Canvas",
+      "titleZh": "精益画布",
       "description": "Generate a Lean Canvas with problem, solution, metrics, cost structure, UVP, unfair advantage, channels, segments, and revenue. Use when exploring a lean startup canvas, testing a business hypothesis, or modeling a new venture.",
+      "summaryZh": "生成精益创业所需的 Lean Canvas。",
       "sourcePath": "~/.codex/skills/lean-canvas/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.748Z",
       "primaryDimension": "数据分析",
@@ -3186,7 +3262,9 @@
     {
       "slug": "dummy-dataset",
       "title": "Dummy Dataset Generation",
+      "titleZh": "模拟数据集",
       "description": "Generate realistic dummy datasets for testing with customizable columns, constraints, and output formats (CSV, JSON, SQL, Python script). Use when creating test data, building mock datasets, or generating sample data for development and demos.",
+      "summaryZh": "生成用于测试和演示的模拟数据。",
       "sourcePath": "~/.codex/skills/dummy-dataset/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.544Z",
       "primaryDimension": "数据分析",
@@ -3252,7 +3330,9 @@
     {
       "slug": "wwas",
       "title": "Why-What-Acceptance (WWA)",
+      "titleZh": "WWA 条目",
       "description": "Create product backlog items in Why-What-Acceptance format — independent, valuable, testable items with strategic context. Use when writing structured backlog items, breaking features into work items, or using the WWA format.",
+      "summaryZh": "用 Why-What-Acceptance 结构写需求条目。",
       "sourcePath": "~/.codex/skills/wwas/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.595Z",
       "primaryDimension": "规划定义",
@@ -3312,7 +3392,9 @@
     {
       "slug": "summarize-meeting",
       "title": "Summarize Meeting",
+      "titleZh": "会议总结",
       "description": "Summarize a meeting transcript into structured notes with date, participants, topic, key decisions, summary points, and action items. Use when processing meeting recordings, creating meeting notes, writing meeting minutes, or recapping discussions.",
+      "summaryZh": "整理会议纪要、结论和行动项。",
       "sourcePath": "~/.codex/skills/summarize-meeting/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.582Z",
       "primaryDimension": "沟通落地",
@@ -3372,7 +3454,9 @@
     {
       "slug": "test-scenarios",
       "title": "Test Scenarios",
+      "titleZh": "测试场景",
       "description": "Create comprehensive test scenarios from user stories with test objectives, starting conditions, user roles, step-by-step actions, and expected outcomes. Use when writing QA test cases, creating test plans, defining acceptance tests, or preparing for feature validation.",
+      "summaryZh": "为需求生成测试场景和验证步骤。",
       "sourcePath": "~/.codex/skills/test-scenarios/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.586Z",
       "primaryDimension": "规划定义",
@@ -3441,7 +3525,9 @@
     {
       "slug": "outcome-roadmap",
       "title": "Transform Roadmap to Outcome-Focused Format",
+      "titleZh": "结果导向路线图",
       "description": "Transform an output-focused roadmap into an outcome-focused one that communicates strategic intent. Rewrites initiatives as outcome statements reflecting user and business impacts. Use when shifting to outcome roadmaps, making a roadmap more strategic, or rewriting feature lists as outcomes.",
+      "summaryZh": "把输出型路线图改成结果导向表达。",
       "sourcePath": "~/.codex/skills/outcome-roadmap/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.553Z",
       "primaryDimension": "规划定义",
@@ -3506,7 +3592,9 @@
     {
       "slug": "sprint-plan",
       "title": "sprint-plan",
+      "titleZh": "Sprint 计划",
       "description": "Plan a sprint with capacity estimation, story selection, dependency mapping, and risk identification. Use when preparing for sprint planning, estimating team capacity, selecting stories, or balancing sprint scope against velocity.",
+      "summaryZh": "规划迭代目标、容量和故事选择。",
       "sourcePath": "~/.codex/skills/sprint-plan/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.574Z",
       "primaryDimension": "规划定义",
@@ -3572,7 +3660,9 @@
     {
       "slug": "user-stories",
       "title": "User Stories",
+      "titleZh": "用户故事",
       "description": "Create user stories following the 3 C's (Card, Conversation, Confirmation) and INVEST criteria with descriptions, design links, and acceptance criteria. Use when writing user stories, breaking down features into backlog items, or defining acceptance criteria.",
+      "summaryZh": "编写符合 INVEST 原则的用户故事。",
       "sourcePath": "~/.codex/skills/user-stories/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.591Z",
       "primaryDimension": "规划定义",
@@ -3642,7 +3732,9 @@
     {
       "slug": "opportunity-solution-tree",
       "title": "opportunity-solution-tree",
+      "titleZh": "机会解决方案树",
       "description": "Build an Opportunity Solution Tree (OST) to structure product discovery — map a desired outcome to opportunities, solutions, and experiments. Based on Teresa Torres' Continuous Discovery Habits. Use when structuring discovery work, mapping opportunities to solutions, or deciding what to build next.",
+      "summaryZh": "构建 OST 来连接目标、机会和方案。",
       "sourcePath": "~/.codex/skills/opportunity-solution-tree/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.721Z",
       "primaryDimension": "发现研究",
@@ -3715,7 +3807,9 @@
     {
       "slug": "customer-journey-map",
       "title": "customer-journey-map",
+      "titleZh": "用户旅程地图",
       "description": "Create an end-to-end customer journey map with stages, touchpoints, emotions, pain points, and opportunities. Use when mapping the customer experience, identifying friction points, improving onboarding, or visualizing the user journey.",
+      "summaryZh": "绘制端到端用户旅程和痛点机会。",
       "sourcePath": "~/.codex/skills/customer-journey-map/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.630Z",
       "primaryDimension": "发现研究",
@@ -3780,7 +3874,9 @@
     {
       "slug": "value-proposition",
       "title": "Value Proposition",
+      "titleZh": "价值主张设计",
       "description": "Design a detailed value proposition using a 6-part JTBD template — Who, Why, What before, How, What after, Alternatives. Use when creating a value proposition, analyzing customer value delivery, or articulating why customers should choose your product.",
+      "summaryZh": "设计面向目标用户的价值主张。",
       "sourcePath": "~/.codex/skills/value-proposition/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.789Z",
       "primaryDimension": "发现研究",
@@ -3850,7 +3946,9 @@
     {
       "slug": "value-prop-statements",
       "title": "Value Proposition Statements",
+      "titleZh": "价值主张文案",
       "description": "Generate value proposition statements for marketing, sales, and onboarding from existing value propositions. Use when writing marketing copy, creating sales messaging, or crafting onboarding messages.",
+      "summaryZh": "把价值主张转成营销或销售表达。",
       "sourcePath": "~/.codex/skills/value-prop-statements/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.676Z",
       "primaryDimension": "策略定位",
@@ -3915,7 +4013,9 @@
     {
       "slug": "retro",
       "title": "retro",
+      "titleZh": "Sprint 回顾",
       "description": "Facilitate a structured sprint retrospective — what went well, what didn't, and prioritized action items with owners and deadlines. Use when running a retrospective, reflecting on a sprint, creating action items from team feedback, or learning how to run effective retros.",
+      "summaryZh": "组织团队复盘，总结问题和改进行动。",
       "sourcePath": "~/.codex/skills/retro/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.570Z",
       "primaryDimension": "规划定义",
@@ -3992,7 +4092,9 @@
     {
       "slug": "business-model",
       "title": "Business Model Canvas",
+      "titleZh": "商业模式画布",
       "description": "Generate a Business Model Canvas with all 9 building blocks. Use when creating a business model, documenting how a business creates value, or analyzing an existing business model.",
+      "summaryZh": "搭建完整的商业模式结构。",
       "sourcePath": "~/.codex/skills/business-model/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.743Z",
       "primaryDimension": "策略定位",
@@ -4059,7 +4161,9 @@
     {
       "slug": "porters-five-forces",
       "title": "Porter's Five Forces",
+      "titleZh": "波特五力",
       "description": "Perform Porter's Five Forces analysis — competitive rivalry, supplier power, buyer power, threat of substitutes, and threat of new entrants. Use when analyzing industry dynamics, assessing competitive forces, or evaluating market attractiveness.",
+      "summaryZh": "分析行业竞争结构与外部压力。",
       "sourcePath": "~/.codex/skills/porters-five-forces/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.761Z",
       "primaryDimension": "策略定位",
@@ -4130,7 +4234,9 @@
     {
       "slug": "product-name",
       "title": "Product Name",
+      "titleZh": "产品命名",
       "description": "Brainstorm 5 unique, memorable product names with rationale aligned to brand values and target audience. Use when naming a new product, rebranding, or exploring product name ideas.",
+      "summaryZh": "生成贴合定位的产品名称方案。",
       "sourcePath": "~/.codex/skills/product-name/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.671Z",
       "primaryDimension": "增长营销",
@@ -4192,7 +4298,9 @@
     {
       "slug": "stakeholder-map",
       "title": "stakeholder-map",
+      "titleZh": "干系人地图",
       "description": "Build a stakeholder map using a power/interest grid, identify communication strategies per quadrant, and generate a communication plan. Use when managing stakeholders, preparing for a launch, aligning cross-functional teams, or planning stakeholder engagement.",
+      "summaryZh": "梳理关键干系人及沟通策略。",
       "sourcePath": "~/.codex/skills/stakeholder-map/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.578Z",
       "primaryDimension": "规划定义",
@@ -4273,7 +4381,9 @@
     {
       "slug": "competitor-analysis",
       "title": "Competitor Analysis",
+      "titleZh": "竞品分析",
       "description": "Analyze competitors with strengths, weaknesses, and differentiation opportunities. Identifies direct competitors and maps the competitive landscape. Use when doing competitive research, preparing a competitive brief, or finding differentiation opportunities.",
+      "summaryZh": "分析竞品优劣势和差异化机会。",
       "sourcePath": "~/.codex/skills/competitor-analysis/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.625Z",
       "primaryDimension": "发现研究",
@@ -4346,7 +4456,9 @@
     {
       "slug": "product-vision",
       "title": "Product Vision",
+      "titleZh": "产品愿景",
       "description": "Brainstorm an inspiring, achievable, and emotional product vision that motivates teams and aligns stakeholders. Use when defining or refining a product vision, creating a vision statement, or aligning the team around a shared direction.",
+      "summaryZh": "定义产品愿景和长期方向。",
       "sourcePath": "~/.codex/skills/product-vision/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.775Z",
       "primaryDimension": "策略定位",
@@ -4409,7 +4521,9 @@
     {
       "slug": "job-stories",
       "title": "Job Stories",
+      "titleZh": "Job Stories",
       "description": "Create job stories using the 'When [situation], I want to [motivation], so I can [outcome]' format with detailed acceptance criteria. Use when writing job stories, creating JTBD-style backlog items, or expressing user situations and motivations.",
+      "summaryZh": "用 JTBD 结构表达用户场景和动机。",
       "sourcePath": "~/.codex/skills/job-stories/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.549Z",
       "primaryDimension": "发现研究",
@@ -4474,7 +4588,9 @@
     {
       "slug": "pricing-strategy",
       "title": "pricing-strategy",
+      "titleZh": "定价策略",
       "description": "Analyze and design pricing strategies including pricing models, competitive pricing analysis, willingness-to-pay estimation, and price elasticity. Use when setting prices, evaluating pricing models, preparing for a pricing change, or comparing freemium vs paid approaches.",
+      "summaryZh": "分析并设计产品定价模型。",
       "sourcePath": "~/.codex/skills/pricing-strategy/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.765Z",
       "primaryDimension": "策略定位",
@@ -4540,7 +4656,9 @@
     {
       "slug": "sql-queries",
       "title": "SQL Query Generator",
+      "titleZh": "SQL 查询生成",
       "description": "Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL, MySQL, and other dialects. Reads database schemas from uploaded diagrams or documentation. Use when writing SQL, building data reports, exploring databases, or translating business questions into queries.",
+      "summaryZh": "把自然语言需求转成 SQL 查询。",
       "sourcePath": "~/.codex/skills/sql-queries/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.529Z",
       "primaryDimension": "数据分析",
@@ -4607,7 +4725,9 @@
     {
       "slug": "brainstorm-experiments-new",
       "title": "brainstorm-experiments-new",
+      "titleZh": "新产品实验脑暴",
       "description": "Design lean startup experiments (pretotypes) for a new product. Creates XYZ hypotheses and suggests low-effort validation methods like landing pages, explainer videos, and pre-orders. Use when validating a new product idea, creating pretotypes, or testing market demand.",
+      "summaryZh": "为新产品设计验证市场和需求的实验。",
       "sourcePath": "~/.codex/skills/brainstorm-experiments-new/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.689Z",
       "primaryDimension": "设计体验",
@@ -4668,7 +4788,9 @@
     {
       "slug": "prioritize-assumptions",
       "title": "prioritize-assumptions",
+      "titleZh": "假设优先级排序",
       "description": "Prioritize assumptions using an Impact × Risk matrix and suggest experiments for each. Use when triaging a list of assumptions, deciding what to test first, or applying the assumption prioritization canvas.",
+      "summaryZh": "按风险和影响排序关键假设。",
       "sourcePath": "~/.codex/skills/prioritize-assumptions/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.726Z",
       "primaryDimension": "规划定义",
@@ -4737,7 +4859,9 @@
     {
       "slug": "brainstorm-okrs",
       "title": "Brainstorm Team OKRs",
+      "titleZh": "OKR 脑暴",
       "description": "Brainstorm team-level OKRs aligned with company objectives — qualitative objectives with measurable key results. Use when setting quarterly OKRs, aligning team goals with company strategy, drafting objectives, or learning how to write effective OKRs.",
+      "summaryZh": "生成团队目标和关键结果建议。",
       "sourcePath": "~/.codex/skills/brainstorm-okrs/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.534Z",
       "primaryDimension": "策略定位",
@@ -4800,7 +4924,9 @@
     {
       "slug": "pestle-analysis",
       "title": "PESTLE Analysis",
+      "titleZh": "PESTLE 宏观分析",
       "description": "Perform a PESTLE analysis covering Political, Economic, Social, Technological, Legal, and Environmental factors. Use when assessing the macro environment, doing strategic planning, or evaluating external factors affecting your business.",
+      "summaryZh": "分析政治、经济、社会等宏观因素。",
       "sourcePath": "~/.codex/skills/pestle-analysis/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.757Z",
       "primaryDimension": "策略定位",
@@ -4877,7 +5003,9 @@
     {
       "slug": "identify-assumptions-existing",
       "title": "identify-assumptions-existing",
+      "titleZh": "现有产品假设识别",
       "description": "Identify risky assumptions for a feature idea in an existing product across Value, Usability, Viability, and Feasibility. Uses multi-perspective devil's advocate thinking. Use when stress-testing a feature idea, doing risk assessment, or preparing for assumption mapping.",
+      "summaryZh": "识别现有功能或方案中的风险假设。",
       "sourcePath": "~/.codex/skills/identify-assumptions-existing/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.703Z",
       "primaryDimension": "发现研究",
@@ -4939,7 +5067,9 @@
     {
       "slug": "swot-analysis",
       "title": "SWOT Analysis",
+      "titleZh": "SWOT 分析",
       "description": "Perform a detailed SWOT analysis — strengths, weaknesses, opportunities, and threats with actionable recommendations. Use when doing strategic assessment, competitive analysis, or evaluating a product or business position.",
+      "summaryZh": "分析优势、劣势、机会和威胁。",
       "sourcePath": "~/.codex/skills/swot-analysis/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.784Z",
       "primaryDimension": "策略定位",
@@ -5015,7 +5145,9 @@
     {
       "slug": "prioritization-frameworks",
       "title": "prioritization-frameworks",
+      "titleZh": "优先级框架",
       "description": "Reference guide to 9 prioritization frameworks with formulas, when-to-use guidance, and templates — RICE, ICE, Kano, MoSCoW, Opportunity Score, and more. Use when selecting a prioritization method, comparing frameworks like RICE vs ICE, or learning how different prioritization approaches work.",
+      "summaryZh": "汇总 RICE、ICE、Kano 等优先级方法。",
       "sourcePath": "~/.codex/skills/prioritization-frameworks/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.561Z",
       "primaryDimension": "规划定义",
@@ -5073,7 +5205,9 @@
     {
       "slug": "review-resume",
       "title": "Resume Review for Product Managers",
+      "titleZh": "简历评审",
       "description": "Comprehensive PM resume review and tailoring against 10 best practices including XYZ+S formula, keyword optimization, job-specific tailoring, and structure. Use when reviewing a PM resume, preparing for job applications, or improving resume impact.",
+      "summaryZh": "评审产品经理简历内容和表达。",
       "sourcePath": "~/.codex/skills/review-resume/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.806Z",
       "primaryDimension": "设计体验",
@@ -5144,7 +5278,9 @@
     {
       "slug": "grammar-check",
       "title": "Grammar and Flow Checking",
+      "titleZh": "文案语法检查",
       "description": "Identify grammar, logical, and flow errors in text and suggest targeted fixes without rewriting the entire text. Use when proofreading content, checking writing quality, or reviewing a draft.",
+      "summaryZh": "检查文案中的语法、逻辑和流畅度问题。",
       "sourcePath": "~/.codex/skills/grammar-check/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.798Z",
       "primaryDimension": "沟通落地",
@@ -5192,7 +5328,9 @@
     {
       "slug": "develop-web-game",
       "title": "Develop Web Game",
+      "titleZh": "Web 游戏开发",
       "description": "Use when Codex is building or iterating on a web game (HTML/JS) and needs a reliable development + testing loop: implement small changes, run a Playwright-based test script with short input bursts and intentional pauses, inspect screenshots/text, and review console errors with render_game_to_text.",
+      "summaryZh": "支持网页游戏的开发、测试和迭代。",
       "sourcePath": "~/.codex/skills/develop-web-game/SKILL.md",
       "modifiedAt": "2026-02-27T12:41:39.856Z",
       "primaryDimension": "设计体验",
@@ -5259,7 +5397,9 @@
     {
       "slug": "privacy-policy",
       "title": "Privacy Policy Generator",
+      "titleZh": "隐私政策",
       "description": "Draft a detailed privacy policy covering data types, jurisdiction, GDPR and compliance considerations, and clauses needing legal review. Use when creating a privacy policy, updating data protection documentation, or preparing for compliance.",
+      "summaryZh": "生成或完善隐私政策文档。",
       "sourcePath": "~/.codex/skills/privacy-policy/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.802Z",
       "primaryDimension": "数据分析",
@@ -5322,7 +5462,9 @@
     {
       "slug": "draft-nda",
       "title": "NDA (Non-Disclosure Agreement) Drafting",
+      "titleZh": "NDA 起草",
       "description": "Draft a detailed Non-Disclosure Agreement between two parties covering information types, jurisdiction, and clauses needing legal review. Use when creating confidentiality agreements or preparing an NDA for a partnership.",
+      "summaryZh": "起草保密协议和相关条款。",
       "sourcePath": "~/.codex/skills/draft-nda/SKILL.md",
       "modifiedAt": "2026-03-19T08:29:09.793Z",
       "primaryDimension": "视觉表达",

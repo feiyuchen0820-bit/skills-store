@@ -65,6 +65,26 @@ function escapeHtml(value) {
     .replaceAll("'", "&#39;");
 }
 
+function getDisplayTitle(skill) {
+  return skill.titleZh || skill.title;
+}
+
+function getSecondaryTitle(skill) {
+  if (!skill.titleZh || skill.titleZh === skill.title) {
+    return "";
+  }
+
+  return skill.title;
+}
+
+function getDisplaySummary(skill) {
+  return skill.summaryZh || skill.description;
+}
+
+function getComparableTitle(skill) {
+  return getDisplayTitle(skill);
+}
+
 function isFavorite(slug) {
   return state.favorites.has(slug);
 }
@@ -130,7 +150,7 @@ function sortSkills(skills) {
 
   if (state.sortMode === "title") {
     nextSkills.sort((left, right) =>
-      left.title.localeCompare(right.title, "zh-CN")
+      getComparableTitle(left).localeCompare(getComparableTitle(right), "zh-CN")
     );
     return nextSkills;
   }
@@ -147,7 +167,7 @@ function sortSkills(skills) {
       return rightPrimary - leftPrimary;
     }
 
-    return left.title.localeCompare(right.title, "zh-CN");
+    return getComparableTitle(left).localeCompare(getComparableTitle(right), "zh-CN");
   });
 
   return nextSkills;
@@ -188,7 +208,9 @@ function getFilteredSkills() {
       const haystack = [
         skill.slug,
         skill.title,
+        skill.titleZh,
         skill.description,
+        skill.summaryZh,
         skill.primaryDimension
       ]
         .join(" ")
@@ -298,6 +320,9 @@ function renderCards() {
     emptyStateElement.classList.add("hidden");
     cardsElement.innerHTML = visibleSkills
       .map((skill) => {
+        const displayTitle = getDisplayTitle(skill);
+        const secondaryTitle = getSecondaryTitle(skill);
+        const displaySummary = getDisplaySummary(skill);
         const keywordPills = summarizeMatchedKeywords(skill)
           .map((keyword) => `<span class="keyword-pill">${escapeHtml(keyword)}</span>`)
           .join("");
@@ -319,8 +344,13 @@ function renderCards() {
         return `
           <article class="skill-card">
             <div class="skill-topline">
-              <div>
-                <h2 class="skill-title">${escapeHtml(skill.title)}</h2>
+              <div class="skill-title-group">
+                <h2 class="skill-title">${escapeHtml(displayTitle)}</h2>
+                ${
+                  secondaryTitle
+                    ? `<div class="skill-subtitle">${escapeHtml(secondaryTitle)}</div>`
+                    : ""
+                }
                 <div class="skill-slug">${escapeHtml(skill.slug)}</div>
               </div>
               <div class="score-badges">
@@ -332,7 +362,7 @@ function renderCards() {
               </div>
             </div>
 
-            <p class="skill-description">${escapeHtml(skill.description)}</p>
+            <p class="skill-description">${escapeHtml(displaySummary)}</p>
 
             <div class="skill-bottomline">
               <span class="meta-pill">最近修改 ${escapeHtml(formatDateTime(skill.modifiedAt))}</span>

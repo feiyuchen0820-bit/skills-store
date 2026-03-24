@@ -1,0 +1,288 @@
+{
+  "skills": {
+    "figma-implement-design": {
+      "titleZh": "Figma 设计实现",
+      "summaryZh": "把 Figma 节点转成高还原度的界面实现代码。"
+    },
+    "mijia-app-figma-spec": {
+      "titleZh": "米家 App Figma 规范",
+      "summaryZh": "基于米家 Harmony Figma 规范做页面设计、评审和实现映射。"
+    },
+    "interview-script": {
+      "titleZh": "用户访谈提纲",
+      "summaryZh": "生成结构化的用户或客户访谈脚本。"
+    },
+    "product-strategy": {
+      "titleZh": "产品战略画布",
+      "summaryZh": "用战略画布梳理产品方向、价值和竞争优势。"
+    },
+    "user-personas": {
+      "titleZh": "用户画像",
+      "summaryZh": "从研究数据中提炼用户画像、痛点和目标。"
+    },
+    "create-prd": {
+      "titleZh": "PRD 文档",
+      "summaryZh": "生成结构化的产品需求文档。"
+    },
+    "gtm-strategy": {
+      "titleZh": "GTM 上市策略",
+      "summaryZh": "制定产品上市、渠道和增长传播策略。"
+    },
+    "sentiment-analysis": {
+      "titleZh": "情感分析",
+      "summaryZh": "分析用户反馈中的情绪、主题和满意度信号。"
+    },
+    "metrics-dashboard": {
+      "titleZh": "指标看板设计",
+      "summaryZh": "定义产品指标、看板结构和预警逻辑。"
+    },
+    "beachhead-segment": {
+      "titleZh": "滩头市场选择",
+      "summaryZh": "识别最适合切入的首个目标市场。"
+    },
+    "imagegen": {
+      "titleZh": "图像生成",
+      "summaryZh": "生成、编辑和替换图片等视觉素材。"
+    },
+    "ab-test-analysis": {
+      "titleZh": "A/B 测试分析",
+      "summaryZh": "分析实验显著性、样本量和结论建议。"
+    },
+    "marketing-ideas": {
+      "titleZh": "营销创意",
+      "summaryZh": "生成适合产品推广的营销点子和活动方案。"
+    },
+    "pre-mortem": {
+      "titleZh": "预演复盘",
+      "summaryZh": "在发布前预判潜在问题和失败风险。"
+    },
+    "iot-query": {
+      "titleZh": "IoT 智能家居竞品研究",
+      "summaryZh": "研究智能家居能力主题与竞品平台演进。"
+    },
+    "release-notes": {
+      "titleZh": "发布说明",
+      "summaryZh": "生成面向用户的版本更新说明。"
+    },
+    "positioning-ideas": {
+      "titleZh": "定位方案",
+      "summaryZh": "输出产品定位、差异化与表达建议。"
+    },
+    "market-segments": {
+      "titleZh": "市场细分",
+      "summaryZh": "识别潜在用户细分与匹配场景。"
+    },
+    "ideal-customer-profile": {
+      "titleZh": "理想客户画像 ICP",
+      "summaryZh": "定义理想客户画像和关键特征。"
+    },
+    "user-segmentation": {
+      "titleZh": "用户分群",
+      "summaryZh": "按行为、需求和反馈对用户做分层。"
+    },
+    "cohort-analysis": {
+      "titleZh": "Cohort 队列分析",
+      "summaryZh": "分析用户留存、活跃和采用趋势。"
+    },
+    "identify-assumptions-new": {
+      "titleZh": "新产品假设识别",
+      "summaryZh": "识别新产品方案中的关键高风险假设。"
+    },
+    "startup-canvas": {
+      "titleZh": "创业画布",
+      "summaryZh": "梳理创业项目的战略与商业模式要素。"
+    },
+    "ansoff-matrix": {
+      "titleZh": "安索夫矩阵",
+      "summaryZh": "用安索夫矩阵规划增长路径。"
+    },
+    "better-icons": {
+      "titleZh": "图标资源",
+      "summaryZh": "搜索、获取和复用图标 SVG 资源。"
+    },
+    "analyze-feature-requests": {
+      "titleZh": "功能需求分析",
+      "summaryZh": "归类并优先排序用户功能请求。"
+    },
+    "gtm-motions": {
+      "titleZh": "GTM 动作选择",
+      "summaryZh": "选择适合的上市动作、渠道和打法。"
+    },
+    "growth-loops": {
+      "titleZh": "增长循环",
+      "summaryZh": "设计增长飞轮与自驱增长机制。"
+    },
+    "summarize-interview": {
+      "titleZh": "访谈总结",
+      "summaryZh": "把用户访谈整理成结构化洞察。"
+    },
+    "north-star-metric": {
+      "titleZh": "北极星指标",
+      "summaryZh": "定义北极星指标及其输入指标体系。"
+    },
+    "monetization-strategy": {
+      "titleZh": "变现策略",
+      "summaryZh": "设计和比较产品变现模式。"
+    },
+    "market-sizing": {
+      "titleZh": "市场规模测算",
+      "summaryZh": "估算 TAM、SAM、SOM 等市场规模。"
+    },
+    "competitive-battlecard": {
+      "titleZh": "竞争作战卡",
+      "summaryZh": "生成竞品对比和销售应对卡片。"
+    },
+    "prioritize-features": {
+      "titleZh": "功能优先级排序",
+      "summaryZh": "对功能 backlog 做影响、成本和风险排序。"
+    },
+    "brainstorm-experiments-existing": {
+      "titleZh": "现有产品实验脑暴",
+      "summaryZh": "为现有产品设计低成本验证实验。"
+    },
+    "brainstorm-ideas-existing": {
+      "titleZh": "现有产品创意脑暴",
+      "summaryZh": "围绕现有产品生成多角度的新点子。"
+    },
+    "brainstorm-ideas-new": {
+      "titleZh": "新产品创意脑暴",
+      "summaryZh": "为新产品探索功能想法和方向。"
+    },
+    "lean-canvas": {
+      "titleZh": "精益画布",
+      "summaryZh": "生成精益创业所需的 Lean Canvas。"
+    },
+    "dummy-dataset": {
+      "titleZh": "模拟数据集",
+      "summaryZh": "生成用于测试和演示的模拟数据。"
+    },
+    "wwas": {
+      "titleZh": "WWA 条目",
+      "summaryZh": "用 Why-What-Acceptance 结构写需求条目。"
+    },
+    "summarize-meeting": {
+      "titleZh": "会议总结",
+      "summaryZh": "整理会议纪要、结论和行动项。"
+    },
+    "test-scenarios": {
+      "titleZh": "测试场景",
+      "summaryZh": "为需求生成测试场景和验证步骤。"
+    },
+    "outcome-roadmap": {
+      "titleZh": "结果导向路线图",
+      "summaryZh": "把输出型路线图改成结果导向表达。"
+    },
+    "sprint-plan": {
+      "titleZh": "Sprint 计划",
+      "summaryZh": "规划迭代目标、容量和故事选择。"
+    },
+    "user-stories": {
+      "titleZh": "用户故事",
+      "summaryZh": "编写符合 INVEST 原则的用户故事。"
+    },
+    "opportunity-solution-tree": {
+      "titleZh": "机会解决方案树",
+      "summaryZh": "构建 OST 来连接目标、机会和方案。"
+    },
+    "customer-journey-map": {
+      "titleZh": "用户旅程地图",
+      "summaryZh": "绘制端到端用户旅程和痛点机会。"
+    },
+    "value-proposition": {
+      "titleZh": "价值主张设计",
+      "summaryZh": "设计面向目标用户的价值主张。"
+    },
+    "value-prop-statements": {
+      "titleZh": "价值主张文案",
+      "summaryZh": "把价值主张转成营销或销售表达。"
+    },
+    "retro": {
+      "titleZh": "Sprint 回顾",
+      "summaryZh": "组织团队复盘，总结问题和改进行动。"
+    },
+    "business-model": {
+      "titleZh": "商业模式画布",
+      "summaryZh": "搭建完整的商业模式结构。"
+    },
+    "porters-five-forces": {
+      "titleZh": "波特五力",
+      "summaryZh": "分析行业竞争结构与外部压力。"
+    },
+    "product-name": {
+      "titleZh": "产品命名",
+      "summaryZh": "生成贴合定位的产品名称方案。"
+    },
+    "stakeholder-map": {
+      "titleZh": "干系人地图",
+      "summaryZh": "梳理关键干系人及沟通策略。"
+    },
+    "competitor-analysis": {
+      "titleZh": "竞品分析",
+      "summaryZh": "分析竞品优劣势和差异化机会。"
+    },
+    "product-vision": {
+      "titleZh": "产品愿景",
+      "summaryZh": "定义产品愿景和长期方向。"
+    },
+    "job-stories": {
+      "titleZh": "Job Stories",
+      "summaryZh": "用 JTBD 结构表达用户场景和动机。"
+    },
+    "pricing-strategy": {
+      "titleZh": "定价策略",
+      "summaryZh": "分析并设计产品定价模型。"
+    },
+    "sql-queries": {
+      "titleZh": "SQL 查询生成",
+      "summaryZh": "把自然语言需求转成 SQL 查询。"
+    },
+    "brainstorm-experiments-new": {
+      "titleZh": "新产品实验脑暴",
+      "summaryZh": "为新产品设计验证市场和需求的实验。"
+    },
+    "prioritize-assumptions": {
+      "titleZh": "假设优先级排序",
+      "summaryZh": "按风险和影响排序关键假设。"
+    },
+    "brainstorm-okrs": {
+      "titleZh": "OKR 脑暴",
+      "summaryZh": "生成团队目标和关键结果建议。"
+    },
+    "pestle-analysis": {
+      "titleZh": "PESTLE 宏观分析",
+      "summaryZh": "分析政治、经济、社会等宏观因素。"
+    },
+    "identify-assumptions-existing": {
+      "titleZh": "现有产品假设识别",
+      "summaryZh": "识别现有功能或方案中的风险假设。"
+    },
+    "swot-analysis": {
+      "titleZh": "SWOT 分析",
+      "summaryZh": "分析优势、劣势、机会和威胁。"
+    },
+    "prioritization-frameworks": {
+      "titleZh": "优先级框架",
+      "summaryZh": "汇总 RICE、ICE、Kano 等优先级方法。"
+    },
+    "review-resume": {
+      "titleZh": "简历评审",
+      "summaryZh": "评审产品经理简历内容和表达。"
+    },
+    "grammar-check": {
+      "titleZh": "文案语法检查",
+      "summaryZh": "检查文案中的语法、逻辑和流畅度问题。"
+    },
+    "develop-web-game": {
+      "titleZh": "Web 游戏开发",
+      "summaryZh": "支持网页游戏的开发、测试和迭代。"
+    },
+    "privacy-policy": {
+      "titleZh": "隐私政策",
+      "summaryZh": "生成或完善隐私政策文档。"
+    },
+    "draft-nda": {
+      "titleZh": "NDA 起草",
+      "summaryZh": "起草保密协议和相关条款。"
+    }
+  }
+}

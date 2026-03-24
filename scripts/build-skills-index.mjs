@@ -10,12 +10,14 @@ const __dirname = path.dirname(__filename);
 const workspaceRoot = path.resolve(__dirname, "..");
 const taxonomyPath = path.join(workspaceRoot, "config", "pm-taxonomy.json");
 const overridesPath = path.join(workspaceRoot, "config", "pm-overrides.json");
+const zhCatalogPath = path.join(workspaceRoot, "config", "pm-zh.json");
 const outputPath = path.join(workspaceRoot, "data", "skills.json");
 const detailsRoot = path.join(workspaceRoot, "skills");
 const shouldValidate = process.argv.includes("--validate");
 
 const taxonomy = JSON.parse(await fs.readFile(taxonomyPath, "utf8"));
 const overrides = JSON.parse(await fs.readFile(overridesPath, "utf8"));
+const zhCatalog = JSON.parse(await fs.readFile(zhCatalogPath, "utf8"));
 const sourceRoot = process.env.SKILLS_ROOT || taxonomy.sourceRoot;
 const dimensionOrder = taxonomy.dimensions.map((dimension) => dimension.key);
 
@@ -38,6 +40,10 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
+}
+
+function containsChinese(value) {
+  return /[\u3400-\u9fff]/u.test(String(value || ""));
 }
 
 function matchesKeyword(rawHaystack, normalizedHaystack, keyword) {
@@ -179,6 +185,19 @@ function formatSourcePath(absolutePath) {
 
 function buildDetailUrl(slug) {
   return `./skills/${slug}/`;
+}
+
+function getZhCopy(skill) {
+  const entry = zhCatalog.skills?.[skill.slug];
+
+  return {
+    titleZh:
+      entry?.titleZh ||
+      (containsChinese(skill.title) ? skill.title : null),
+    summaryZh:
+      entry?.summaryZh ||
+      (containsChinese(skill.description) ? skill.description : null)
+  };
 }
 
 function validateOverrideConfig() {
@@ -341,7 +360,9 @@ function validatePayload(payload) {
     const requiredFields = [
       "slug",
       "title",
+      "titleZh",
       "description",
+      "summaryZh",
       "sourcePath",
       "detailUrl",
       "modifiedAt",
@@ -440,16 +461,21 @@ function renderDetailPage(skill) {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>${escapeHtml(skill.title)} · Skills 详情</title>
-    <meta name="description" content="${escapeHtml(skill.description)}" />
+    <title>${escapeHtml(skill.titleZh || skill.title)} · Skills 详情</title>
+    <meta name="description" content="${escapeHtml(skill.summaryZh || skill.description)}" />
     <link rel="stylesheet" href="../../styles.css" />
   </head>
   <body>
     <main class="page-shell">
       <section class="hero-card">
         <p class="eyebrow">Skill 详情</p>
-        <h1>${escapeHtml(skill.title)}</h1>
-        <p class="hero-copy">${escapeHtml(skill.description)}</p>
+        <h1>${escapeHtml(skill.titleZh || skill.title)}</h1>
+        <p class="hero-copy">${escapeHtml(skill.summaryZh || skill.description)}</p>
+        ${
+          skill.titleZh && skill.titleZh !== skill.title
+            ? `<div class="skill-slug">${escapeHtml(skill.title)}</div>`
+            : ""
+        }
         <div class="score-badges">
           <span class="score-pill">推荐分 ${skill.pmScore}</span>
           <span class="dimension-pill">${escapeHtml(skill.primaryDimension)}</span>
@@ -477,6 +503,11 @@ function renderDetailPage(skill) {
               : '<span class="keyword-pill">暂无关键词命中</span>'
           }
         </div>
+      </section>
+
+      <section class="skill-card">
+        <div class="section-label">英文原始说明</div>
+        <p class="skill-description">${escapeHtml(skill.description)}</p>
       </section>
 
       <section class="skill-card">
@@ -531,6 +562,7 @@ async function main() {
     const slug = String(frontmatter.name || path.basename(path.dirname(absolutePath)));
     const title = parseTitle(markdown) || slug;
     const description = String(frontmatter.description || "").trim();
+    const zhCopy = getZhCopy({ slug, title, description });
     const scorecard = applyManualOverride(
       { slug, title, description },
       buildScorecard({ slug, title, description })
@@ -539,7 +571,9 @@ async function main() {
     skills.push({
       slug,
       title,
+      titleZh: zhCopy.titleZh,
       description,
+      summaryZh: zhCopy.summaryZh,
       sourcePath: formatSourcePath(absolutePath),
       modifiedAt: fileStats.mtime.toISOString(),
       primaryDimension: scorecard.primaryDimension,
@@ -588,7 +622,9 @@ async function main() {
     skills: skills.map((skill) => ({
       slug: skill.slug,
       title: skill.title,
+      titleZh: skill.titleZh,
       description: skill.description,
+      summaryZh: skill.summaryZh,
       sourcePath: skill.sourcePath,
       modifiedAt: skill.modifiedAt,
       primaryDimension: skill.primaryDimension,

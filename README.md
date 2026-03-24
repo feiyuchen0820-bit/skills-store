@@ -7,6 +7,7 @@
 - `package.json`：构建、校验和本地预览脚本
 - `config/pm-taxonomy.json`：产品相关维度、加分词、惩罚词和校验名单
 - `config/pm-overrides.json`：手工置顶、降权、强制收录/排除规则
+- `config/pm-zh.json`：skills 的中文标题与中文简介映射
 - `scripts/build-skills-index.mjs`：扫描 skill 并生成 `data/skills.json` 与 `skills/<slug>/index.html`
 - `index.html`、`styles.css`、`app.js`：静态 H5 页面
 - `scripts/daily-refresh.sh`：每日更新数据并按需推送
@@ -95,6 +96,7 @@ npm run check
 - 当前收录阈值：`推荐分 >= 15`
 - 数据源只使用：`slug + title + description`
 - `.system` 目录下的系统 skills 不进入站点目录
+- 前端优先展示 `config/pm-zh.json` 中配置的中文标题与中文简介，英文原文仍保留在详情页
 
 ## 手工规则与收藏
 
